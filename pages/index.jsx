@@ -2309,28 +2309,61 @@ function FieldManual({ onBack, onSubscribe }) {
       {/* WHAT IS THIS */}
       {activeSection === "what" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+
+          {/* Lead */}
           <div style={{
             background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderLeft: "3px solid #f0c040",
             borderRadius: 2, padding: 28,
           }}>
-            <div style={{ fontFamily: "Georgia, serif", color: "#f0c040", fontSize: 18, fontWeight: 900, marginBottom: 12 }}>
+            <div style={{ fontFamily: "Georgia, serif", color: "#f0c040", fontSize: 18, fontWeight: 900, marginBottom: 14 }}>
               STARGATE is a remote viewing training and simulation platform.
             </div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2 }}>
-              It is built on the actual structured methodology developed during a classified U.S. government psychoenergetics research program that ran from 1972 to 1995 — now fully declassified and part of the public record via the CIA's CREST archive.
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#ffffff", fontWeight: 900, letterSpacing: "0.05em", marginBottom: 12 }}>
+              Remote viewing is a skill. Like any skill, it can be developed.
+            </div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2.1 }}>
+              Think of it like being an artist. A great choreographer might never paint like Michelangelo — but if they pick up a brush and practice seriously, they will get better. They will surprise themselves. They may even produce work that astonishes them. The ceiling varies from person to person. The floor moves every time you practice.
               <br /><br />
-              Remote viewing is the practice of attempting to perceive information about a distant, unseen, or otherwise inaccessible target using focused mental attention alone. The structured protocols used here — Coordinate Remote Viewing (CRV) and Extended Remote Viewing (ERV) — were developed to make that process as consistent, trainable, and documentable as possible.
+              Remote viewing works the same way. Everyone who approaches it seriously improves. Some people discover they have a natural signal strength they never knew existed. Others build it slowly, stage by stage, session by session. What separates good viewers from poor ones is rarely talent — it is discipline, repetition, and willingness to be honest about what came from the signal and what came from the mind filling in the gaps.
               <br /><br />
-              STARGATE is not a game. It is a serious practice environment for anyone interested in exploring the outer edges of human perception — whether you approach it as a psychoenergetics practitioner, a meditator, a researcher, a writer, or simply someone who is curious.
+              The structured protocols in STARGATE were designed precisely for this — to give you a repeatable methodology for separating signal from noise, so that over time you can see your own development clearly.
             </div>
           </div>
 
+          {/* What it's built on */}
+          <div style={{
+            background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 24,
+          }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", fontWeight: 900, letterSpacing: "0.15em", marginBottom: 12 }}>WHAT THIS IS BUILT ON</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2.1 }}>
+              STARGATE is built on the actual methodology developed during a classified U.S. government psychoenergetics research program that ran from 1972 to 1995. The program employed trained military and civilian remote viewers to gather intelligence on targets that conventional methods could not access — sealed facilities, unknown locations, moving subjects, anomalous events.
+              <br /><br />
+              The program has been fully declassified. The session transcripts, training manuals, oversight documents, and research papers are part of the public record via the CIA's CREST archive. What you practice here is the same protocol they used — not a simulation of it. The Monitor AI evaluates your sessions using the same criteria the original program Monitors applied.
+            </div>
+          </div>
+
+          {/* The honest caveat */}
+          <div style={{
+            background: "rgba(20,10,0,0.35)", border: "1px solid #3a2a1a", borderLeft: "3px solid #f0c040",
+            borderRadius: 2, padding: 24,
+          }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", fontWeight: 900, letterSpacing: "0.15em", marginBottom: 12 }}>THE HONEST TRUTH ABOUT WHAT TO EXPECT</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2.1 }}>
+              Your first sessions will probably be messy. Analytical overlay — the mind's tendency to label and guess — will intrude constantly. That is normal. It happens to every viewer, at every level. The protocol exists to catch it.
+              <br /><br />
+              Over time, if you practice consistently, you will notice something shift. Impressions will arrive faster, more cleanly, before the analytical mind can interfere. You will start to recognize what signal feels like — different from imagination, different from guessing. That distinction is the whole game.
+              <br /><br />
+              Not everyone will reach the same ceiling. But everyone who shows up seriously will move their floor. STARGATE is the place to do that work.
+            </div>
+          </div>
+
+          {/* Feature cards */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12 }}>
             {[
-              { icon: "◈", title: "STRUCTURED PROTOCOL", desc: "Every session follows the same 6-stage CRV framework used by trained program viewers. No guesswork. No free-association without structure." },
-              { icon: "⬟", title: "AI MONITOR", desc: "MONITOR evaluates each stage of your session in real time, providing intelligence-grade feedback on signal quality, AOL contamination, and data value." },
-              { icon: "⬡", title: "BLIND TARGETING", desc: "Targets are sealed — assigned by coordinate, temporal marker, subject designation, or anomaly reference only. You receive no descriptive information before or during a session. This replicates the true operational conditions of the original program. The target type is determined by your viewer profile." },
-              { icon: "◇", title: "PERSONAL ARCHIVE", desc: "Every completed session is saved to your personal dossier and persists across visits in this browser. Browse past sessions, review stage data and Monitor evaluations, and track your development over time." },
+              { icon: "◈", title: "STRUCTURED PROTOCOL", desc: "Every session follows a rigorous stage framework used by trained program viewers. No guesswork. No free-association without structure. The protocol is the practice." },
+              { icon: "⬟", title: "AI MONITOR", desc: "MONITOR evaluates each stage in real time — signal quality, AOL contamination, intelligence value. Immediate, specific, protocol-accurate feedback after every transmission." },
+              { icon: "⬡", title: "BLIND TARGETING", desc: "Targets are completely sealed — assigned by coordinate, temporal marker, or reference code only. No description. No image. No context. True operational conditions." },
+              { icon: "◇", title: "PERSONAL ARCHIVE", desc: "Every completed session is saved to your dossier. Review stage data and Monitor evaluations over time. Watch your signal line develop. The archive is your training record." },
             ].map(c => (
               <div key={c.title} style={{ background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 18 }}>
                 <div style={{ fontFamily: "'Courier New', monospace", fontSize: 20, color: "#f0c040", marginBottom: 8 }}>{c.icon}</div>
