@@ -528,58 +528,89 @@ function BootScreen({ onEnter }) {
 
 function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, onCustomTarget, onDossier, sessionCount }) {
   const [time, setTime] = useState(new Date());
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => { const t = setInterval(() => setTime(new Date()), 1000); return () => clearInterval(t); }, []);
+
+  const navBtns = [
+    { label: "▸ UPGRADE", action: onSubscribe, amber: true },
+    { label: "▸ FIELD MANUAL", action: onFieldManual },
+    { label: "▸ CUSTOM TARGET", action: onCustomTarget },
+    { label: "▸ EXPAND CLEARANCE", action: onLearnMore },
+  ];
 
   return (
     <header style={{
-      borderBottom: "1px solid #1a3a1a", padding: "10px 24px",
-      display: "flex", alignItems: "center", justifyContent: "space-between",
+      borderBottom: "1px solid #1a3a1a",
       background: "rgba(2,10,2,0.95)", backdropFilter: "blur(4px)",
       position: "sticky", top: 0, zIndex: 100,
     }}>
-      {/* LEFT — logo */}
-      <div style={{ display: "flex", alignItems: "center", gap: 16, flexShrink: 0 }}>
-        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 17, fontWeight: 900, color: "#f0c040", letterSpacing: "0.2em" }}>STARGATE</div>
-          <div style={{ height: 1, background: "linear-gradient(to right, #f0c040, transparent)" }} />
+      <div style={{ padding: "10px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        {/* LEFT — logo */}
+        <div style={{ display: "flex", alignItems: "center", gap: 12, flexShrink: 0 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 17, fontWeight: 900, color: "#f0c040", letterSpacing: "0.2em" }}>STARGATE</div>
+            <div style={{ height: 1, background: "linear-gradient(to right, #f0c040, transparent)" }} />
+          </div>
+          <div style={{ width: 1, height: 20, background: "#1a3a1a" }} />
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.7, maxWidth: 80, lineHeight: 1.4 }}>
+            <BlinkDot />SECURE CHANNEL ACTIVE
+          </div>
         </div>
-        <div style={{ width: 1, height: 20, background: "#1a3a1a" }} />
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.7, maxWidth: 80, lineHeight: 1.4 }}>
-          <BlinkDot />SECURE CHANNEL ACTIVE
+
+        {/* RIGHT — desktop nav + clock */}
+        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+          {/* Desktop nav — hidden on small screens via fontSize trick */}
+          <div id="desktop-nav" style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            {navBtns.map(btn => (
+              <button key={btn.label} onClick={() => { btn.action(); setMenuOpen(false); }} style={{
+                background: btn.amber ? "rgba(20,40,0,0.8)" : "transparent",
+                border: `1px solid ${btn.amber ? "#f0c040" : "#1a3a1a"}`,
+                color: btn.amber ? "#f0c040" : "#4ade80",
+                fontFamily: "'Courier New', monospace", fontSize: 9, padding: "5px 10px",
+                cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2, whiteSpace: "nowrap",
+              }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = btn.amber ? "#f0c040" : "#4ade80"; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = btn.amber ? "#f0c040" : "#1a3a1a"; }}
+              >{btn.label}</button>
+            ))}
+          </div>
+          <div style={{ width: 1, height: 20, background: "#1a3a1a", marginLeft: 4 }} />
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.6, textAlign: "right" }}>
+            <div style={{ display: "none" }} className="hide-mobile">{time.toISOString().replace("T", " ").slice(0, 19)} UTC</div>
+            {sessionId && <div style={{ fontSize: 8 }}>SID: {sessionId.slice(-8)}</div>}
+            {viewer && <div style={{ fontSize: 8 }}>{viewer.id}</div>}
+          </div>
+          {/* Hamburger — mobile only */}
+          <button onClick={() => setMenuOpen(m => !m)} style={{
+            background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
+            fontFamily: "'Courier New', monospace", fontSize: 14, padding: "4px 10px",
+            cursor: "pointer", borderRadius: 2, marginLeft: 6, display: "none",
+          }} id="hamburger">☰</button>
         </div>
       </div>
 
-      {/* RIGHT — nav + clock */}
-      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-        <button onClick={onSubscribe} style={{
-          background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
-          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "5px 12px",
-          cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
-        }}
-          onMouseEnter={e => e.currentTarget.style.background = "rgba(40,60,0,0.9)"}
-          onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
-        >▸ UPGRADE CLEARANCE</button>
-        {[
-          { label: "▸ FIELD MANUAL", action: onFieldManual },
-          { label: "▸ CUSTOM TARGET", action: onCustomTarget },
-          { label: "▸ EXPAND CLEARANCE", action: onLearnMore },
-        ].map(btn => (
-          <button key={btn.label} onClick={btn.action} style={{
-            background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 9, padding: "5px 12px",
-            cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
-          }}
-            onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
-            onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
-          >{btn.label}</button>
-        ))}
-        <div style={{ width: 1, height: 20, background: "#1a3a1a", marginLeft: 4 }} />
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.6, textAlign: "right" }}>
-          <div>{time.toISOString().replace("T", " ").slice(0, 19)} UTC</div>
-          {sessionId && <div>SESSION: {sessionId}</div>}
-          {viewer && <div>VIEWER: {viewer.callsign}</div>}
+      {/* Mobile dropdown menu */}
+      {menuOpen && (
+        <div style={{
+          borderTop: "1px solid #1a3a1a", background: "rgba(2,10,2,0.98)",
+          padding: "12px 16px", display: "flex", flexDirection: "column", gap: 8,
+        }}>
+          {navBtns.map(btn => (
+            <button key={btn.label} onClick={() => { btn.action(); setMenuOpen(false); }} style={{
+              background: btn.amber ? "rgba(20,40,0,0.8)" : "transparent",
+              border: `1px solid ${btn.amber ? "#f0c040" : "#1a3a1a"}`,
+              color: btn.amber ? "#f0c040" : "#4ade80",
+              fontFamily: "'Courier New', monospace", fontSize: 10, padding: "10px 14px",
+              cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2, textAlign: "left",
+            }}>{btn.label}</button>
+          ))}
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, paddingTop: 4 }}>
+            {time.toISOString().replace("T", " ").slice(0, 19)} UTC
+            {sessionId && <div>SESSION: {sessionId}</div>}
+            {viewer && <div>VIEWER: {viewer.callsign}</div>}
+          </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }
@@ -2571,6 +2602,10 @@ export default function App() {
         body { margin: 0; background: #020a02; }
         textarea::placeholder, input::placeholder { color: rgba(74,222,128,0.3); }
         ::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: #020a02; } ::-webkit-scrollbar-thumb { background: #1a3a1a; }
+        @media (max-width: 640px) {
+          #desktop-nav { display: none !important; }
+          #hamburger { display: block !important; }
+        }
       `}</style>
       <Scanlines /><Noise />
       <div style={{ minHeight: "100vh", background: "#020a02", color: "#4ade80" }}>
