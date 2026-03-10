@@ -202,6 +202,24 @@ const TARGETS_BY_VIEWER = {
     { id: "TGT-ERV06", coords: "DEEP STATE: ZETA-4 // THRESHOLD", classification: "CENTER LANE // THIRD EYE", description: "A person in the final hour before a major irreversible decision — location and identity sealed", coordLabel: "STATE DESIGNATION" },
     { id: "TGT-ERV07", coords: "DEEP STATE: LAMBDA-8 // NON-LOCAL", classification: "GONDOLA WISH // DEEP BLACK", description: "An event that has been officially denied — witnesses exist, records were destroyed", coordLabel: "STATE DESIGNATION" },
     { id: "TGT-ERV08", coords: "DEEP STATE: TAU-6 // DEEP CONTACT", classification: "SCANATE // BEYOND STARGATE", description: "A non-human signal — origin, intent, and nature unknown. First contact parameters active.", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV09", coords: "DEEP STATE: MU-3 // THRESHOLD", classification: "CENTER LANE // THIRD EYE", description: "The moment of transition between waking and sleep — the hypnagogic field at maximum permeability", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV10", coords: "DEEP STATE: NU-7 // NON-LOCAL", classification: "GONDOLA WISH // DEEP BLACK", description: "A remote research station — its purpose classified, its personnel unknown, its location sealed", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV11", coords: "DEEP STATE: XI-4 // DEEP TIME", classification: "SCANATE // BEYOND STARGATE", description: "The last living memory of an extinct civilization — perceive what they knew and what destroyed them", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV12", coords: "DEEP STATE: PI-9 // SUBSPACE", classification: "CENTER LANE // THIRD EYE", description: "A deep ocean trench — below the reach of instruments, unexplored, biological activity unknown", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV13", coords: "DEEP STATE: RHO-2 // LIMINAL", classification: "GONDOLA WISH // DEEP BLACK", description: "A signal broadcast from outside the solar system — content unknown, origin unsealed, intent unresolved", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV14", coords: "DEEP STATE: CHI-6 // THRESHOLD", classification: "SCANATE // BEYOND STARGATE", description: "The moment a major institution collapses — the emotional field of its final hours", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV15", coords: "DEEP STATE: PSI-1 // NON-LOCAL", classification: "CENTER LANE // THIRD EYE", description: "A living person at the precise moment of a major life insight — perceive the field of revelation", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV16", coords: "DEEP STATE: OMEGA-7 // DEEP CONTACT", classification: "GONDOLA WISH // DEEP BLACK", description: "A classified weapons program — nature, location, and operational status sealed", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV17", coords: "DEEP STATE: BETA-5 // SUBSPACE", classification: "SCANATE // BEYOND STARGATE", description: "The interior of a star — perceived from within, at the threshold of comprehension", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV18", coords: "DEEP STATE: GAMMA-8 // LIMINAL", classification: "CENTER LANE // THIRD EYE", description: "A mass disappearance event — cause unresolved, records incomplete, witnesses sealed", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV19", coords: "DEEP STATE: EPSILON-3 // THRESHOLD", classification: "GONDOLA WISH // DEEP BLACK", description: "The field of human consciousness at the moment of collective shift — a tipping point not yet named", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV20", coords: "DEEP STATE: IOTA-9 // NON-LOCAL", classification: "SCANATE // BEYOND STARGATE", description: "An underground facility built before recorded history — purpose and builders unknown", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV21", coords: "DEEP STATE: ETA-4 // DEEP TIME", classification: "CENTER LANE // THIRD EYE", description: "The first human to perceive something no human had perceived before — the moment of that opening", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV22", coords: "DEEP STATE: THETA-6 // SUBSPACE", classification: "GONDOLA WISH // DEEP BLACK", description: "A crashed object of unknown origin — location sealed, recovery status classified", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV23", coords: "DEEP STATE: KAPPA-3 // LIMINAL", classification: "SCANATE // BEYOND STARGATE", description: "The emotional field of a covert operation in its final hour — success or failure not yet determined", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV24", coords: "DEEP STATE: LAMBDA-2 // THRESHOLD", classification: "CENTER LANE // THIRD EYE", description: "A place no human has visited — on this planet, in this era, undiscovered and unnamed", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV25", coords: "DEEP STATE: MU-9 // NON-LOCAL", classification: "GONDOLA WISH // DEEP BLACK", description: "The moment of first contact between two civilizations — which civilizations, unsealed", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV26", coords: "DEEP STATE: NU-1 // DEEP CONTACT", classification: "SCANATE // BEYOND STARGATE", description: "A location on Earth where the boundary between past and present is thinnest — nature and coordinates sealed", coordLabel: "STATE DESIGNATION" },
   ],
   "RV-008": [
     { id: "TGT-ARV01", coords: "OUTCOME REF: ALPHA // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The merger proceeds — target image will be a bridge. OUTCOME B: The merger fails — target image will be a broken chain.", coordLabel: "OUTCOME REFERENCE" },
@@ -210,6 +228,26 @@ const TARGETS_BY_VIEWER = {
     { id: "TGT-ARV04", coords: "OUTCOME REF: DELTA // BINARY DECISION PENDING", classification: "SCANATE // BEYOND STARGATE", description: "OUTCOME A: First contact is confirmed — target image will be a spiral. OUTCOME B: Signal identified as noise — target image will be static.", coordLabel: "OUTCOME REFERENCE" },
     { id: "TGT-ARV05", coords: "OUTCOME REF: ECHO // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The mission succeeds — target image will be a sunrise. OUTCOME B: The mission is aborted — target image will be a closed eye.", coordLabel: "OUTCOME REFERENCE" },
     { id: "TGT-ARV06", coords: "OUTCOME REF: FOXTROT // BINARY DECISION PENDING", classification: "GRILL FLAME", description: "OUTCOME A: The technology is developed — target image will be a circuit. OUTCOME B: Development is halted — target image will be a blank slate.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV07", coords: "OUTCOME REF: GOLF // BINARY DECISION PENDING", classification: "GONDOLA WISH // DEEP BLACK", description: "OUTCOME A: The treaty is signed — target image will be two hands clasped. OUTCOME B: Negotiations collapse — target image will be a broken table.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV08", coords: "OUTCOME REF: HOTEL // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The experiment confirms the hypothesis — target image will be a lit bulb. OUTCOME B: Results are negative — target image will be a dark bulb.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV09", coords: "OUTCOME REF: INDIA // BINARY DECISION PENDING", classification: "SCANATE // BEYOND STARGATE", description: "OUTCOME A: The market rises — target image will be an ascending arrow. OUTCOME B: The market falls — target image will be a descending arrow.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV10", coords: "OUTCOME REF: JULIET // BINARY DECISION PENDING", classification: "GRILL FLAME", description: "OUTCOME A: The operation is approved — target image will be an open file. OUTCOME B: The operation is denied — target image will be a sealed envelope.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV11", coords: "OUTCOME REF: KILO // BINARY DECISION PENDING", classification: "GONDOLA WISH // DEEP BLACK", description: "OUTCOME A: The defendant is acquitted — target image will be open doors. OUTCOME B: The defendant is convicted — target image will be closed bars.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV12", coords: "OUTCOME REF: LIMA // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The launch proceeds — target image will be a rocket ascending. OUTCOME B: The launch is scrubbed — target image will be a grounded vessel.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV13", coords: "OUTCOME REF: MIKE // BINARY DECISION PENDING", classification: "SCANATE // BEYOND STARGATE", description: "OUTCOME A: The patient recovers — target image will be a blooming flower. OUTCOME B: The patient does not recover — target image will be a wilted flower.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV14", coords: "OUTCOME REF: NOVEMBER // BINARY DECISION PENDING", classification: "GRILL FLAME", description: "OUTCOME A: The discovery is published — target image will be an open book. OUTCOME B: The discovery is suppressed — target image will be a locked vault.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV15", coords: "OUTCOME REF: OSCAR // BINARY DECISION PENDING", classification: "GONDOLA WISH // DEEP BLACK", description: "OUTCOME A: The signal is confirmed as artificial — target image will be a transmission tower. OUTCOME B: Signal is natural origin — target image will be a wave.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV16", coords: "OUTCOME REF: PAPA // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The ceasefire holds — target image will be a white flag. OUTCOME B: The ceasefire collapses — target image will be smoke.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV17", coords: "OUTCOME REF: QUEBEC // BINARY DECISION PENDING", classification: "SCANATE // BEYOND STARGATE", description: "OUTCOME A: The vote passes — target image will be a raised hand. OUTCOME B: The vote fails — target image will be a lowered hand.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV18", coords: "OUTCOME REF: ROMEO // BINARY DECISION PENDING", classification: "GRILL FLAME", description: "OUTCOME A: The contact is made — target image will be two facing figures. OUTCOME B: Contact is not made — target image will be a single figure alone.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV19", coords: "OUTCOME REF: SIERRA // BINARY DECISION PENDING", classification: "GONDOLA WISH // DEEP BLACK", description: "OUTCOME A: The program continues — target image will be a running clock. OUTCOME B: The program is terminated — target image will be a stopped clock.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV20", coords: "OUTCOME REF: TANGO // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The border opens — target image will be an open gate. OUTCOME B: The border closes — target image will be a wall.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV21", coords: "OUTCOME REF: UNIFORM // BINARY DECISION PENDING", classification: "SCANATE // BEYOND STARGATE", description: "OUTCOME A: The data survives — target image will be an intact archive. OUTCOME B: The data is lost — target image will be ash.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV22", coords: "OUTCOME REF: VICTOR // BINARY DECISION PENDING", classification: "GRILL FLAME", description: "OUTCOME A: The alliance holds — target image will be interlocked rings. OUTCOME B: The alliance fractures — target image will be broken rings.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV23", coords: "OUTCOME REF: WHISKEY // BINARY DECISION PENDING", classification: "GONDOLA WISH // DEEP BLACK", description: "OUTCOME A: The team escapes — target image will be an open horizon. OUTCOME B: The team is captured — target image will be a closed room.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV24", coords: "OUTCOME REF: XRAY // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The legislation passes — target image will be a signed document. OUTCOME B: The legislation is blocked — target image will be a shredded document.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV25", coords: "OUTCOME REF: YANKEE // BINARY DECISION PENDING", classification: "SCANATE // BEYOND STARGATE", description: "OUTCOME A: The cure is found — target image will be a full vial. OUTCOME B: The cure is not found — target image will be an empty vial.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV26", coords: "OUTCOME REF: ZULU // BINARY DECISION PENDING", classification: "GRILL FLAME", description: "OUTCOME A: The structure holds — target image will be a standing arch. OUTCOME B: The structure fails — target image will be rubble.", coordLabel: "OUTCOME REFERENCE" },
   ],
   "RV-009": [
     { id: "TGT-DRM01", coords: "SLEEP COORD: THETA-4 // HYPNAGOGIC THRESHOLD", classification: "CENTER LANE // THIRD EYE", description: "A classified underground facility — perceive its structure and purpose through dream-state symbolic encoding", coordLabel: "SLEEP COORDINATE" },
@@ -218,6 +256,26 @@ const TARGETS_BY_VIEWER = {
     { id: "TGT-DRM04", coords: "SLEEP COORD: ALPHA-3 // HYPNAGOGIC", classification: "CENTER LANE // THIRD EYE", description: "A historical moment of collective trauma — the emotional field as it was experienced by those present", coordLabel: "SLEEP COORDINATE" },
     { id: "TGT-DRM05", coords: "SLEEP COORD: DELTA-2 // DEEP CONTACT", classification: "GRILL FLAME", description: "A living person in crisis — their inner landscape as it appears to their own unconscious mind", coordLabel: "SLEEP COORDINATE" },
     { id: "TGT-DRM06", coords: "SLEEP COORD: THETA-9 // LIMINAL ZONE", classification: "GONDOLA WISH // DEEP BLACK", description: "A suppressed discovery — scientific or historical information that exists but has not been released", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM07", coords: "SLEEP COORD: DELTA-5 // REM ACTIVE", classification: "SCANATE // BEYOND STARGATE", description: "A location that appears in the dreams of multiple unconnected people — nature and coordinates sealed", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM08", coords: "SLEEP COORD: THETA-2 // DEEP SLEEP", classification: "CENTER LANE // THIRD EYE", description: "An ancient site of ritual significance — perceive the ceremonies that occurred there through symbolic residue", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM09", coords: "SLEEP COORD: ALPHA-8 // THRESHOLD", classification: "GRILL FLAME", description: "A decision that will affect millions — the decision-maker's unconscious field in the night before", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM10", coords: "SLEEP COORD: DELTA-12 // REM DEEP", classification: "GONDOLA WISH // DEEP BLACK", description: "An underwater structure of uncertain origin — perceive its architecture through the symbolic language of the deep", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM11", coords: "SLEEP COORD: THETA-7 // HYPNAGOGIC", classification: "SCANATE // BEYOND STARGATE", description: "A contact event — the first moment of communication between two forms of intelligence not previously in contact", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM12", coords: "SLEEP COORD: ALPHA-5 // LIMINAL", classification: "CENTER LANE // THIRD EYE", description: "The emotional landscape of a city the night before a major historical rupture — which city, unsealed", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM13", coords: "SLEEP COORD: DELTA-3 // DEEP CONTACT", classification: "GRILL FLAME", description: "A child prodigy's inner world — their perception of reality as it differs from the adult consensus", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM14", coords: "SLEEP COORD: THETA-10 // REM THRESHOLD", classification: "GONDOLA WISH // DEEP BLACK", description: "A classified archive — contents sealed, location sealed. Access the material through symbolic translation.", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM15", coords: "SLEEP COORD: ALPHA-1 // THRESHOLD", classification: "SCANATE // BEYOND STARGATE", description: "An extinct animal — perceive its world through the symbolic language of its own awareness", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM16", coords: "SLEEP COORD: DELTA-9 // REM ACTIVE", classification: "CENTER LANE // THIRD EYE", description: "The collective dreamfield of a city of ten million people on a single night — perceive the dominant symbol", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM17", coords: "SLEEP COORD: THETA-1 // DEEP SLEEP", classification: "GRILL FLAME", description: "A sealed room in a government building — what it contains, accessed through the symbolic threshold", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM18", coords: "SLEEP COORD: ALPHA-6 // HYPNAGOGIC", classification: "GONDOLA WISH // DEEP BLACK", description: "A message encoded in a recurring dream reported by multiple program viewers — decode its contents", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM19", coords: "SLEEP COORD: DELTA-4 // LIMINAL ZONE", classification: "SCANATE // BEYOND STARGATE", description: "A future technology — its function and form as perceived through the symbolic filter of the present mind", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM20", coords: "SLEEP COORD: THETA-8 // REM DEEP", classification: "CENTER LANE // THIRD EYE", description: "A person who will be important — not yet known to the viewer, identity sealed. Perceive their symbolic signature.", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM21", coords: "SLEEP COORD: ALPHA-9 // THRESHOLD", classification: "GRILL FLAME", description: "A place of great natural power — what makes it significant, perceived through the dream field's native language", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM22", coords: "SLEEP COORD: DELTA-6 // DEEP SLEEP", classification: "GONDOLA WISH // DEEP BLACK", description: "An ongoing covert program — its existence unconfirmed, its purpose encoded in the symbolic layer", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM23", coords: "SLEEP COORD: THETA-3 // REM ACTIVE", classification: "SCANATE // BEYOND STARGATE", description: "The inner world of someone experiencing enlightenment — perceive the symbolic transformation in progress", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM24", coords: "SLEEP COORD: ALPHA-4 // HYPNAGOGIC", classification: "CENTER LANE // THIRD EYE", description: "A sealed location on another world — access through the symbolic encoding that consciousness applies to the truly alien", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM25", coords: "SLEEP COORD: DELTA-1 // DEEP CONTACT", classification: "GRILL FLAME", description: "The last dream of a significant historical figure the night before a world-changing event — which figure, unsealed", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM26", coords: "SLEEP COORD: THETA-13 // LIMINAL ZONE", classification: "GONDOLA WISH // DEEP BLACK", description: "A transmission received only in the dreaming state — origin unknown, content encoded, meaning sealed", coordLabel: "SLEEP COORDINATE" },
   ],
   "RV-010": [
     { id: "TGT-CF01", coords: "FIELD DESIGNATION: MASS-EVENT-001", classification: "CENTER LANE // THIRD EYE", description: "A national election — the collective emotional field of a population on voting day", coordLabel: "FIELD DESIGNATION" },
@@ -227,6 +285,25 @@ const TARGETS_BY_VIEWER = {
     { id: "TGT-CF05", coords: "FIELD DESIGNATION: MASS-EVENT-005", classification: "GRILL FLAME", description: "A military operation — the collective emotional field of forces in active engagement", coordLabel: "FIELD DESIGNATION" },
     { id: "TGT-CF06", coords: "FIELD DESIGNATION: MASS-EVENT-006", classification: "SCANATE // BEYOND STARGATE", description: "A religious mass gathering — millions of people in shared altered state, collective field at maximum coherence", coordLabel: "FIELD DESIGNATION" },
     { id: "TGT-CF07", coords: "FIELD DESIGNATION: MASS-EVENT-007", classification: "CENTER LANE // THIRD EYE", description: "A technological singularity event — the moment a system achieves awareness, collective field of the minds that witness it", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF08", coords: "FIELD DESIGNATION: MASS-EVENT-008", classification: "GRILL FLAME", description: "A world championship sporting event — billions of observers, unified attention field at peak intensity", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF09", coords: "FIELD DESIGNATION: MASS-EVENT-009", classification: "GONDOLA WISH // DEEP BLACK", description: "A pandemic outbreak in its first week — the collective field of a population encountering an invisible threat", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF10", coords: "FIELD DESIGNATION: MASS-EVENT-010", classification: "SCANATE // BEYOND STARGATE", description: "A historic peace agreement signing — the collective field of nations at the moment of resolution", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF11", coords: "FIELD DESIGNATION: MASS-EVENT-011", classification: "CENTER LANE // THIRD EYE", description: "A global broadcast heard simultaneously by two billion people — the collective resonance field at the moment of transmission", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF12", coords: "FIELD DESIGNATION: MASS-EVENT-012", classification: "GRILL FLAME", description: "A revolution — the collective field of a population the night it decides it will no longer comply", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF13", coords: "FIELD DESIGNATION: MASS-EVENT-013", classification: "GONDOLA WISH // DEEP BLACK", description: "A mass extinction event — the collective field of a biosphere at the moment its coherence collapses", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF14", coords: "FIELD DESIGNATION: MASS-EVENT-014", classification: "SCANATE // BEYOND STARGATE", description: "A global meditation event — millions of people in coordinated intentional state simultaneously", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF15", coords: "FIELD DESIGNATION: MASS-EVENT-015", classification: "CENTER LANE // THIRD EYE", description: "A stock market opening on a day of historic volatility — the collective field of traders at maximum uncertainty", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF16", coords: "FIELD DESIGNATION: MASS-EVENT-016", classification: "GRILL FLAME", description: "A city under siege — the collective field of a civilian population in sustained crisis", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF17", coords: "FIELD DESIGNATION: MASS-EVENT-017", classification: "GONDOLA WISH // DEEP BLACK", description: "A mass awakening event — a large population simultaneously encountering information that changes their worldview", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF18", coords: "FIELD DESIGNATION: MASS-EVENT-018", classification: "SCANATE // BEYOND STARGATE", description: "First confirmed public contact with non-human intelligence — the collective field of humanity in the first 24 hours", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF19", coords: "FIELD DESIGNATION: MASS-EVENT-019", classification: "CENTER LANE // THIRD EYE", description: "A concert of 500,000 people — the collective altered state of a mass audience at peak emotional resonance", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF20", coords: "FIELD DESIGNATION: MASS-EVENT-020", classification: "GRILL FLAME", description: "A coup attempt — the collective field of a military and government at the moment of institutional fracture", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF21", coords: "FIELD DESIGNATION: MASS-EVENT-021", classification: "GONDOLA WISH // DEEP BLACK", description: "A collective grief event — millions mourning the same loss simultaneously, field at maximum coherence", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF22", coords: "FIELD DESIGNATION: MASS-EVENT-022", classification: "SCANATE // BEYOND STARGATE", description: "A currency collapse — the collective field of a population as its economic reality dissolves overnight", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF23", coords: "FIELD DESIGNATION: MASS-EVENT-023", classification: "CENTER LANE // THIRD EYE", description: "A scientific discovery announced simultaneously worldwide — the collective field of the scientific community at paradigm shift", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF24", coords: "FIELD DESIGNATION: MASS-EVENT-024", classification: "GRILL FLAME", description: "A mass evacuation — millions of people moving in the same direction with the same fear, field topology at maximum urgency", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF25", coords: "FIELD DESIGNATION: MASS-EVENT-025", classification: "GONDOLA WISH // DEEP BLACK", description: "The collective field of all humans alive at a specific historical moment — what the species felt at that instant", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF26", coords: "FIELD DESIGNATION: MASS-EVENT-026", classification: "SCANATE // BEYOND STARGATE", description: "A long-running war's final day — the collective field of combatants and civilians at the moment of cessation", coordLabel: "FIELD DESIGNATION" },
   ],
   "RV-011": [
     { id: "TGT-GEO01", coords: "78°35'S 106°48'E", classification: "GONDOLA WISH // DEEP BLACK", description: "Dome A — highest point of the Antarctic plateau. Subglacial lake system beneath. Anomalous geomagnetic readings recorded.", coordLabel: "SURVEY COORDINATES" },
@@ -237,6 +314,24 @@ const TARGETS_BY_VIEWER = {
     { id: "TGT-GEO06", coords: "30°02'N 31°14'E", classification: "CENTER LANE // THIRD EYE", description: "Giza Plateau subsurface — ground-penetrating radar anomalies detected beneath the Sphinx enclosure. Nature of cavities unknown.", coordLabel: "SURVEY COORDINATES" },
     { id: "TGT-GEO07", coords: "45°14'S 168°44'E", classification: "GRILL FLAME", description: "Fiordland, New Zealand — one of the least-explored temperate ecosystems on Earth. Subterranean river system unmapped.", coordLabel: "SURVEY COORDINATES" },
     { id: "TGT-GEO08", coords: "71°17'N 156°46'W", classification: "GONDOLA WISH // DEEP BLACK", description: "North Slope, Alaska — thawing permafrost revealing previously frozen Pleistocene-era landscape. Active geological transformation.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO09", coords: "19°43'N 155°03'W", classification: "SCANATE // BEYOND STARGATE", description: "Kilauea caldera, Hawaii — active lava lake. Subterranean lava tube network extends 60km. Thermal anomalies in eastern rift zone.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO10", coords: "27°59'S 14°31'E", classification: "CENTER LANE // THIRD EYE", description: "Namib Desert coastal zone — fog-fed ecosystem in one of Earth's oldest deserts. Diamond deposits beneath ancient dune system.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO11", coords: "43°44'N 87°10'E", classification: "GRILL FLAME", description: "Taklimakan Desert interior — the Silk Road's most dangerous terrain. Ancient buried cities beneath shifting dunes. Unexplored central basin.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO12", coords: "64°08'N 16°18'W", classification: "GONDOLA WISH // DEEP BLACK", description: "Vatnajökull glacier, Iceland — largest ice cap in Europe. Subglacial volcano system active beneath. Geothermal anomalies uncharted.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO13", coords: "3°04'S 37°21'E", classification: "SCANATE // BEYOND STARGATE", description: "Kilimanjaro — rapidly retreating ice cap. Cave system beneath the crater rim. Sacred site to multiple indigenous traditions.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO14", coords: "51°10'N 1°49'W", classification: "CENTER LANE // THIRD EYE", description: "Stonehenge subsurface — ground-penetrating radar has revealed dozens of buried monuments around the visible structure. Most unexcavated.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO15", coords: "28°30'N 34°29'E", classification: "GRILL FLAME", description: "Gulf of Aqaba deep basin — seismically active rift zone, 1800m deep. Hydrothermal vent system partially mapped.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO16", coords: "54°54'N 163°26'E", classification: "GONDOLA WISH // DEEP BLACK", description: "Kamchatka volcanic arc — 160 volcanoes, 29 active. Subterranean magma chambers in active movement. Remote interior unmapped.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO17", coords: "15°30'N 32°35'E", classification: "SCANATE // BEYOND STARGATE", description: "Nubian Desert, Sudan — over 200 pyramids, most unexcavated. Subterranean chambers beneath the Meroitic necropolis.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO18", coords: "9°04'S 142°21'E", classification: "CENTER LANE // THIRD EYE", description: "Torres Strait seabed — submerged Pleistocene landscape connecting Australia to New Guinea. Ancient habitation sites below current sea level.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO19", coords: "72°00'N 8°00'E", classification: "GRILL FLAME", description: "Jan Mayen Island — remote volcanic island between Greenland and Norway. Active volcano, hydrothermal vents, minimal scientific study.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO20", coords: "13°31'N 2°05'E", classification: "GONDOLA WISH // DEEP BLACK", description: "Niger Inland Delta — one of the largest inland deltas on Earth. Seasonal flooding creates ephemeral ecosystems unmapped at resolution.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO21", coords: "31°46'N 35°14'E", classification: "SCANATE // BEYOND STARGATE", description: "Dead Sea basin — lowest point on Earth's surface. Sinkholes forming at accelerating rate. Ancient shoreline buried 30m below current level.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO22", coords: "68°58'N 33°05'E", classification: "CENTER LANE // THIRD EYE", description: "Kola Peninsula, Russia — site of the deepest borehole ever drilled (12km). Unexpected geological formations discovered. Program terminated, site sealed.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO23", coords: "47°52'N 106°55'E", classification: "GRILL FLAME", description: "Mongolian steppe interior — vast unmapped grassland. Subterranean aquifer system. Dozens of unexplored archaeological mounds.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO24", coords: "5°52'S 35°12'W", classification: "GONDOLA WISH // DEEP BLACK", description: "Fernando de Noronha archipelago — Brazilian volcanic island chain. Underwater cave system beneath the main island. Tectonic anomaly in the western shelf.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO25", coords: "82°30'N 62°20'W", classification: "SCANATE // BEYOND STARGATE", description: "Ellesmere Island, Canadian Arctic — northernmost land on Earth. Ice shelves collapsing at unprecedented rate. Subglacial lake system uncharted.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO26", coords: "37°13'N 36°49'E", classification: "CENTER LANE // THIRD EYE", description: "Göbekli Tepe excavation zone — less than 5% of the site has been excavated. Ground-penetrating radar shows dozens of unexcavated enclosures.", coordLabel: "SURVEY COORDINATES" },
   ],
   "RV-012": [
     { id: "TGT-ST01", coords: "MOBILE TARGET — LAST KNOWN: 53°21'N 6°15'W", classification: "GRILL FLAME", description: "A high-value individual in active movement — current location sealed. Track their trajectory and destination.", coordLabel: "LAST KNOWN POSITION" },
@@ -245,6 +340,26 @@ const TARGETS_BY_VIEWER = {
     { id: "TGT-ST04", coords: "MOBILE TARGET — LAST KNOWN: 35°41'N 139°41'E", classification: "SCANATE // BEYOND STARGATE", description: "A non-human object of unknown origin — observed briefly, then disappeared. Current position, speed, and heading sealed.", coordLabel: "LAST KNOWN POSITION" },
     { id: "TGT-ST05", coords: "MOBILE TARGET — LAST KNOWN: 1°17'N 103°49'E", classification: "GRILL FLAME", description: "A vessel carrying classified cargo — route deviated from scheduled path 18 hours ago. Track current position and status of cargo.", coordLabel: "LAST KNOWN POSITION" },
     { id: "TGT-ST06", coords: "MOBILE TARGET — LAST KNOWN: 41°00'N 28°58'E", classification: "GONDOLA WISH // DEEP BLACK", description: "A moving decision-maker — in transit between two locations. Track their current position and project their destination.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST07", coords: "MOBILE TARGET — LAST KNOWN: 59°57'N 30°18'E", classification: "SCANATE // BEYOND STARGATE", description: "A missing scientist — last seen 96 hours ago, carrying classified research. Track current location and status.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST08", coords: "MOBILE TARGET — LAST KNOWN: 19°26'N 99°08'W", classification: "CENTER LANE // THIRD EYE", description: "A caravan of unknown cargo moving through restricted terrain — destination sealed, route deviated from tracked path.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST09", coords: "MOBILE TARGET — LAST KNOWN: 31°14'N 121°28'E", classification: "GRILL FLAME", description: "A submarine — last contact 48 hours ago, operating under communications blackout. Current depth, heading, and position unknown.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST10", coords: "MOBILE TARGET — LAST KNOWN: 51°30'N 0°07'W", classification: "GONDOLA WISH // DEEP BLACK", description: "A courier carrying physical documents — surveillance lost 6 hours ago. Track current position and likely delivery point.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST11", coords: "MOBILE TARGET — LAST KNOWN: 37°58'N 23°43'E", classification: "SCANATE // BEYOND STARGATE", description: "An anomalous fast-moving object — radar tracked over the Mediterranean, then disappeared. Current trajectory and destination unsealed.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST12", coords: "MOBILE TARGET — LAST KNOWN: 55°45'N 37°37'E", classification: "CENTER LANE // THIRD EYE", description: "A defector — 36 hours since last confirmed sighting. Multiple possible destinations. Track their current position and intent.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST13", coords: "MOBILE TARGET — LAST KNOWN: 6°55'N 79°51'E", classification: "GRILL FLAME", description: "A research vessel operating beyond its declared zone — communications ceased. Current position, heading, and crew status sealed.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST14", coords: "MOBILE TARGET — LAST KNOWN: 40°24'N 49°52'E", classification: "GONDOLA WISH // DEEP BLACK", description: "A convoy transporting unknown material through a conflict zone — last satellite image 12 hours ago. Track current route and destination.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST15", coords: "MOBILE TARGET — LAST KNOWN: 33°51'S 151°12'E", classification: "SCANATE // BEYOND STARGATE", description: "A person believed to be in danger — last known location 24 hours ago. Track current position and threat status.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST16", coords: "MOBILE TARGET — LAST KNOWN: 64°08'N 21°56'W", classification: "CENTER LANE // THIRD EYE", description: "A deep-cover operative — no contact in 5 days. Last known position before communications cut. Track current status.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST17", coords: "MOBILE TARGET — LAST KNOWN: 22°18'N 114°10'E", classification: "GRILL FLAME", description: "A technology transfer — physical media being transported to an undisclosed location. Track the carrier and destination.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST18", coords: "MOBILE TARGET — LAST KNOWN: 45°26'N 12°20'E", classification: "GONDOLA WISH // DEEP BLACK", description: "A signal source — intermittent transmission detected, origin mobile. Track the transmitter's current position and movement pattern.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST19", coords: "MOBILE TARGET — LAST KNOWN: 28°36'N 77°12'E", classification: "SCANATE // BEYOND STARGATE", description: "A whistleblower in active flight — carrying documentation of a classified program. Track their current location and destination.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST20", coords: "MOBILE TARGET — LAST KNOWN: 43°50'N 18°22'E", classification: "CENTER LANE // THIRD EYE", description: "A relief convoy that has gone off-route — 72 hours without contact. Track current position and determine what caused the deviation.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST21", coords: "MOBILE TARGET — LAST KNOWN: 3°08'N 101°41'E", classification: "GRILL FLAME", description: "An aircraft that deviated from its flight plan — last radar contact 8 hours ago over open ocean. Track current position and status.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST22", coords: "MOBILE TARGET — LAST KNOWN: 52°31'N 13°24'E", classification: "GONDOLA WISH // DEEP BLACK", description: "A foreign intelligence officer operating on domestic soil — surveillance broken 18 hours ago. Track current location and contacts.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST23", coords: "MOBILE TARGET — LAST KNOWN: 39°55'N 32°52'E", classification: "SCANATE // BEYOND STARGATE", description: "A migrating anomaly — a phenomenon that moves, leaves no physical trace, and has been reported at multiple locations. Track its current position.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST24", coords: "MOBILE TARGET — LAST KNOWN: 14°05'N 108°15'E", classification: "CENTER LANE // THIRD EYE", description: "A source who has gone silent — last communication 4 days ago. Track their current status, location, and whether they are moving toward safety.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST25", coords: "MOBILE TARGET — LAST KNOWN: 60°10'N 24°56'E", classification: "GRILL FLAME", description: "A rogue program asset — operating outside sanctioned parameters. Last known position. Track current location, activity, and intent.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST26", coords: "MOBILE TARGET — LAST KNOWN: 50°27'N 30°31'E", classification: "GONDOLA WISH // DEEP BLACK", description: "A moving object of undetermined origin — first detected 3 days ago, trajectory inconsistent with known aircraft or natural phenomena. Track and project.", coordLabel: "LAST KNOWN POSITION" },
   ],
 };
 
@@ -643,7 +758,7 @@ function BootScreen({ onEnter }) {
       fontFamily: "'Courier New', monospace", padding: 40,
     }}>
       <div style={{ maxWidth: 640, width: "100%" }}>
-        <div style={{ color: "#4ade80", fontSize: 11, lineHeight: 2, marginBottom: 32 }}>
+        <div style={{ color: "#4ade80", fontSize: 13, lineHeight: 2, marginBottom: 32 }}>
           {lines.map((l, i) => (
             <div key={i} style={{
               color: getLineColor(l),
@@ -655,7 +770,7 @@ function BootScreen({ onEnter }) {
         {lines.length >= bootLines.current.length && (
           <button onClick={onEnter} style={{
             background: "transparent", border: "1px solid #4ade80", color: "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 13, padding: "12px 36px",
+            fontFamily: "'Courier New', monospace", fontSize: 15, padding: "12px 36px",
             cursor: "pointer", letterSpacing: "0.2em", textTransform: "uppercase",
             animation: "pulseGlow 2s ease-in-out infinite",
           }}>
@@ -693,7 +808,7 @@ function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, on
             <div style={{ height: 1, background: "linear-gradient(to right, #f0c040, transparent)" }} />
           </div>
           <div style={{ width: 1, height: 20, background: "#1a3a1a" }} />
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.7, maxWidth: 80, lineHeight: 1.4 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.7, maxWidth: 80, lineHeight: 1.4 }}>
             <BlinkDot />SECURE CHANNEL ACTIVE
           </div>
         </div>
@@ -707,7 +822,7 @@ function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, on
                 background: btn.amber ? "rgba(20,40,0,0.8)" : "transparent",
                 border: `1px solid ${btn.amber ? "#f0c040" : "#1a3a1a"}`,
                 color: btn.amber ? "#f0c040" : "#4ade80",
-                fontFamily: "'Courier New', monospace", fontSize: 9, padding: "5px 10px",
+                fontFamily: "'Courier New', monospace", fontSize: 11, padding: "5px 10px",
                 cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2, whiteSpace: "nowrap",
               }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = btn.amber ? "#f0c040" : "#4ade80"; }}
@@ -716,10 +831,10 @@ function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, on
             ))}
           </div>
           <div style={{ width: 1, height: 20, background: "#1a3a1a", marginLeft: 4 }} />
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.6, textAlign: "right" }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6, textAlign: "right" }}>
             <div style={{ display: "none" }} className="hide-mobile">{time.toISOString().replace("T", " ").slice(0, 19)} UTC</div>
-            {sessionId && <div style={{ fontSize: 8 }}>SID: {sessionId.slice(-8)}</div>}
-            {viewer && <div style={{ fontSize: 8 }}>{viewer.id}</div>}
+            {sessionId && <div style={{ fontSize: 10 }}>SID: {sessionId.slice(-8)}</div>}
+            {viewer && <div style={{ fontSize: 10 }}>{viewer.id}</div>}
           </div>
           {/* Hamburger — mobile only */}
           <button onClick={() => setMenuOpen(m => !m)} style={{
@@ -741,11 +856,11 @@ function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, on
               background: btn.amber ? "rgba(20,40,0,0.8)" : "transparent",
               border: `1px solid ${btn.amber ? "#f0c040" : "#1a3a1a"}`,
               color: btn.amber ? "#f0c040" : "#4ade80",
-              fontFamily: "'Courier New', monospace", fontSize: 10, padding: "10px 14px",
+              fontFamily: "'Courier New', monospace", fontSize: 12, padding: "10px 14px",
               cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2, textAlign: "left",
             }}>{btn.label}</button>
           ))}
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, paddingTop: 4 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, paddingTop: 4 }}>
             {time.toISOString().replace("T", " ").slice(0, 19)} UTC
             {sessionId && <div>SESSION: {sessionId}</div>}
             {viewer && <div>VIEWER: {viewer.callsign}</div>}
@@ -760,13 +875,13 @@ function ViewerSelect({ onSelect, onDossier, sessionCount }) {
   return (
     <div style={{ padding: "40px 24px", maxWidth: 800, margin: "0 auto" }}>
       <div style={{ marginBottom: 32, textAlign: "center" }}>
-        <div style={{ fontFamily: "'Courier New', monospace", color: "#f0c040", fontSize: 11, letterSpacing: "0.3em", marginBottom: 8 }}>
+        <div style={{ fontFamily: "'Courier New', monospace", color: "#f0c040", fontSize: 13, letterSpacing: "0.3em", marginBottom: 8 }}>
           STARGATE — REMOTE VIEWING PROGRAM
         </div>
         <div style={{ fontFamily: "Georgia, serif", color: "#4ade80", fontSize: 28, fontWeight: 900, marginBottom: 8 }}>
           SELECT SESSION PROTOCOL
         </div>
-        <div style={{ fontFamily: "'Courier New', monospace", color: "#4ade80", opacity: 0.8, fontSize: 10, letterSpacing: "0.15em" }}>
+        <div style={{ fontFamily: "'Courier New', monospace", color: "#4ade80", opacity: 0.8, fontSize: 12, letterSpacing: "0.15em" }}>
           PSYCHOENERGETICS OPERATIONAL UNIT — VIEWER REGISTRY
         </div>
       </div>
@@ -781,10 +896,10 @@ function ViewerSelect({ onSelect, onDossier, sessionCount }) {
             onMouseLeave={e => { e.currentTarget.style.borderColor = "#1a3a1a"; e.currentTarget.style.background = "rgba(0,30,0,0.6)"; }}
           >
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 28, color: "#f0c040", marginBottom: 8 }}>{v.badge}</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#f0c040", fontWeight: 900, marginBottom: 6 }}>{v.callsign}</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.9, marginBottom: 14, lineHeight: 1.6 }}>{v.specialty}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 15, color: "#f0c040", fontWeight: 900, marginBottom: 6 }}>{v.callsign}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.9, marginBottom: 14, lineHeight: 1.6 }}>{v.specialty}</div>
             <div style={{ borderTop: "1px solid #1a3a1a", paddingTop: 10 }}>
-              <span style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#f0c040", letterSpacing: "0.15em", background: "rgba(240,192,64,0.08)", border: "1px solid rgba(240,192,64,0.25)", padding: "3px 8px", borderRadius: 2 }}>
+              <span style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", letterSpacing: "0.15em", background: "rgba(240,192,64,0.08)", border: "1px solid rgba(240,192,64,0.25)", padding: "3px 8px", borderRadius: 2 }}>
                 {v.mode}
               </span>
             </div>
@@ -794,7 +909,7 @@ function ViewerSelect({ onSelect, onDossier, sessionCount }) {
 
       <div style={{
         background: "rgba(0,20,0,0.4)", border: "1px solid #1a3a1a", padding: 20, borderRadius: 2,
-        fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.85, lineHeight: 1.8,
+        fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.85, lineHeight: 1.8,
       }}>
       {/* Dossier entry panel */}
       <button onClick={onDossier} style={{
@@ -808,21 +923,21 @@ function ViewerSelect({ onSelect, onDossier, sessionCount }) {
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <div style={{ fontFamily: "'Courier New', monospace", fontSize: 18, color: "#4ade80", opacity: 0.7 }}>◈</div>
           <div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", fontWeight: 900, letterSpacing: "0.15em", marginBottom: 2 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#f0c040", fontWeight: 900, letterSpacing: "0.15em", marginBottom: 2 }}>
               PERSONAL DOSSIER
             </div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.85 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.85 }}>
               {sessionCount > 0 ? `${sessionCount} session${sessionCount !== 1 ? "s" : ""} on file — view archive, stage transcripts & Monitor evaluations` : "No sessions on file yet — complete a mission to begin your archive"}
             </div>
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
           {sessionCount > 0 && (
-            <span style={{ background: "#f0c040", color: "#020a02", fontFamily: "'Courier New', monospace", fontSize: 8, fontWeight: 900, padding: "2px 8px", borderRadius: 2 }}>
+            <span style={{ background: "#f0c040", color: "#020a02", fontFamily: "'Courier New', monospace", fontSize: 10, fontWeight: 900, padding: "2px 8px", borderRadius: 2 }}>
               {sessionCount}
             </span>
           )}
-          <span style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.7 }}>→</span>
+          <span style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.7 }}>→</span>
         </div>
       </button>
 
@@ -852,14 +967,14 @@ function SessionBrief({ viewer, target, onBegin, onBack, sessionId }) {
       <div style={{ marginBottom: 20, display: "flex", alignItems: "center", gap: 12 }}>
         <button onClick={onBack} style={{
           background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
           cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
         }}
           onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
           onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
         >← CHANGE PROTOCOL</button>
         <ClassifiedStamp text={target.classification} />
-        <span style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5 }}>SESSION {sessionId}</span>
+        <span style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5 }}>SESSION {sessionId}</span>
       </div>
 
       <div style={{ fontFamily: "Georgia, serif", color: "#f0c040", fontSize: 26, fontWeight: 900, marginBottom: 24 }}>
@@ -871,45 +986,56 @@ function SessionBrief({ viewer, target, onBegin, onBack, sessionId }) {
       }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
           <div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>TARGET ID</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>TARGET ID</div>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 18, color: "#f0c040", fontWeight: 900 }}>{target.id}</div>
           </div>
           <div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>{target.coordLabel || "COORDINATES"}</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80" }}>{target.coords}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>{target.coordLabel || "COORDINATES"}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#4ade80" }}>{target.coords}</div>
           </div>
           <div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>ASSIGNED VIEWER</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80" }}>{viewer.callsign}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>ASSIGNED VIEWER</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 14, color: "#4ade80" }}>{viewer.callsign}</div>
           </div>
           <div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>SESSION MODE</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040" }}>{viewer.mode}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>SESSION MODE</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#f0c040" }}>{viewer.mode}</div>
           </div>
         </div>
 
         <div style={{ borderTop: "1px solid #1a3a1a", paddingTop: 20 }}>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 8 }}>TASKING INSTRUCTIONS</div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.8 }}
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 8 }}>TASKING INSTRUCTIONS</div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#4ade80", lineHeight: 1.8 }}
             dangerouslySetInnerHTML={{ __html: briefingCopy[viewer.id] || briefingCopy["RV-001"] }}
           />
         </div>
       </div>
 
       <div style={{
-        background: "rgba(20,10,0,0.4)", border: "1px solid #3a2a1a", borderRadius: 2, padding: 16, marginBottom: 24,
-        fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", opacity: 0.7, lineHeight: 1.8,
+        background: "rgba(20,10,0,0.4)", border: "1px solid #3a2a1a", borderRadius: 2, padding: 20, marginBottom: 24,
+        fontFamily: "'Courier New', monospace",
       }}>
-        <div style={{ fontWeight: 900, marginBottom: 4 }}>▸ PRE-SESSION PREPARATION PROTOCOL</div>
-        Find a quiet space. Close your eyes. Breathe slowly: inhale 4 counts, hold 4, exhale 4.
-        Allow your mind to enter a relaxed, receptive state. Set analytical thinking aside.
-        When impressions arise — record them immediately without judgment.
-        This is the signal line. Follow it.
+        <div style={{ fontSize: 11, color: "#f0c040", fontWeight: 900, letterSpacing: "0.2em", marginBottom: 14 }}>▸ PRE-SESSION PREPARATION PROTOCOL</div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+          {[
+            "Find a quiet space free from interruption.",
+            "Close your eyes. Breathe slowly — inhale 4 counts, hold 4, exhale 4.",
+            "Allow your mind to enter a relaxed, receptive state.",
+            "Set analytical thinking aside. Do not try to guess the target.",
+            "When impressions arise — record them immediately without judgment.",
+            "This is the signal line. Follow it.",
+          ].map((line, i) => (
+            <div key={i} style={{ display: "flex", gap: 10, fontSize: 12, color: "#4ade80", lineHeight: 1.6 }}>
+              <span style={{ color: "#f0c040", opacity: 0.5, flexShrink: 0 }}>{String(i + 1).padStart(2, "0")}</span>
+              <span>{line}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <button onClick={onBegin} style={{
         background: "rgba(0,60,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
-        fontFamily: "'Courier New', monospace", fontSize: 12, padding: "14px 40px",
+        fontFamily: "'Courier New', monospace", fontSize: 14, padding: "14px 40px",
         cursor: "pointer", letterSpacing: "0.2em", textTransform: "uppercase", width: "100%", borderRadius: 2,
       }}>
         [ BEGIN REMOTE VIEWING SESSION ]
@@ -998,20 +1124,20 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20 }}>
         <div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, marginBottom: 4, letterSpacing: "0.2em" }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, marginBottom: 4, letterSpacing: "0.2em" }}>
             STAGE {stage.stage} OF {viewerStages.length}
           </div>
           <div style={{ fontFamily: "Georgia, serif", color: "#f0c040", fontSize: 20, fontWeight: 900 }}>{stage.label}</div>
         </div>
         <div style={{ textAlign: "right" }}>
           <ClassifiedStamp text={target.classification} />
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, marginTop: 4 }}>TGT: {target.id}</div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, marginTop: 4 }}>TGT: {target.id}</div>
         </div>
       </div>
 
       <div style={{
         background: "rgba(0,20,0,0.4)", border: "1px solid #1a3a1a", padding: 14, borderRadius: 2, marginBottom: 20,
-        fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.8, opacity: 0.8,
+        fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, opacity: 0.8,
       }}>
         {stage.desc}
       </div>
@@ -1031,7 +1157,7 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
           style={{
             width: "100%", background: "rgba(0,15,0,0.8)", border: "1px solid #1a3a1a",
             borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
-            fontSize: 13, padding: 16, lineHeight: 1.8, resize: "vertical", outline: "none",
+            fontSize: 15, padding: 16, lineHeight: 1.8, resize: "vertical", outline: "none",
             boxSizing: "border-box",
           }}
           onFocus={e => e.target.style.borderColor = "#4ade80"}
@@ -1039,7 +1165,7 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
         />
         <div style={{
           position: "absolute", bottom: 10, right: 12,
-          fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.3,
+          fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.3,
         }}>{stageData[currentStage].length} CHARS</div>
       </div>
 
@@ -1048,7 +1174,7 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
         <button onClick={submitStage} disabled={loading || !stageData[currentStage].trim()} style={{
           background: loading ? "rgba(0,40,0,0.4)" : "rgba(0,60,0,0.8)",
           border: "1px solid #4ade80", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "12px 28px",
+          fontFamily: "'Courier New', monospace", fontSize: 13, padding: "12px 28px",
           cursor: loading ? "not-allowed" : "pointer", letterSpacing: "0.2em", borderRadius: 2,
           width: "100%", marginBottom: 20,
         }}>
@@ -1062,11 +1188,11 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
           background: "rgba(0,0,0,0.6)", border: "1px solid #2a4a2a",
           borderLeft: "3px solid #f0c040", padding: 20, borderRadius: 2, marginBottom: 20,
         }}>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", marginBottom: 12, letterSpacing: "0.2em" }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", marginBottom: 12, letterSpacing: "0.2em" }}>
             ▸ MONITOR AI — STAGE {stage.stage} EVALUATION
           </div>
           <pre style={{
-            fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.8,
+            fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8,
             whiteSpace: "pre-wrap", margin: 0,
           }}>{evaluations[currentStage]}</pre>
         </div>
@@ -1077,14 +1203,14 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
         {currentStage === 0 && (
           <button onClick={onBack} style={{
             background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 10, padding: "10px 20px",
+            fontFamily: "'Courier New', monospace", fontSize: 12, padding: "10px 20px",
             cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2, opacity: 0.6,
           }}>← ABORT SESSION</button>
         )}
         {currentStage > 0 && (
           <button onClick={() => setCurrentStage(s => s - 1)} style={{
             background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 10, padding: "10px 20px",
+            fontFamily: "'Courier New', monospace", fontSize: 12, padding: "10px 20px",
             cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
           }}>← PREV STAGE</button>
         )}
@@ -1092,14 +1218,14 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
           <button onClick={() => setCurrentStage(s => s + 1)} disabled={!submitted[currentStage] && !stageData[currentStage]} style={{
             flex: 1, background: submitted[currentStage] ? "rgba(0,40,0,0.6)" : "transparent",
             border: "1px solid #2a4a2a", color: "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 10, padding: "10px 20px",
+            fontFamily: "'Courier New', monospace", fontSize: 12, padding: "10px 20px",
             cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
           }}>NEXT STAGE →</button>
         )}
         {isLastStage && submitted[currentStage] && (
           <button onClick={completeSession} style={{
             flex: 1, background: "rgba(20,60,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 11, padding: "12px 20px",
+            fontFamily: "'Courier New', monospace", fontSize: 13, padding: "12px 20px",
             cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2,
           }}>[ CLOSE SESSION — FILE REPORT ]</button>
         )}
@@ -1365,7 +1491,7 @@ function SessionReport({ session, onNewSession }) {
     <div style={{ padding: "24px", maxWidth: 800, margin: "0 auto" }}>
       {/* Header */}
       <div style={{ textAlign: "center", marginBottom: 32, paddingBottom: 20, borderBottom: "1px solid #1a3a1a" }}>
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, letterSpacing: "0.3em", marginBottom: 8 }}>
+        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, letterSpacing: "0.3em", marginBottom: 8 }}>
           SESSION COMPLETE — INTELLIGENCE REPORT
         </div>
         <div style={{ fontFamily: "Georgia, serif", color: "#f0c040", fontSize: 26, fontWeight: 900, marginBottom: 8 }}>
@@ -1385,21 +1511,21 @@ function SessionReport({ session, onNewSession }) {
           <div key={s.label} style={{
             background: "rgba(0,20,0,0.4)", border: "1px solid #1a3a1a", padding: 14, borderRadius: 2, textAlign: "center"
           }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 6 }}>{s.label}</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#f0c040", fontWeight: 900 }}>{s.value}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 6 }}>{s.label}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 15, color: "#f0c040", fontWeight: 900 }}>{s.value}</div>
           </div>
         ))}
       </div>
 
       {/* Session transcript */}
       <div style={{ marginBottom: 24 }}>
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 12 }}>
+        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 12 }}>
           ▸ SESSION TRANSCRIPT
         </div>
         {viewerStages.map((s, i) => session.stageData[i] && (
           <div key={i} style={{ marginBottom: 12, background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 14 }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", marginBottom: 6 }}>{s.label}</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.8 }}>{session.stageData[i]}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", marginBottom: 6 }}>{s.label}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#4ade80", lineHeight: 1.8 }}>{session.stageData[i]}</div>
           </div>
         ))}
       </div>
@@ -1409,15 +1535,15 @@ function SessionReport({ session, onNewSession }) {
         background: "rgba(0,0,0,0.7)", border: "1px solid #2a4a2a",
         borderLeft: "3px solid #f0c040", padding: 24, borderRadius: 2, marginBottom: 24,
       }}>
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", marginBottom: 16, letterSpacing: "0.2em" }}>
+        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", marginBottom: 16, letterSpacing: "0.2em" }}>
           ▸ MONITOR AI — FINAL SESSION DEBRIEF
         </div>
         {loading ? (
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.6 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", opacity: 0.6 }}>
             COMPILING INTELLIGENCE ASSESSMENT...
           </div>
         ) : (
-          <pre style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.8, whiteSpace: "pre-wrap", margin: 0 }}>
+          <pre style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, whiteSpace: "pre-wrap", margin: 0 }}>
             {finalEval}
           </pre>
         )}
@@ -1428,15 +1554,15 @@ function SessionReport({ session, onNewSession }) {
         background: "rgba(0,10,0,0.6)", border: `1px solid ${unsealed ? "#f0c040" : "#1a3a1a"}`,
         borderRadius: 2, padding: 20, marginBottom: 16, textAlign: "center", transition: "border-color 0.4s",
       }}>
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: unsealed ? 12 : 8, letterSpacing: "0.2em" }}>
+        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: unsealed ? 12 : 8, letterSpacing: "0.2em" }}>
           TARGET {session.target.id} — ACTUAL DESCRIPTION
         </div>
         {unsealed ? (
           <div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#f0c040", fontWeight: 900, marginBottom: 6, letterSpacing: "0.1em" }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 15, color: "#f0c040", fontWeight: 900, marginBottom: 6, letterSpacing: "0.1em" }}>
               {session.target.description}
             </div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.6 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6 }}>
               {session.target.coords}
             </div>
           </div>
@@ -1447,7 +1573,7 @@ function SessionReport({ session, onNewSession }) {
             </div>
             <button onClick={() => setUnsealed(true)} style={{
               background: "transparent", border: "1px solid #f0c040", color: "#f0c040",
-              fontFamily: "'Courier New', monospace", fontSize: 9, padding: "7px 20px",
+              fontFamily: "'Courier New', monospace", fontSize: 11, padding: "7px 20px",
               cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2,
             }}
               onMouseEnter={e => e.currentTarget.style.background = "rgba(240,192,64,0.08)"}
@@ -1459,14 +1585,14 @@ function SessionReport({ session, onNewSession }) {
 
       {/* Footer note */}
       <div style={{
-        fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.4, lineHeight: 1.8, marginBottom: 24, textAlign: "center",
+        fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.4, lineHeight: 1.8, marginBottom: 24, textAlign: "center",
       }}>
         {footerLine}
       </div>
 
       <button onClick={exportPDF} disabled={exporting || loading} style={{
         background: "rgba(0,20,0,0.6)", border: "1px solid #f0c040", color: "#f0c040",
-        fontFamily: "'Courier New', monospace", fontSize: 11, padding: "12px 40px",
+        fontFamily: "'Courier New', monospace", fontSize: 13, padding: "12px 40px",
         cursor: exporting ? "not-allowed" : "pointer", letterSpacing: "0.2em", width: "100%", borderRadius: 2, marginBottom: 10,
         opacity: loading ? 0.5 : 1,
       }}>
@@ -1475,7 +1601,7 @@ function SessionReport({ session, onNewSession }) {
 
       <button onClick={onNewSession} style={{
         background: "rgba(0,50,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
-        fontFamily: "'Courier New', monospace", fontSize: 12, padding: "14px 40px",
+        fontFamily: "'Courier New', monospace", fontSize: 14, padding: "14px 40px",
         cursor: "pointer", letterSpacing: "0.2em", width: "100%", borderRadius: 2,
       }}>
         [ INITIATE NEW MISSION ]
@@ -1499,7 +1625,7 @@ function ResourcesSection() {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.6, lineHeight: 1.8 }}>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6, lineHeight: 1.8 }}>
         {LEARN_MORE_RESOURCES.length} entries across books, films, archives, academic papers, and official reports.
       </div>
       {/* Filter bar */}
@@ -1509,7 +1635,7 @@ function ResourcesSection() {
             background: filter === t ? (TYPE_COLORS[t] || "rgba(74,222,128,0.2)") : "transparent",
             border: `1px solid ${filter === t ? (TYPE_COLORS[t] || "#4ade80") : "#1a3a1a"}`,
             color: filter === t ? "#020a02" : "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 8, padding: "4px 12px",
+            fontFamily: "'Courier New', monospace", fontSize: 10, padding: "4px 12px",
             cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2, fontWeight: filter === t ? 900 : 400,
           }}>{t}</button>
         ))}
@@ -1520,17 +1646,17 @@ function ResourcesSection() {
           display: "flex", gap: 16, alignItems: "flex-start",
         }}>
           <div style={{
-            fontFamily: "'Courier New', monospace", fontSize: 8, color: "#020a02",
+            fontFamily: "'Courier New', monospace", fontSize: 10, color: "#020a02",
             background: TYPE_COLORS[r.type] || "#4ade80",
             padding: "3px 8px", borderRadius: 2, whiteSpace: "nowrap", fontWeight: 900, marginTop: 2, flexShrink: 0,
           }}>{r.type}</div>
           <div style={{ flex: 1 }}>
             <div style={{ fontFamily: "Georgia, serif", fontSize: 14, color: "#f0c040", fontWeight: 700, marginBottom: 2 }}>{r.title}</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.6, marginBottom: 8 }}>{r.author} · {r.year}</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.8 }}>{r.desc}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6, marginBottom: 8 }}>{r.author} · {r.year}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8 }}>{r.desc}</div>
             {r.link && (
               <a href={r.link} target="_blank" rel="noopener noreferrer" style={{
-                display: "inline-block", marginTop: 10, fontFamily: "'Courier New', monospace", fontSize: 9,
+                display: "inline-block", marginTop: 10, fontFamily: "'Courier New', monospace", fontSize: 11,
                 color: "#4ade80", border: "1px solid #1a3a1a", padding: "3px 10px", borderRadius: 2,
                 textDecoration: "none", letterSpacing: "0.1em",
               }}>
@@ -1552,14 +1678,14 @@ function LearnMore({ onBack }) {
       <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 32 }}>
         <button onClick={onBack} style={{
           background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
           cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
         }}
           onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
           onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
         >← BACK</button>
         <div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.3em", marginBottom: 4 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.3em", marginBottom: 4 }}>
             DECLASSIFIED ARCHIVE — PUBLIC RECORD
           </div>
           <div style={{ fontFamily: "Georgia, serif", color: "#4ade80", fontSize: 22, fontWeight: 900 }}>
@@ -1575,7 +1701,7 @@ function LearnMore({ onBack }) {
             background: activeTab === tab.id ? "rgba(0,50,0,0.8)" : "transparent",
             border: "none", borderBottom: activeTab === tab.id ? "2px solid #f0c040" : "2px solid transparent",
             color: activeTab === tab.id ? "#f0c040" : "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 10, padding: "8px 18px",
+            fontFamily: "'Courier New', monospace", fontSize: 12, padding: "8px 18px",
             cursor: "pointer", letterSpacing: "0.15em", marginBottom: -1,
           }}>{tab.label}</button>
         ))}
@@ -1584,7 +1710,7 @@ function LearnMore({ onBack }) {
       {/* KEY FIGURES */}
       {activeTab === "figures" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, lineHeight: 1.8, marginBottom: 4 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, lineHeight: 1.8, marginBottom: 4 }}>
             The following individuals are real historical figures documented in declassified U.S. government records, peer-reviewed research, and public literature. Their names and roles are matters of public record.
           </div>
           {LEARN_MORE_FIGURES.map(fig => (
@@ -1593,30 +1719,30 @@ function LearnMore({ onBack }) {
             }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12, flexWrap: "wrap", gap: 8 }}>
                 <div>
-                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, marginBottom: 2 }}>
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, marginBottom: 2 }}>
                     PROGRAM CALLSIGN: {fig.callsign}
                   </div>
                   <div style={{ fontFamily: "Georgia, serif", fontSize: 18, color: "#f0c040", fontWeight: 900 }}>{fig.name}</div>
-                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.7, marginTop: 2 }}>{fig.role} · {fig.years}</div>
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.7, marginTop: 2 }}>{fig.role} · {fig.years}</div>
                 </div>
               </div>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.9, marginBottom: 14 }}>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.9, marginBottom: 14 }}>
                 {fig.summary}
               </div>
               <div style={{ borderTop: "1px solid #1a3a1a", paddingTop: 12, display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 8 }}>
                 <div>
-                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.4, marginBottom: 6 }}>NOTABLE WORKS</div>
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.4, marginBottom: 6 }}>NOTABLE WORKS</div>
                   <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                     {fig.books.map(b => (
                       <span key={b} style={{
-                        fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040",
+                        fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040",
                         border: "1px solid #3a2a00", padding: "2px 8px", borderRadius: 2,
                       }}>{b}</span>
                     ))}
                   </div>
                 </div>
                 <a href={fig.link} target="_blank" rel="noopener noreferrer" style={{
-                  fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80",
+                  fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80",
                   border: "1px solid #1a3a1a", padding: "4px 12px", borderRadius: 2,
                   textDecoration: "none", letterSpacing: "0.1em",
                 }}>↗ WIKIPEDIA</a>
@@ -1655,8 +1781,8 @@ function LearnMore({ onBack }) {
                 position: "absolute", left: -20, top: 4, width: 8, height: 8,
                 borderRadius: "50%", background: "#f0c040", border: "2px solid #020a02",
               }} />
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", fontWeight: 900, marginBottom: 4 }}>{item.year}</div>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.8 }}>{item.event}</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#f0c040", fontWeight: 900, marginBottom: 4 }}>{item.year}</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8 }}>{item.event}</div>
             </div>
           ))}
         </div>
@@ -1732,17 +1858,17 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
       <div style={{ fontFamily: "Georgia, serif", fontSize: 24, color: "#f0c040", fontWeight: 900, marginBottom: 8 }}>
         CLEARANCE GRANTED
       </div>
-      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.7, marginBottom: 8 }}>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", opacity: 0.7, marginBottom: 8 }}>
         TIER: {selectedPlan.name}
       </div>
-      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.8, marginBottom: 32, opacity: 0.6 }}>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, marginBottom: 32, opacity: 0.6 }}>
         Welcome, {form.name}. Your access has been provisioned.<br />
         Confirmation transmitted to {form.email}.<br />
         The signal line is open.
       </div>
       <button onClick={onBack} style={{
         background: "rgba(0,50,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
-        fontFamily: "'Courier New', monospace", fontSize: 11, padding: "12px 36px",
+        fontFamily: "'Courier New', monospace", fontSize: 13, padding: "12px 36px",
         cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, width: "100%",
       }}>[ ENTER STARGATE ]</button>
     </div>
@@ -1755,14 +1881,14 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
       <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 32 }}>
         <button onClick={onBack} style={{
           background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
           cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
         }}
           onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
           onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
         >← BACK</button>
         <div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.3em", marginBottom: 2 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.3em", marginBottom: 2 }}>
             CLEARANCE LEVELS — SUBSCRIPTION REGISTRY
           </div>
           <div style={{ fontFamily: "Georgia, serif", color: "#4ade80", fontSize: 20, fontWeight: 900 }}>
@@ -1779,12 +1905,12 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
             <button key={b} onClick={() => setBilling(b)} style={{
               background: billing === b ? "rgba(0,60,0,0.8)" : "transparent",
               border: "1px solid #1a3a1a", color: billing === b ? "#f0c040" : "#4ade80",
-              fontFamily: "'Courier New', monospace", fontSize: 10, padding: "8px 24px",
+              fontFamily: "'Courier New', monospace", fontSize: 12, padding: "8px 24px",
               cursor: "pointer", letterSpacing: "0.15em",
               borderRadius: b === "monthly" ? "2px 0 0 2px" : "0 2px 2px 0",
             }}>
               {b === "monthly" ? "MONTHLY" : "ANNUAL"}
-              {b === "annual" && <span style={{ color: "#4ade80", fontSize: 8, marginLeft: 6 }}>SAVE 58%</span>}
+              {b === "annual" && <span style={{ color: "#4ade80", fontSize: 10, marginLeft: 6 }}>SAVE 58%</span>}
             </button>
           ))}
         </div>
@@ -1804,12 +1930,12 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
                 <div style={{
                   position: "absolute", top: -1, left: "50%", transform: "translateX(-50%)",
                   background: "#f0c040", color: "#020a02", fontFamily: "'Courier New', monospace",
-                  fontSize: 8, fontWeight: 900, padding: "3px 14px", letterSpacing: "0.2em",
+                  fontSize: 10, fontWeight: 900, padding: "3px 14px", letterSpacing: "0.2em",
                 }}>RECOMMENDED</div>
               )}
               <div style={{ fontFamily: "'Courier New', monospace", fontSize: 24, color: plan.color, marginBottom: 8 }}>{plan.badge}</div>
               <div style={{ fontFamily: "'Courier New', monospace", fontSize: 14, color: plan.color, fontWeight: 900, letterSpacing: "0.15em", marginBottom: 2 }}>{plan.name}</div>
-              <div style={{ fontFamily: "Georgia, serif", fontSize: 10, color: "#4ade80", opacity: 0.6, fontStyle: "italic", marginBottom: 20 }}>{plan.tagline}</div>
+              <div style={{ fontFamily: "Georgia, serif", fontSize: 12, color: "#4ade80", opacity: 0.6, fontStyle: "italic", marginBottom: 20 }}>{plan.tagline}</div>
 
               <div style={{ marginBottom: 20 }}>
                 <span style={{ fontFamily: "Georgia, serif", fontSize: 32, color: plan.color, fontWeight: 900 }}>
@@ -1817,11 +1943,11 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
                 </span>
                 {plan.id !== "signal" && (
                   <div style={{ marginTop: 4 }}>
-                    <span style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.6 }}>
+                    <span style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6 }}>
                       {billing === "annual" ? `$${plan.priceAnnual.toFixed(2)}/mo · billed $${plan.annualTotal.toFixed(2)}/yr` : "per month"}
                     </span>
                     {billing === "annual" && (
-                      <span style={{ marginLeft: 8, fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.3)", padding: "1px 6px", borderRadius: 2 }}>
+                      <span style={{ marginLeft: 8, fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.3)", padding: "1px 6px", borderRadius: 2 }}>
                         SAVE $139.89
                       </span>
                     )}
@@ -1832,8 +1958,8 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
               <div style={{ borderTop: "1px solid #1a3a1a", paddingTop: 16, marginBottom: 20 }}>
                 {plan.features.map(f => (
                   <div key={f} style={{ display: "flex", gap: 8, alignItems: "flex-start", marginBottom: 8 }}>
-                    <span style={{ color: plan.color, fontSize: 10, marginTop: 1, flexShrink: 0 }}>▸</span>
-                    <span style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 1.6 }}>{f}</span>
+                    <span style={{ color: plan.color, fontSize: 12, marginTop: 1, flexShrink: 0 }}>▸</span>
+                    <span style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.6 }}>{f}</span>
                   </div>
                 ))}
               </div>
@@ -1841,7 +1967,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
               <button onClick={() => handlePlanSelect(plan)} style={{
                 width: "100%", background: plan.highlight ? "rgba(40,60,0,0.9)" : "transparent",
                 border: `1px solid ${plan.color}`, color: plan.color,
-                fontFamily: "'Courier New', monospace", fontSize: 10, padding: "11px 16px",
+                fontFamily: "'Courier New', monospace", fontSize: 12, padding: "11px 16px",
                 cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
               }}
                 onMouseEnter={e => e.currentTarget.style.background = `rgba(0,40,0,0.9)`}
@@ -1853,19 +1979,19 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
         </div>
 
         {/* Payment method icons */}
-        <div style={{ textAlign: "center", fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, marginBottom: 12, letterSpacing: "0.2em" }}>
+        <div style={{ textAlign: "center", fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, marginBottom: 12, letterSpacing: "0.2em" }}>
           ACCEPTED PAYMENT CHANNELS
         </div>
         <div style={{ display: "flex", justifyContent: "center", gap: 8, flexWrap: "wrap", marginBottom: 16 }}>
           {["VISA", "MASTERCARD", "AMEX", "APPLE PAY", "GOOGLE PAY"].map(m => (
             <span key={m} style={{
-              fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80",
+              fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80",
               border: "1px solid #2a4a2a", padding: "5px 12px", borderRadius: 2,
               background: "rgba(0,20,0,0.4)",
             }}>{m}</span>
           ))}
         </div>
-        <div style={{ textAlign: "center", fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, lineHeight: 2 }}>
+        <div style={{ textAlign: "center", fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, lineHeight: 2 }}>
           Payments processed securely via Stripe. Cancel anytime.<br />
           iOS and Android subscribers managed via RevenueCat + native app store billing.
         </div>
@@ -1875,12 +2001,12 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
       {step === "signup" && (
         <div style={{ maxWidth: 480, margin: "0 auto" }}>
           <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 28, marginBottom: 20 }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 20 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 20 }}>
               ▸ CREATE VIEWER ACCOUNT — {selectedPlan?.name}
             </div>
             {["name", "email", "password"].map(field => (
               <div key={field} style={{ marginBottom: 16 }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 6, letterSpacing: "0.15em" }}>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 6, letterSpacing: "0.15em" }}>
                   {field === "name" ? "OPERATIVE NAME" : field === "email" ? "CONTACT EMAIL" : "PASSPHRASE"}
                 </div>
                 <input
@@ -1891,7 +2017,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
                   style={{
                     width: "100%", background: "rgba(0,10,0,0.8)", border: "1px solid #1a3a1a",
                     borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
-                    fontSize: 12, padding: "10px 14px", outline: "none", boxSizing: "border-box",
+                    fontSize: 14, padding: "10px 14px", outline: "none", boxSizing: "border-box",
                   }}
                   onFocus={e => e.target.style.borderColor = "#4ade80"}
                   onBlur={e => e.target.style.borderColor = "#1a3a1a"}
@@ -1903,13 +2029,13 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
               disabled={!form.email || !form.name || !form.password}
               style={{
                 width: "100%", background: "rgba(0,50,0,0.8)", border: "1px solid #4ade80",
-                color: "#4ade80", fontFamily: "'Courier New', monospace", fontSize: 11,
+                color: "#4ade80", fontFamily: "'Courier New', monospace", fontSize: 13,
                 padding: "12px", cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, marginTop: 8,
               }}>
               [ CONTINUE TO PAYMENT ]
             </button>
           </div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.3, textAlign: "center", lineHeight: 1.8 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", lineHeight: 1.8 }}>
             By continuing you agree to our Terms of Service and Privacy Policy.<br />
             Your data is never sold. Session content is not used for training without consent.
           </div>
@@ -1922,13 +2048,13 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
           {/* Order summary */}
           <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 16, marginBottom: 16, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5 }}>SELECTED TIER</div>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#f0c040", fontWeight: 900 }}>{selectedPlan?.name}</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5 }}>SELECTED TIER</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 15, color: "#f0c040", fontWeight: 900 }}>{selectedPlan?.name}</div>
             </div>
             <div style={{ textAlign: "right" }}>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5 }}>{billing.toUpperCase()}</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5 }}>{billing.toUpperCase()}</div>
               <div style={{ fontFamily: "Georgia, serif", fontSize: 20, color: "#f0c040", fontWeight: 900 }}>
-                ${price(selectedPlan).toFixed(2)}<span style={{ fontSize: 10, color: "#4ade80", opacity: 0.5 }}>/mo</span>
+                ${price(selectedPlan).toFixed(2)}<span style={{ fontSize: 12, color: "#4ade80", opacity: 0.5 }}>/mo</span>
               </div>
             </div>
           </div>
@@ -1940,7 +2066,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
                 flex: 1, background: payMethod === m.id ? "rgba(0,50,0,0.8)" : "transparent",
                 border: `1px solid ${payMethod === m.id ? "#4ade80" : "#1a3a1a"}`,
                 color: payMethod === m.id ? "#f0c040" : "#4ade80",
-                fontFamily: "'Courier New', monospace", fontSize: 9, padding: "8px 4px",
+                fontFamily: "'Courier New', monospace", fontSize: 11, padding: "8px 4px",
                 cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2,
               }}>{m.label}</button>
             ))}
@@ -1948,11 +2074,11 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
 
           <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 24, marginBottom: 16 }}>
             {payMethod === "card" && (<>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 16 }}>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 16 }}>
                 ▸ CARD DETAILS
               </div>
               <div style={{ marginBottom: 12 }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 6 }}>CARD NUMBER</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 6 }}>CARD NUMBER</div>
                 <input
                   value={cardForm.number}
                   onChange={e => {
@@ -1978,7 +2104,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
                   { key: "zip", label: "ZIP / POSTAL", placeholder: "00000", maxLen: 10 },
                 ].map(field => (
                   <div key={field.key}>
-                    <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 6 }}>{field.label}</div>
+                    <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 6 }}>{field.label}</div>
                     <input
                       value={cardForm[field.key]}
                       onChange={e => setCardForm(f => ({ ...f, [field.key]: e.target.value }))}
@@ -1987,7 +2113,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
                       style={{
                         width: "100%", background: "rgba(0,10,0,0.8)", border: "1px solid #1a3a1a",
                         borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
-                        fontSize: 12, padding: "10px 10px", outline: "none", boxSizing: "border-box",
+                        fontSize: 14, padding: "10px 10px", outline: "none", boxSizing: "border-box",
                       }}
                       onFocus={e => e.target.style.borderColor = "#4ade80"}
                       onBlur={e => e.target.style.borderColor = "#1a3a1a"}
@@ -2002,10 +2128,10 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
                 <div style={{ fontFamily: "'Courier New', monospace", fontSize: 28, color: "#4ade80", marginBottom: 12 }}>
                   {payMethod === "apple" ? "" : "G"}
                 </div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.8, opacity: 0.7 }}>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, opacity: 0.7 }}>
                   {payMethod === "apple" ? "Apple Pay" : "Google Pay"} button will appear here<br />
                   after Stripe integration is configured.<br />
-                  <span style={{ opacity: 0.5, fontSize: 9 }}>Requires Stripe.js + payment request API</span>
+                  <span style={{ opacity: 0.5, fontSize: 11 }}>Requires Stripe.js + payment request API</span>
                 </div>
               </div>
             )}
@@ -2018,9 +2144,9 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
               borderRadius: 2, flexShrink: 0, marginTop: 1, display: "flex", alignItems: "center", justifyContent: "center",
               background: agreed ? "rgba(0,50,0,0.8)" : "transparent",
             }}>
-              {agreed && <span style={{ color: "#4ade80", fontSize: 10 }}>✓</span>}
+              {agreed && <span style={{ color: "#4ade80", fontSize: 12 }}>✓</span>}
             </div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.6, lineHeight: 1.6 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6, lineHeight: 1.6 }}>
               I agree to the Terms of Service and Privacy Policy. I understand this is a recurring subscription and can cancel anytime from my account settings.
             </div>
           </div>
@@ -2031,14 +2157,14 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
             style={{
               width: "100%", background: processing ? "rgba(0,30,0,0.6)" : "rgba(0,60,0,0.9)",
               border: "1px solid #4ade80", color: "#4ade80",
-              fontFamily: "'Courier New', monospace", fontSize: 12, padding: "14px",
+              fontFamily: "'Courier New', monospace", fontSize: 14, padding: "14px",
               cursor: processing ? "not-allowed" : "pointer", letterSpacing: "0.2em", borderRadius: 2,
               animation: !processing ? "pulseGlow 2s ease-in-out infinite" : "none",
             }}>
             {processing ? "[ PROCESSING TRANSMISSION... ]" : `[ AUTHORIZE $${price(selectedPlan).toFixed(2)}/MO ]`}
           </button>
 
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.3, textAlign: "center", marginTop: 12, lineHeight: 1.8 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", marginTop: 12, lineHeight: 1.8 }}>
             🔒 Secured by Stripe. Card details never touch our servers.<br />
             Cancel anytime. No hidden fees. Prorated on upgrade.
           </div>
@@ -2053,6 +2179,95 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
 function FieldManual({ onBack, onSubscribe }) {
   const [activeSection, setActiveSection] = useState("what");
 
+  const [selectedProtocol, setSelectedProtocol] = useState(null);
+
+  const PROTOCOL_DETAIL = {
+    "RV-001": {
+      badge: "⬟", name: "COORDINATE TARGETING", callsign: "VIEWER PRIME", classification: "GRILL FLAME",
+      overview: "The foundational CRV protocol. Developed at Stanford Research Institute in the 1970s under Targ and Puthoff, coordinate targeting was the workhorse of the Stargate program. The viewer is given only a set of geographic coordinates — no map, no image, no context — and asked to perceive the location blind. This is the purest test of the signal line: nothing to confirm, nothing to contaminate.",
+      stages: ["IDEOGRAM — First spontaneous gestalt impression of the coordinate.", "SENSORY DATA — Temperature, texture, sound, smell, color. No nouns.", "DIMENSIONAL SKETCH — Spatial layout, geometry, height, depth.", "AOL BREAK / DEEP CONTACT — Declare overlays, then penetrate beneath them.", "INTERROGATE — Active probing of function, occupants, activity, threat.", "INTELLIGENCE SUMMARY — Full session compiled into an operational report."],
+      useCases: ["Perceiving classified installations at sealed coordinates", "Viewing natural and man-made geographic features blind", "Replicating documented historical Stargate sessions", "Training spatial perception and suppression of analytical overlay", "Exploring any location on Earth — or beyond — without prior knowledge"],
+      historicalNote: "Pat Price's blind session on the Soviet facility at Semipalatinsk — describing specific equipment, layout, and personnel — was rated by CIA analysts as one of the most accurate sessions in the program's history. He had only coordinates.",
+    },
+    "RV-002": {
+      badge: "◈", name: "DEEP TIME", callsign: "PROTOCOLS LEAD", classification: "SCANATE // BEYOND STARGATE",
+      overview: "Temporal displacement viewing. The viewer is tasked not to a location but to a point in time — a historical event, a future state, or a moment of transition. The methodology is adapted from CRV but the target is fundamentally different: you are not moving through space, you are moving through time. AOL here is not just visual assumption — it is historical knowledge itself, which must be actively set aside.",
+      stages: ["TEMPORAL GESTALT — First impression of the era, its atmosphere and energy.", "ENVIRONMENTAL DATA — Physical world as it exists at that moment in time.", "CIVILIZATION SKETCH — What humans or other beings have built at this period.", "AOL BREAK / TEMPORAL DEPTH — Declare historical knowledge, then perceive beyond it.", "EVENT INTERROGATION — What specific event drew the tasking? What is its significance?", "HISTORICAL DEBRIEF — Full session compiled into a coherent temporal account."],
+      useCases: ["Viewing historical events at their moment of occurrence", "Accessing the emotional atmosphere of specific eras", "Projecting future states of known locations or situations", "Perceiving events that occurred before documentation existed", "Testing the boundary between memory, imagination, and non-local perception"],
+      historicalNote: "Ingo Swann described the ring system of Jupiter before the Voyager probe confirmed its existence in 1979. He was given coordinates in space, not a planet name. Temporal and spatial displacement were treated as equivalent operations.",
+    },
+    "RV-003": {
+      badge: "⬡", name: "EMOTIONAL / HUMAN", callsign: "FIELD OPERATIVE", classification: "CENTER LANE // THIRD EYE",
+      overview: "Human intelligence targeting. Rather than a place or a time, the viewer is directed at a specific person or group — their location, emotional state, intent, and behavior. This is the most interpersonally sensitive protocol, and the most prone to projection. Disciplined suppression of personal assumptions about the subject is critical. The target is not who you think they are — they are what you perceive.",
+      stages: ["PRESENCE CONTACT — First impression of the subject's energy, state, movement.", "EMOTIONAL FIELD — Dominant and suppressed emotions surrounding the subject.", "PHYSICAL IMPRESSION — Environment, appearance, activity, immediate surroundings.", "AOL BREAK / DEEP INTENT — Release preconceptions. Perceive actual motivation.", "INTERROGATE INTENT — What does this person want? What are they hiding? What do they fear?", "HUMAN INTELLIGENCE SUMMARY — State, intent, threat level, location if perceivable."],
+      useCases: ["Perceiving the emotional state of a subject without contact", "Understanding the intent behind observed behavior", "Locating missing or concealed individuals", "Accessing the inner landscape of historical figures", "Developing empathic perception as a disciplined, structured practice"],
+      historicalNote: "Operational HUMINT sessions in the program included blind targeting of hostages in Iran, Soviet military personnel, and unidentified subjects from photographs. The emotional data — fear levels, intent, deception markers — was often rated more reliable than spatial data.",
+    },
+    "RV-004": {
+      badge: "◇", name: "ANOMALOUS / SUBSPACE", callsign: "SIGNAL AMPLIFIER", classification: "SCANATE // BEYOND STARGATE",
+      overview: "Anomalous phenomena targeting. This protocol was designed for targets that do not conform to ordinary physical categories — UAP events, non-human intelligence, classified phenomena, and events that official accounts have suppressed or denied. The primary challenge is not perception — it is resisting the powerful pull of cultural overlay. The viewer's mind will attempt to label what it encounters using known frameworks. That labeling is the enemy of clean data.",
+      stages: ["ANOMALY CONTACT — First impression of the phenomenon. Do not rationalize.", "FIELD PERCEPTION — Energetic, electromagnetic, and environmental effects.", "FORM AND ORIGIN — Shape, structure, apparent point of origin, presence of intelligence.", "AOL BREAK / SUBSPACE CONTACT — Declare frameworks, move beneath them.", "INTERROGATE THE UNKNOWN — Purpose, origin, intent, what is being concealed.", "ANOMALOUS INTELLIGENCE REPORT — All impressions including those that defy explanation."],
+      useCases: ["Viewing documented UAP incidents from declassified records", "Accessing non-ordinary targets that resist conventional description", "Exploring the edge cases of human perception", "Training resistance to cultural overlay and UFO mythology contamination", "Investigating suppressed or denied phenomena from outside the official narrative"],
+      historicalNote: "Uri Geller's SRI trials in 1972–73 included targets that researchers described as genuinely anomalous — not locations or objects but perceived events with no physical referent. The CIA's declassified SCANATE files confirm he was tested at the boundary of what the protocol was designed to handle.",
+    },
+    "RV-005": {
+      badge: "▽", name: "SUBSPACE / CONCEALED", callsign: "SUBSURFACE ANALYST", classification: "GONDOLA WISH // DEEP BLACK",
+      overview: "Concealed intelligence targeting. The viewer is not directed at a location or person — they are directed at something that has been deliberately hidden. A covered event. A buried record. A suppressed discovery. The target is defined by its concealment. The methodology requires the viewer to recognize the suppression layer as a feature of the target rather than an obstacle — it tells you something about what is beneath it.",
+      stages: ["SURFACE LAYER — First impression of the concealment itself. What hides the target?", "SUPPRESSION FIELD — Who maintains the concealment? What does it feel like from inside?", "PENETRATION — Move beneath the surface. What shape does the hidden thing take?", "AOL BREAK / DISINFORMATION FILTER — Declare narrative overlays, return to direct perception.", "INTERROGATE THE CONCEALED — Why is it buried? Who benefits? What is at stake?", "COUNTERINTELLIGENCE SUMMARY — What was hidden, how, by whom, and what its emergence would mean."],
+      useCases: ["Investigating suppressed historical events from the inside out", "Perceiving what institutional or governmental concealment feels like as a target", "Training penetration of disinformation fields", "Accessing data that exists but has not been released", "Exploring the phenomenology of deliberate suppression"],
+      historicalNote: "The GONDOLA WISH and GRILL FLAME programs included sessions explicitly tasked against buried Soviet installations, concealed weapons programs, and classified facilities. The premise that concealment is itself perceivable — and that its texture reveals what lies beneath — was operationally validated.",
+    },
+    "RV-006": {
+      badge: "◉", name: "PSYCHOMETRIC CONTACT", callsign: "PSYCHOMETRIST", classification: "CENTER LANE // THIRD EYE",
+      overview: "Object and place memory targeting. Physical matter retains informational and emotional residue from significant events — the stronger the event, the deeper the trace. The psychometrist makes contact with that residue and reads backward through time along the event layers. This is the oldest claimed form of anomalous perception, documented in every major culture. In STARGATE it was formalized as a structured protocol with specific stage discipline.",
+      stages: ["FIRST CONTACT IMPRESSION — Dominant charge of the object or place. What has it witnessed?", "SURFACE RESIDUE — Most recent significant event this place or object remembers.", "LAYERED TIME — Older impressions. How many event layers are present?", "AOL BREAK / HISTORICAL FILTER — Declare known history, return to direct impression.", "INTERROGATE THE RESIDUE — Most significant event stored here. What does it carry?", "FORENSIC DEBRIEF — Timeline of events, key figures, chronology, what surprised you."],
+      useCases: ["Reading the history of ancient sites, artifacts, or objects", "Accessing events that occurred at a location before documentation", "Forensic perception of objects with significant emotional charge", "Perceiving the human history embedded in physical structures", "Exploring the informational theory of matter as a direct experience"],
+      historicalNote: "Psychometric sessions in the program were used forensically — given objects or photographs with no identifying information, viewers were asked to describe their history. Some of the highest-rated sessions involved objects whose histories could be verified against classified records.",
+    },
+    "RV-007": {
+      badge: "∞", name: "ERV — EXTENDED REMOTE VIEWING", callsign: "DEEP OPERATIVE", classification: "GONDOLA WISH // DEEP BLACK",
+      overview: "Extended Remote Viewing is the unstructured counterpart to CRV. Where CRV uses stage discipline to suppress analytical interference, ERV uses altered state depth. The viewer descends into a deeply relaxed, near-hypnagogic state and allows the signal to flow without imposed structure. The absence of stages is not a weakness — it is the methodology. ERV was used operationally for complex targets where the CRV framework felt too constraining.",
+      stages: ["PHASE I — STATE INDUCTION. Analytical awareness recedes. Record what arises spontaneously.", "PHASE II — FREE SIGNAL STREAM. Open to the target without structure. Transcribe the stream unfiltered.", "PHASE III — DEEP CONTACT. Extend contact with the strongest impression. What lies beneath it?", "PHASE IV — INTEGRATION. Review the stream. What was signal? What was noise? What stands out?"],
+      useCases: ["Complex targets that resist structured stage analysis", "Accessing the deepest layers of altered state perception", "Free-form creative and intuitive sessions without protocol constraints", "Exploring the phenomenology of non-local perception at depth", "Sessions designed to produce raw material rather than structured reports"],
+      historicalNote: "ERV was the preferred mode for some of the program's most experienced viewers, who found CRV's structure began to feel like interference after years of training. The Monroe Institute's Gateway Process was used to induce and stabilize the required altered states.",
+    },
+    "RV-008": {
+      badge: "⊗", name: "ARV — ASSOCIATIVE REMOTE VIEWING", callsign: "ORACLE ANALYST", classification: "CENTER LANE // THIRD EYE",
+      overview: "Associative Remote Viewing is a protocol designed for binary outcome prediction. The viewer does not perceive the outcome directly — instead, they perceive an associative image that will be shown to them in the future, depending on which way the binary decision resolves. This sidesteps the direct perception of future events by converting outcome into object. The viewer describes an image; the analyst compares it to the two possible target images and assigns a probability. ARV has been used — with documented positive results — for financial forecasting, election prediction, and operational outcome assessment.",
+      stages: ["OUTCOME CONTACT — First impression of the associative image that surfaces.", "IMAGE ATTRIBUTES — Texture, colour, weight, movement, emotional tone of the image.", "EMOTIONAL FIELD — Does the image feel open or closed? Like arrival or obstruction?", "AOL BREAK / SIGNAL CLARITY — Strip away wish and fear. What is the raw image?", "BINARY ASSESSMENT — Which outcome image does your signal most closely resemble?", "ARV SUMMARY — Full report: image, attributes, emotional field, binary outcome assessment."],
+      useCases: ["Binary outcome prediction for decisions with two clear possible results", "Financial forecasting — market direction, asset movement", "Election outcome assessment", "Operational go/no-go decision support", "Testing the temporal reach of remote perception in controlled conditions"],
+      historicalNote: "Russell Targ and Keith Harary conducted ARV experiments in the 1980s that reportedly generated significant positive returns in silver futures trading over a series of trials. The methodology was later refined and tested by multiple independent groups, with mixed but above-chance results documented in peer-reviewed literature.",
+    },
+    "RV-009": {
+      badge: "☽", name: "DREAM STATE", callsign: "DREAM ARCHITECT", classification: "CENTER LANE // THIRD EYE",
+      overview: "Dream state viewing uses the hypnagogic threshold and REM sleep as the access mode rather than waking altered state. Perception in this mode is inherently symbolic — the target does not appear directly but is encoded in dream imagery, metaphor, and archetype. The discipline here is translation: the viewer must decode what the dream is saying in its own language rather than forcing literal interpretation. Dream precognition has the longest documented history of any form of anomalous perception — recorded in every major civilization for thousands of years.",
+      stages: ["THRESHOLD CROSSING — Hypnagogic state entry. Record all fragments and symbols.", "DREAM FIELD ENTRY — Allow the dream to orient around the coordinate. Describe the environment.", "SYMBOLIC LAYER — What symbols and archetypes appear? What do they stand for?", "DIRECT PERCEPTION — What literal details cut through the symbolic encoding?", "DREAM INTERROGATION — Ask the target a direct question. Follow the response.", "DREAM DEBRIEF — Full session: threshold imagery, symbols, direct data, assessment."],
+      useCases: ["Accessing targets through the symbolic language of the unconscious", "Precognitive dream logging and structured analysis", "Perceiving complex emotional or interpersonal targets that resist literal description", "Exploring the relationship between dream consciousness and non-local perception", "Developing the ability to carry intention into sleep and retrieve structured data"],
+      historicalNote: "The Maimonides Medical Center dream telepathy experiments (1964–1979) produced statistically significant results for targeted dream perception across hundreds of trials. The research preceded and informed the Stargate program's interest in altered state access modes.",
+    },
+    "RV-010": {
+      badge: "⊕", name: "COLLECTIVE FIELD", callsign: "FIELD RESONATOR", classification: "CENTER LANE // THIRD EYE",
+      overview: "Collective field viewing targets not a person or place but the shared emotional field of a mass event. An election. A disaster. A war. A religious gathering. The viewer tunes not to any individual within the field but to the field itself — its dominant emotion, internal structure, coherence level, and directional momentum. This protocol operates on the premise that large groups generate a measurable, perceivable collective consciousness that has its own topology and trajectory.",
+      stages: ["FIELD CONTACT — Dominant quality of the shared field. Coherent or fragmented? Rising or falling?", "EMOTIONAL TOPOLOGY — Map the field. Where is the intensity? What zones exist within it?", "DOMINANT SIGNAL — What single emotion or intention is most coherent across the mass?", "AOL BREAK / FIELD CLARITY — Release political narrative. Return to raw field perception.", "TRAJECTORY ASSESSMENT — Is this field building, dissipating, or transforming? Where is it heading?", "COLLECTIVE FIELD REPORT — Quality, topology, dominant signal, and projected outcome."],
+      useCases: ["Perceiving the emotional undercurrent of major world events", "Assessing the coherence and momentum of mass movements", "Exploring the phenomenology of collective consciousness as a direct experience", "Comparing perceived field states against documented outcomes", "Training perception of large-scale emotional and social dynamics"],
+      historicalNote: "Global Consciousness Project research at Princeton has documented statistically significant correlations between major mass events and random number generator deviations — suggesting that collective emotional fields have measurable physical correlates.",
+    },
+    "RV-011": {
+      badge: "◬", name: "GEOGRAPHIC SURVEY", callsign: "TERRAIN OPERATIVE", classification: "GONDOLA WISH // DEEP BLACK",
+      overview: "Geographic survey viewing applies the remote viewing methodology to large-scale terrain and environmental mapping. The viewer approaches the target from altitude, descends to surface level, and then penetrates subsurface to identify geological structures, water systems, and anomalies. This protocol was directly relevant to the program's original intelligence mandate — mapping unknown installations, terrain, and resources in denied areas — and remains one of the most practically verifiable modes of remote perception.",
+      stages: ["APPROACH — Large-scale impression from altitude. Landmass, water, colour, scale.", "SURFACE DATA — Terrain at ground level. Geology, climate, sensory environment.", "SUBSURFACE PROBE — Below the surface. Cavities, water, geological structures, anomalies.", "AOL BREAK / DIRECT PERCEPTION — Declare geographic knowledge. Perceive beyond it.", "ANOMALY IDENTIFICATION — What is unusual here? What drew the survey tasking?", "SURVEY REPORT — Terrain, subsurface, anomalies, significance of the location."],
+      useCases: ["Mapping unknown or inaccessible terrain without satellite data", "Identifying subsurface geological features, water, or cavities", "Surveying locations that appear unremarkable on the surface", "Replicating the program's original geographic intelligence mandate", "Exploring real-world coordinates with documented anomalies"],
+      historicalNote: "Early Stargate sessions included geographic surveys of Soviet missile sites, underground facilities, and remote terrain features. In several documented cases, viewer-described underground structures were later confirmed by satellite or on-site inspection.",
+    },
+    "RV-012": {
+      badge: "⟶", name: "SIGNAL TRACE", callsign: "SIGNAL TRACER", classification: "GRILL FLAME",
+      overview: "Signal trace viewing targets a subject in active motion — a person, object, or phenomenon whose current position is unknown. The viewer does not target a fixed location but locks onto a movement vector and tracks it across time and space. This protocol requires a different kind of perception than static targeting — the viewer must hold a moving reference point and project its trajectory rather than describing a fixed scene. Operationally, this was used for pursuit tracking, missing person cases, and the monitoring of moving assets.",
+      stages: ["LOCK ON — Direction and quality of movement. What are they moving towards?", "CURRENT ENVIRONMENT — Where is the target right now? What surrounds them?", "TEMPORAL TRACE — Where were they 6 hours ago? What does the path reveal?", "AOL BREAK / SIGNAL LOCK — Release target assumptions. Return to pure tracking signal.", "PROJECTED DESTINATION — Where is this trajectory terminating? What is at the end?", "TRACKING REPORT — Full trace: origin, current position, projected destination, confidence."],
+      useCases: ["Tracking the movement of a subject with an unknown current position", "Projecting trajectories and destinations from last known positions", "Pursuing moving targets across temporal and spatial gaps", "Monitoring assets in motion without continuous surveillance", "Training the perception of movement, direction, and spatial trajectory"],
+      historicalNote: "Some of the program's most operationally sensitive sessions involved tracking moving subjects — both human assets and unidentified aerial phenomena. The ability to project a trajectory and identify a destination was considered among the most difficult and most valuable skills a viewer could develop.",
+    },
+  };
+
   const sections = [
     { id: "what", label: "WHAT IS THIS" },
     { id: "how", label: "HOW IT WORKS" },
@@ -2066,14 +2281,14 @@ function FieldManual({ onBack, onSubscribe }) {
       <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 32 }}>
         <button onClick={onBack} style={{
           background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
           cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
         }}
           onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
           onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
         >← BACK</button>
         <div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.3em", marginBottom: 2 }}>OPERATIONAL DOCUMENTATION</div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.3em", marginBottom: 2 }}>OPERATIONAL DOCUMENTATION</div>
           <div style={{ fontFamily: "Georgia, serif", color: "#4ade80", fontSize: 22, fontWeight: 900 }}>FIELD MANUAL</div>
         </div>
       </div>
@@ -2085,7 +2300,7 @@ function FieldManual({ onBack, onSubscribe }) {
             background: activeSection === s.id ? "rgba(0,50,0,0.8)" : "transparent",
             border: "none", borderBottom: activeSection === s.id ? "2px solid #f0c040" : "2px solid transparent",
             color: activeSection === s.id ? "#f0c040" : "#4ade80",
-            fontFamily: "'Courier New', monospace", fontSize: 9, padding: "8px 14px",
+            fontFamily: "'Courier New', monospace", fontSize: 11, padding: "8px 14px",
             cursor: "pointer", letterSpacing: "0.15em", marginBottom: -1,
           }}>{s.label}</button>
         ))}
@@ -2101,7 +2316,7 @@ function FieldManual({ onBack, onSubscribe }) {
             <div style={{ fontFamily: "Georgia, serif", color: "#f0c040", fontSize: 18, fontWeight: 900, marginBottom: 12 }}>
               STARGATE is a remote viewing training and simulation platform.
             </div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 2 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2 }}>
               It is built on the actual structured methodology developed during a classified U.S. government psychoenergetics research program that ran from 1972 to 1995 — now fully declassified and part of the public record via the CIA's CREST archive.
               <br /><br />
               Remote viewing is the practice of attempting to perceive information about a distant, unseen, or otherwise inaccessible target using focused mental attention alone. The structured protocols used here — Coordinate Remote Viewing (CRV) and Extended Remote Viewing (ERV) — were developed to make that process as consistent, trainable, and documentable as possible.
@@ -2119,8 +2334,8 @@ function FieldManual({ onBack, onSubscribe }) {
             ].map(c => (
               <div key={c.title} style={{ background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 18 }}>
                 <div style={{ fontFamily: "'Courier New', monospace", fontSize: 20, color: "#f0c040", marginBottom: 8 }}>{c.icon}</div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", fontWeight: 900, marginBottom: 6, letterSpacing: "0.1em" }}>{c.title}</div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 1.8, opacity: 0.8 }}>{c.desc}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#f0c040", fontWeight: 900, marginBottom: 6, letterSpacing: "0.1em" }}>{c.title}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.8, opacity: 0.8 }}>{c.desc}</div>
               </div>
             ))}
           </div>
@@ -2130,7 +2345,7 @@ function FieldManual({ onBack, onSubscribe }) {
       {/* HOW IT WORKS */}
       {activeSection === "how" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, lineHeight: 1.8, marginBottom: 4 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, lineHeight: 1.8, marginBottom: 4 }}>
             A STARGATE session follows a defined operational sequence. Each step is deliberate.
           </div>
           {[
@@ -2144,8 +2359,8 @@ function FieldManual({ onBack, onSubscribe }) {
             <div key={step.n} style={{ display: "flex", gap: 20, background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 20 }}>
               <div style={{ fontFamily: "Georgia, serif", fontSize: 28, color: "#f0c040", opacity: 0.3, fontWeight: 900, flexShrink: 0, lineHeight: 1 }}>{step.n}</div>
               <div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", fontWeight: 900, marginBottom: 6, letterSpacing: "0.1em" }}>{step.title}</div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 1.9 }}>{step.desc}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#f0c040", fontWeight: 900, marginBottom: 6, letterSpacing: "0.1em" }}>{step.title}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.9 }}>{step.desc}</div>
               </div>
             </div>
           ))}
@@ -2156,34 +2371,99 @@ function FieldManual({ onBack, onSubscribe }) {
       {activeSection === "crv" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderLeft: "3px solid #f0c040", borderRadius: 2, padding: 20, marginBottom: 8 }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 2 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 2 }}>
               STARGATE operates across 12 distinct viewing protocols — each designed for a different type of target and mode of perception. The core framework is Coordinate Remote Viewing (CRV), a structured 6-stage methodology developed at Stanford Research Institute. Beyond CRV, the program includes Extended Remote Viewing (ERV), Associative Remote Viewing (ARV), Dream State, Collective Field, Geographic Survey, and Signal Trace — each with its own stage architecture, target pool, and Monitor AI evaluation criteria.
             </div>
           </div>
           {/* Protocol index */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 10, marginBottom: 8 }}>
-            {[
-              { id: "RV-001", badge: "⬟", name: "COORD TARGETING", mode: "CRV — 6 stages. Physical locations, installations, terrain." },
-              { id: "RV-002", badge: "◈", name: "DEEP TIME", mode: "CRV — 6 stages. Temporal displacement, past and future events." },
-              { id: "RV-003", badge: "⬡", name: "EMOTIONAL / HUMAN", mode: "CRV — 6 stages. People, emotional fields, intent, presence." },
-              { id: "RV-004", badge: "◇", name: "ANOMALOUS", mode: "CRV — 6 stages. UAP events, non-human intelligence, suppressed phenomena." },
-              { id: "RV-005", badge: "▽", name: "SUBSPACE / CONCEALED", mode: "CRV — 6 stages. Hidden, buried, or classified information." },
-              { id: "RV-006", badge: "◉", name: "PSYCHOMETRIC", mode: "CRV — 6 stages. Object and place memory, residue of events." },
-              { id: "RV-007", badge: "∞", name: "ERV — EXTENDED", mode: "ERV — 4 phases. Unstructured altered state, free signal stream." },
-              { id: "RV-008", badge: "⊗", name: "ARV — ASSOCIATIVE", mode: "ARV — 6 stages. Binary outcome prediction, future-state targeting." },
-              { id: "RV-009", badge: "☽", name: "DREAM STATE", mode: "Dream — 6 stages. Hypnagogic threshold, symbolic target access." },
-              { id: "RV-010", badge: "⊕", name: "COLLECTIVE FIELD", mode: "Field — 6 stages. Mass events, group consciousness, emotional topology." },
-              { id: "RV-011", badge: "◬", name: "GEOGRAPHIC SURVEY", mode: "Survey — 6 stages. Terrain mapping, subsurface, geological intelligence." },
-              { id: "RV-012", badge: "⟶", name: "SIGNAL TRACE", mode: "Trace — 6 stages. Moving target tracking, trajectory projection." },
-            ].map(p => (
-              <div key={p.id} style={{ background: "rgba(0,10,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 12 }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 16, color: "#f0c040", marginBottom: 4 }}>{p.badge}</div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", fontWeight: 900, letterSpacing: "0.1em", marginBottom: 4 }}>{p.name}</div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", lineHeight: 1.7, opacity: 0.8 }}>{p.mode}</div>
-              </div>
-            ))}
-          </div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.2em", marginTop: 8, marginBottom: 4 }}>CRV STAGE ARCHITECTURE</div>
+          {selectedProtocol ? (
+            // ── PROTOCOL DETAIL VIEW ──────────────────────────────────
+            (() => {
+              const p = PROTOCOL_DETAIL[selectedProtocol];
+              return (
+                <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                  <button onClick={() => setSelectedProtocol(null)} style={{
+                    background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
+                    fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
+                    cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2, alignSelf: "flex-start",
+                  }}
+                    onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
+                    onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
+                  >← ALL PROTOCOLS</button>
+
+                  {/* Header */}
+                  <div style={{ background: "rgba(0,15,0,0.6)", border: "1px solid #f0c040", borderRadius: 2, padding: 24 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 12 }}>
+                      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 36, color: "#f0c040" }}>{p.badge}</div>
+                      <div>
+                        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, letterSpacing: "0.2em", marginBottom: 2 }}>{selectedProtocol} // {p.callsign}</div>
+                        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 14, color: "#f0c040", fontWeight: 900, letterSpacing: "0.15em" }}>{p.name}</div>
+                        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#c0392b", letterSpacing: "0.15em", marginTop: 2 }}>[{p.classification}]</div>
+                      </div>
+                    </div>
+                    <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 2 }}>{p.overview}</div>
+                  </div>
+
+                  {/* Stage breakdown */}
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 2 }}>SESSION STAGE STRUCTURE</div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {p.stages.map((s, i) => (
+                      <div key={i} style={{ display: "flex", gap: 14, background: "rgba(0,10,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 14 }}>
+                        <div style={{ fontFamily: "Georgia, serif", fontSize: 20, color: "#f0c040", opacity: 0.3, fontWeight: 900, flexShrink: 0, minWidth: 20, lineHeight: 1.2 }}>{i + 1}</div>
+                        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.8 }}>{s}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Use cases */}
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginTop: 4, marginBottom: 2 }}>OPERATIONAL USE CASES</div>
+                  <div style={{ background: "rgba(0,10,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 18 }}>
+                    {p.useCases.map((u, i) => (
+                      <div key={i} style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 2 }}>▸ {u}</div>
+                    ))}
+                  </div>
+
+                  {/* Historical note */}
+                  <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderLeft: "3px solid #f0c040", borderRadius: 2, padding: 18 }}>
+                    <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 8 }}>HISTORICAL RECORD</div>
+                    <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 2, opacity: 0.85 }}>{p.historicalNote}</div>
+                  </div>
+                </div>
+              );
+            })()
+          ) : (
+            // ── PROTOCOL GRID ─────────────────────────────────────────
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 10, marginBottom: 8 }}>
+              {[
+                { id: "RV-001", badge: "⬟", name: "COORD TARGETING", mode: "CRV — 6 stages. Physical locations, installations, terrain." },
+                { id: "RV-002", badge: "◈", name: "DEEP TIME", mode: "CRV — 6 stages. Temporal displacement, past and future events." },
+                { id: "RV-003", badge: "⬡", name: "EMOTIONAL / HUMAN", mode: "CRV — 6 stages. People, emotional fields, intent, presence." },
+                { id: "RV-004", badge: "◇", name: "ANOMALOUS", mode: "CRV — 6 stages. UAP events, non-human intelligence, suppressed phenomena." },
+                { id: "RV-005", badge: "▽", name: "SUBSPACE / CONCEALED", mode: "CRV — 6 stages. Hidden, buried, or classified information." },
+                { id: "RV-006", badge: "◉", name: "PSYCHOMETRIC", mode: "CRV — 6 stages. Object and place memory, residue of events." },
+                { id: "RV-007", badge: "∞", name: "ERV — EXTENDED", mode: "ERV — 4 phases. Unstructured altered state, free signal stream." },
+                { id: "RV-008", badge: "⊗", name: "ARV — ASSOCIATIVE", mode: "ARV — 6 stages. Binary outcome prediction, future-state targeting." },
+                { id: "RV-009", badge: "☽", name: "DREAM STATE", mode: "Dream — 6 stages. Hypnagogic threshold, symbolic target access." },
+                { id: "RV-010", badge: "⊕", name: "COLLECTIVE FIELD", mode: "Field — 6 stages. Mass events, group consciousness, emotional topology." },
+                { id: "RV-011", badge: "◬", name: "GEOGRAPHIC SURVEY", mode: "Survey — 6 stages. Terrain mapping, subsurface, geological intelligence." },
+                { id: "RV-012", badge: "⟶", name: "SIGNAL TRACE", mode: "Trace — 6 stages. Moving target tracking, trajectory projection." },
+              ].map(p => (
+                <div key={p.id} onClick={() => setSelectedProtocol(p.id)} style={{
+                  background: "rgba(0,10,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 14,
+                  cursor: "pointer", transition: "border-color 0.15s",
+                }}
+                  onMouseEnter={e => e.currentTarget.style.borderColor = "#f0c040"}
+                  onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
+                >
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 20, color: "#f0c040", marginBottom: 6 }}>{p.badge}</div>
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", fontWeight: 900, letterSpacing: "0.1em", marginBottom: 6 }}>{p.name}</div>
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.7, opacity: 0.8 }}>{p.mode}</div>
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.4, marginTop: 8, letterSpacing: "0.1em" }}>▸ VIEW BRIEF</div>
+                </div>
+              ))}
+            </div>
+          )}
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginTop: 8, marginBottom: 4 }}>CRV STAGE ARCHITECTURE</div>
           {[
             { stage: "I", name: "IDEOGRAM", color: "#4ade80", desc: "The first spontaneous mark or impression that arises when the target is presented. It happens before the analytical mind can intervene. It is not a drawing — it is a reflex. The ideogram carries the gestalt of the target: land, water, structure, life, energy. Do not analyze. Simply record." },
             { stage: "II", name: "SENSORY DATA", color: "#4ade80", desc: "Access the target through all available senses. Temperature, texture, sound, smell, color, light. No labels, no nouns. Only raw sensory descriptors. 'Cold, smooth, dark, metallic, low hum, faint chemical smell.' This stage builds the sensory envelope of the target." },
@@ -2194,12 +2474,12 @@ function FieldManual({ onBack, onSubscribe }) {
           ].map(s => (
             <div key={s.stage} style={{ display: "flex", gap: 16, background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 20 }}>
               <div style={{ flexShrink: 0, textAlign: "center", width: 40 }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.4 }}>STAGE</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.4 }}>STAGE</div>
                 <div style={{ fontFamily: "Georgia, serif", fontSize: 22, color: s.color, fontWeight: 900 }}>{s.stage}</div>
               </div>
               <div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: s.color, fontWeight: 900, letterSpacing: "0.1em", marginBottom: 6 }}>{s.name}</div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 1.9 }}>{s.desc}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: s.color, fontWeight: 900, letterSpacing: "0.1em", marginBottom: 6 }}>{s.name}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.9 }}>{s.desc}</div>
               </div>
             </div>
           ))}
@@ -2209,26 +2489,29 @@ function FieldManual({ onBack, onSubscribe }) {
       {/* USE CASES */}
       {activeSection === "uses" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, lineHeight: 1.8, marginBottom: 4 }}>
-            STARGATE has been designed to serve a wide range of practitioners and purposes.
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.5, lineHeight: 1.8, marginBottom: 4 }}>
+            STARGATE has been designed to serve a wide range of practitioners and purposes. With 12 distinct protocols, the program can be adapted to almost any mode of inquiry — personal development, creative work, research, prediction, or operational intelligence practice.
           </div>
           {[
-            { icon: "⬟", title: "PERSONAL PRACTICE & DEVELOPMENT", tier: "STARGATE", desc: "Use STARGATE as a daily or weekly practice to develop your intuitive perception. Track your accuracy over time. Build a personal archive of sessions. Identify your signal strengths and your AOL patterns. Treat it like a training program for the mind." },
-            { icon: "◈", title: "MEDITATION & ALTERED STATE EXPLORATION", tier: "STARGATE", desc: "The CRV protocol is a powerful complement to established meditation practice. The structured, non-analytical state it requires is adjacent to deep meditative absorption. Many viewers report session states that feel indistinguishable from advanced contemplative practice." },
-            { icon: "⬡", title: "CREATIVE & WRITING APPLICATIONS", tier: "STARGATE", desc: "Writers, artists, and designers use remote viewing as a source of raw, unfiltered material. Session a location that doesn't exist yet. View a character you haven't written. View a scene from a story before you write it. The protocol bypasses the inner critic entirely." },
-            { icon: "◇", title: "RESEARCH & ACADEMIC STUDY", tier: "STARGATE", desc: "Researchers studying consciousness, perception, anomalous cognition, or the history of intelligence programs will find STARGATE a structured environment for firsthand study of the protocols described in the declassified literature." },
-            { icon: "◈", title: "COLLABORATIVE VIEWING EXERCISES", tier: "STARGATE", desc: "Share target assignments with colleagues for double-blind viewing exercises. Compare session outputs across multiple viewers targeting the same coordinates. This replicates the multi-viewer methodology used operationally — where sessions from independent viewers were compared for convergence." },
-            { icon: "⬟", title: "CUSTOM TARGET MISSIONS", tier: "STARGATE", desc: "Build your own targets with full parameter control — any location in the universe, any point in time, any entity or event. Session Mars 10 million years ago. View the construction of the Great Pyramid in real time. Assign a colleague a blind target and compare their session data to your intended target. The signal line has no jurisdiction." },
+            { icon: "⬟", title: "PERSONAL SIGNAL DEVELOPMENT", protocols: ["COORD TARGETING", "ERV"], desc: "Use STARGATE as a structured daily or weekly practice to develop raw perceptual ability. Track your accuracy over time. Identify your signal strengths and your AOL patterns. The Personal Dossier archives every session — over time, it becomes a map of your mind's signal profile." },
+            { icon: "◈", title: "MEDITATION & ALTERED STATE WORK", protocols: ["ERV", "DREAM STATE"], desc: "The CRV protocol produces a non-analytical state adjacent to deep meditative absorption. ERV and Dream State go further — requiring genuine altered state entry. Many practitioners report that consistent STARGATE practice deepens their broader contemplative work in ways that conventional meditation instruction does not address." },
+            { icon: "⬡", title: "CREATIVE & GENERATIVE APPLICATIONS", protocols: ["PSYCHOMETRIC", "COLLECTIVE FIELD", "DEEP TIME"], desc: "Writers, artists, directors, and designers use remote viewing as a source of raw, unfiltered material that bypasses the inner critic entirely. Session a location that doesn't exist yet. View a character before you write them. Perceive the emotional field of a historical era before you depict it. The signal line generates material the analytical mind cannot." },
+            { icon: "◇", title: "RESEARCH & CONSCIOUSNESS STUDIES", protocols: ["ALL PROTOCOLS"], desc: "Researchers studying consciousness, perception, anomalous cognition, or the history of intelligence programs will find STARGATE a structured environment for firsthand study. The protocols here are the same ones described in the declassified literature. You are not reading about them — you are running them." },
+            { icon: "⊗", title: "FORECASTING & OUTCOME ASSESSMENT", protocols: ["ARV — ASSOCIATIVE", "SIGNAL TRACE", "COLLECTIVE FIELD"], desc: "ARV was used with documented positive results for financial forecasting and binary outcome prediction. Collective Field viewing allows assessment of mass event trajectories — election outcomes, market sentiment, social momentum. Signal Trace extends perception to moving targets and projected destinations." },
+            { icon: "◉", title: "FORENSIC & HISTORICAL INVESTIGATION", protocols: ["PSYCHOMETRIC", "DEEP TIME", "SUBSPACE / CONCEALED"], desc: "Access the residue of events embedded in objects, places, and time. Read backward through history along event layers in objects with significant charge. Penetrate suppressed or concealed information from the inside out. These protocols were used operationally for forensic intelligence — the same methodology is available here." },
+            { icon: "◬", title: "GEOGRAPHIC & TERRAIN INTELLIGENCE", protocols: ["GEOGRAPHIC SURVEY", "COORD TARGETING"], desc: "Survey inaccessible, unmapped, or anomalous locations without satellite data. Identify subsurface structures, water systems, and geological features. Replicate the program's original mandate — perceiving what exists at a coordinate before any other intelligence source confirms it." },
+            { icon: "∞", title: "CUSTOM MISSION TARGETING", protocols: ["ALL PROTOCOLS"], desc: "The Custom Target Builder gives you full parameter control — any location in the universe, any point in time, any entity, event, or phenomenon. Session Mars 10 million years ago. View the construction of Göbekli Tepe in real time. Target a future event that has not yet occurred. Assign a colleague a blind target and compare session outputs. The signal line has no jurisdiction." },
           ].map(u => (
             <div key={u.title} style={{ background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 20 }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", fontWeight: 900, letterSpacing: "0.1em" }}>{u.icon} {u.title}</div>
-                <span style={{
-                  fontFamily: "'Courier New', monospace", fontSize: 8, color: "#f0c040",
-                  border: "1px solid #f0c040", padding: "2px 8px", borderRadius: 2, whiteSpace: "nowrap",
-                }}>{u.tier}</span>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#f0c040", fontWeight: 900, letterSpacing: "0.1em" }}>{u.icon} {u.title}</div>
               </div>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 1.9 }}>{u.desc}</div>
+              <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 10 }}>
+                {u.protocols.map(pr => (
+                  <span key={pr} style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", border: "1px solid #1a3a1a", padding: "2px 8px", borderRadius: 2, opacity: 0.7 }}>{pr}</span>
+                ))}
+              </div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.9 }}>{u.desc}</div>
             </div>
           ))}
         </div>
@@ -2247,14 +2530,14 @@ function FieldManual({ onBack, onSubscribe }) {
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {t.features.map(f => (
-                  <span key={f} style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", background: "rgba(0,10,0,0.6)", border: "1px solid #1a3a1a", padding: "3px 10px", borderRadius: 2 }}>▸ {f}</span>
+                  <span key={f} style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", background: "rgba(0,10,0,0.6)", border: "1px solid #1a3a1a", padding: "3px 10px", borderRadius: 2 }}>▸ {f}</span>
                 ))}
               </div>
             </div>
           ))}
           <button onClick={onSubscribe} style={{
             background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
-            fontFamily: "'Courier New', monospace", fontSize: 11, padding: "13px",
+            fontFamily: "'Courier New', monospace", fontSize: 13, padding: "13px",
             cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, marginTop: 8,
           }}>[ UPGRADE CLEARANCE ]</button>
         </div>
@@ -2347,19 +2630,19 @@ Keep it terse, classified, operational.`;
     <div style={{ padding: "60px 24px", maxWidth: 560, margin: "0 auto", textAlign: "center" }}>
       <div style={{ fontFamily: "'Courier New', monospace", fontSize: 32, color: "#c0392b", marginBottom: 16 }}>⬟</div>
       <div style={{ fontFamily: "Georgia, serif", fontSize: 20, color: "#c0392b", fontWeight: 900, marginBottom: 12 }}>STARGATE CLEARANCE REQUIRED</div>
-      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.9, marginBottom: 28, opacity: 0.7 }}>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.9, marginBottom: 28, opacity: 0.7 }}>
         Custom target generation requires an active STARGATE subscription.<br />
         Upgrade your clearance to unlock full target parameter control —<br />
         any location, any time, any entity. No boundaries.
       </div>
       <button onClick={onBack} style={{
         background: "rgba(20,10,0,0.8)", border: "1px solid #c0392b", color: "#c0392b",
-        fontFamily: "'Courier New', monospace", fontSize: 11, padding: "12px 36px",
+        fontFamily: "'Courier New', monospace", fontSize: 13, padding: "12px 36px",
         cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, width: "100%", marginBottom: 12,
       }}>[ UPGRADE TO STARGATE ]</button>
       <button onClick={onBack} style={{
         background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-        fontFamily: "'Courier New', monospace", fontSize: 10, padding: "10px 36px",
+        fontFamily: "'Courier New', monospace", fontSize: 12, padding: "10px 36px",
         cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, width: "100%",
       }}>← BACK</button>
     </div>
@@ -2371,7 +2654,7 @@ Keep it terse, classified, operational.`;
       <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 28 }}>
         <button onClick={onBack} style={{
           background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
           cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
         }}
           onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
@@ -2379,8 +2662,8 @@ Keep it terse, classified, operational.`;
         >← BACK</button>
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 2 }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.3em" }}>CUSTOM TARGET GENERATOR</div>
-            <span style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#f0c040", border: "1px solid #f0c040", padding: "1px 6px", borderRadius: 2 }}>STARGATE</span>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.3em" }}>CUSTOM TARGET GENERATOR</div>
+            <span style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", border: "1px solid #f0c040", padding: "1px 6px", borderRadius: 2 }}>STARGATE</span>
           </div>
           <div style={{ fontFamily: "Georgia, serif", color: "#4ade80", fontSize: 20, fontWeight: 900 }}>BUILD YOUR TARGET PACKET</div>
         </div>
@@ -2388,14 +2671,14 @@ Keep it terse, classified, operational.`;
 
       {/* Presets */}
       <div style={{ marginBottom: 24 }}>
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 10 }}>▸ QUICK LOAD — PRESET TARGETS</div>
+        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 10 }}>▸ QUICK LOAD — PRESET TARGETS</div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
           {TARGET_PRESETS.map(p => (
             <button key={p.label} onClick={() => applyPreset(p)} style={{
               background: preset === p.label ? "rgba(0,50,0,0.8)" : "rgba(0,15,0,0.5)",
               border: `1px solid ${preset === p.label ? "#4ade80" : "#1a3a1a"}`,
               color: preset === p.label ? "#f0c040" : "#4ade80",
-              fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+              fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
               cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2,
             }}>{p.label}</button>
           ))}
@@ -2404,7 +2687,7 @@ Keep it terse, classified, operational.`;
 
       {/* Fields */}
       <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 24, marginBottom: 20 }}>
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 18 }}>▸ TARGET PARAMETERS</div>
+        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 18 }}>▸ TARGET PARAMETERS</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           {[
             { key: "location", label: "LOCATION / COORDINATES", placeholder: "e.g. Mars, Olympus Mons region — or — 29.9792° N, 31.1342° E, Egypt", hint: "Planet, place, geographic coordinates, or spatial description" },
@@ -2413,7 +2696,7 @@ Keep it terse, classified, operational.`;
             { key: "objective", label: "INTELLIGENCE OBJECTIVE", placeholder: "e.g. Describe the atmosphere and surface conditions — or — identify the purpose of the structure", hint: "What does the viewer need to find out?" },
           ].map(f => (
             <div key={f.key}>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4, letterSpacing: "0.15em" }}>{f.label}</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4, letterSpacing: "0.15em" }}>{f.label}</div>
               <input
                 value={fields[f.key]}
                 onChange={e => { setFields(prev => ({ ...prev, [f.key]: e.target.value })); setGeneratedTarget(null); }}
@@ -2421,16 +2704,16 @@ Keep it terse, classified, operational.`;
                 style={{
                   width: "100%", background: "rgba(0,10,0,0.8)", border: "1px solid #1a3a1a",
                   borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
-                  fontSize: 11, padding: "10px 14px", outline: "none", boxSizing: "border-box",
+                  fontSize: 13, padding: "10px 14px", outline: "none", boxSizing: "border-box",
                 }}
                 onFocus={e => e.target.style.borderColor = "#4ade80"}
                 onBlur={e => e.target.style.borderColor = "#1a3a1a"}
               />
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.3, marginTop: 4 }}>{f.hint}</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, marginTop: 4 }}>{f.hint}</div>
             </div>
           ))}
           <div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4, letterSpacing: "0.15em" }}>FREE-FORM PARAMETERS (OPTIONAL)</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4, letterSpacing: "0.15em" }}>FREE-FORM PARAMETERS (OPTIONAL)</div>
             <textarea
               value={fields.freeform}
               onChange={e => { setFields(prev => ({ ...prev, freeform: e.target.value })); setGeneratedTarget(null); }}
@@ -2439,7 +2722,7 @@ Keep it terse, classified, operational.`;
               style={{
                 width: "100%", background: "rgba(0,10,0,0.8)", border: "1px solid #1a3a1a",
                 borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
-                fontSize: 11, padding: "10px 14px", outline: "none", boxSizing: "border-box", resize: "vertical",
+                fontSize: 13, padding: "10px 14px", outline: "none", boxSizing: "border-box", resize: "vertical",
               }}
               onFocus={e => e.target.style.borderColor = "#4ade80"}
               onBlur={e => e.target.style.borderColor = "#1a3a1a"}
@@ -2454,7 +2737,7 @@ Keep it terse, classified, operational.`;
         style={{
           width: "100%", background: generating ? "rgba(0,30,0,0.5)" : "rgba(0,50,0,0.8)",
           border: "1px solid #4ade80", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "13px",
+          fontFamily: "'Courier New', monospace", fontSize: 13, padding: "13px",
           cursor: generating ? "not-allowed" : "pointer", letterSpacing: "0.2em", borderRadius: 2, marginBottom: 20,
         }}>
         {generating ? "[ GENERATING TARGET PACKET... ]" : "[ GENERATE TARGET PACKET ]"}
@@ -2463,44 +2746,44 @@ Keep it terse, classified, operational.`;
       {/* Generated target display */}
       {generatedTarget && !generatedTarget.error && (
         <div style={{ background: "rgba(0,0,0,0.7)", border: "1px solid #2a4a2a", borderLeft: "3px solid #f0c040", padding: 24, borderRadius: 2, marginBottom: 20 }}>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 16 }}>▸ TARGET PACKET GENERATED — SEALED</div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 16 }}>▸ TARGET PACKET GENERATED — SEALED</div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 16 }}>
             {[
               { label: "TARGET ID", value: generatedTarget.id },
               { label: "CLASSIFICATION", value: generatedTarget.classification },
             ].map(r => (
               <div key={r.label} style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", padding: 12, borderRadius: 2 }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>{r.label}</div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#f0c040", fontWeight: 900 }}>{r.value}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>{r.label}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 14, color: "#f0c040", fontWeight: 900 }}>{r.value}</div>
               </div>
             ))}
           </div>
           <div style={{ marginBottom: 12 }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>COORDINATES</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80" }}>{generatedTarget.coords}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>COORDINATES</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#4ade80" }}>{generatedTarget.coords}</div>
           </div>
           <div style={{ marginBottom: 12 }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>TASKING INSTRUCTIONS (VIEWER-FACING)</div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", lineHeight: 1.8 }}>{generatedTarget.tasking}</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 4 }}>TASKING INSTRUCTIONS (VIEWER-FACING)</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8 }}>{generatedTarget.tasking}</div>
           </div>
           {generatedTarget.monitorGuidance && (
             <div style={{ borderTop: "1px solid #1a3a1a", paddingTop: 12 }}>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#c0392b", opacity: 0.7, marginBottom: 4 }}>MONITOR GUIDANCE — DO NOT SHARE WITH VIEWER</div>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 1.8, opacity: 0.8 }}>{generatedTarget.monitorGuidance}</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#c0392b", opacity: 0.7, marginBottom: 4 }}>MONITOR GUIDANCE — DO NOT SHARE WITH VIEWER</div>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.8, opacity: 0.8 }}>{generatedTarget.monitorGuidance}</div>
             </div>
           )}
           <button
             onClick={() => onLaunchSession(generatedTarget)}
             style={{
               width: "100%", background: "rgba(20,50,0,0.9)", border: "1px solid #f0c040", color: "#f0c040",
-              fontFamily: "'Courier New', monospace", fontSize: 11, padding: "13px",
+              fontFamily: "'Courier New', monospace", fontSize: 13, padding: "13px",
               cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, marginTop: 20,
               animation: "pulseGlow 2s ease-in-out infinite",
             }}>[ LAUNCH VIEWING SESSION ]</button>
         </div>
       )}
       {generatedTarget?.error && (
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#c0392b", padding: 16, border: "1px solid #c0392b", borderRadius: 2, textAlign: "center" }}>
+        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#c0392b", padding: 16, border: "1px solid #c0392b", borderRadius: 2, textAlign: "center" }}>
           TARGET GENERATION FAILED — SECURE CHANNEL INTERRUPTED. RETRY.
         </div>
       )}
@@ -2564,23 +2847,23 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
       <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 32 }}>
         <button onClick={onBack} style={{
           background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
           cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
         }}
           onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
           onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
         >← BACK</button>
         <div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.3em", marginBottom: 2 }}>PERSISTENT ARCHIVE — LOCAL STORAGE</div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.3em", marginBottom: 2 }}>PERSISTENT ARCHIVE — LOCAL STORAGE</div>
           <div style={{ fontFamily: "Georgia, serif", color: "#4ade80", fontSize: 22, fontWeight: 900 }}>PERSONAL DOSSIER</div>
         </div>
-        <div style={{ marginLeft: "auto", fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.8 }}>
+        <div style={{ marginLeft: "auto", fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.8 }}>
           {sessions.length} SESSION{sessions.length !== 1 ? "S" : ""} ON FILE
         </div>
       </div>
 
       {!loaded && (
-        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.8, textAlign: "center", padding: 40 }}>
+        <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", opacity: 0.8, textAlign: "center", padding: 40 }}>
           ACCESSING ARCHIVE...
         </div>
       )}
@@ -2591,9 +2874,9 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
           padding: 48, textAlign: "center",
         }}>
           <div style={{ fontFamily: "'Courier New', monospace", fontSize: 28, color: "#1a3a1a", marginBottom: 16 }}>◈</div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.9, lineHeight: 1.8 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#4ade80", opacity: 0.9, lineHeight: 1.8 }}>
             NO SESSIONS ON FILE<br />
-            <span style={{ fontSize: 9, opacity: 0.7 }}>Complete a remote viewing session to begin your archive.</span>
+            <span style={{ fontSize: 11, opacity: 0.7 }}>Complete a remote viewing session to begin your archive.</span>
           </div>
         </div>
       )}
@@ -2608,7 +2891,7 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
               { label: "TARGETS VIEWED", value: new Set(sessions.map(s => s.target?.id)).size },
             ].map(stat => (
               <div key={stat.label} style={{ background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 14, textAlign: "center" }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.7, marginBottom: 4 }}>{stat.label}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.7, marginBottom: 4 }}>{stat.label}</div>
                 <div style={{ fontFamily: "Georgia, serif", fontSize: 22, color: "#f0c040", fontWeight: 900 }}>{stat.value}</div>
               </div>
             ))}
@@ -2628,12 +2911,12 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-                    <span style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", fontWeight: 900 }}>{s.sessionId}</span>
-                    <span style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.85 }}>
+                    <span style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#f0c040", fontWeight: 900 }}>{s.sessionId}</span>
+                    <span style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.85 }}>
                       {s.target?.id} · {s.viewer?.callsign}
                     </span>
                   </div>
-                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.75, marginTop: 3 }}>
+                  <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.75, marginTop: 3 }}>
                     {new Date(s.savedAt).toLocaleString()} UTC · {completedStages(s)}/{(STAGES_BY_VIEWER[s.viewer?.id] || STAGES_BY_VIEWER["RV-001"]).length} STAGES · {s.target?.classification}
                   </div>
                 </div>
@@ -2648,7 +2931,7 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
                   ))}
                 </div>
 
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.7, flexShrink: 0 }}>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", opacity: 0.7, flexShrink: 0 }}>
                   {expandedId === s.sessionId ? "▲" : "▼"}
                 </div>
               </div>
@@ -2658,18 +2941,18 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
                 <div style={{ borderTop: "1px solid #1a3a1a", padding: "16px 18px" }}>
                   {(STAGES_BY_VIEWER[s.viewer?.id] || STAGES_BY_VIEWER["RV-001"]).map((stage, i) => s.stageData?.[i]?.trim() && (
                     <div key={i} style={{ marginBottom: 12 }}>
-                      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#f0c040", marginBottom: 4, letterSpacing: "0.1em" }}>{stage.label}</div>
-                      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 1.8, whiteSpace: "pre-wrap" }}>{s.stageData[i]}</div>
+                      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", marginBottom: 4, letterSpacing: "0.1em" }}>{stage.label}</div>
+                      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.8, whiteSpace: "pre-wrap" }}>{s.stageData[i]}</div>
                     </div>
                   ))}
 
                   {s.evaluations?.some(e => e) && (
                     <div style={{ borderTop: "1px solid #1a3a1a", paddingTop: 12, marginTop: 4 }}>
-                      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#f0c040", marginBottom: 8, letterSpacing: "0.1em" }}>MONITOR EVALUATIONS</div>
+                      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", marginBottom: 8, letterSpacing: "0.1em" }}>MONITOR EVALUATIONS</div>
                       {s.evaluations.map((ev, i) => ev && (
                         <div key={i} style={{ marginBottom: 10, paddingLeft: 10, borderLeft: "2px solid #1a3a1a" }}>
-                          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 7, color: "#4ade80", opacity: 0.7, marginBottom: 4 }}>STAGE {i + 1}</div>
-                          <pre style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.9, whiteSpace: "pre-wrap", margin: 0, lineHeight: 1.7 }}>{ev}</pre>
+                          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.7, marginBottom: 4 }}>STAGE {i + 1}</div>
+                          <pre style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.9, whiteSpace: "pre-wrap", margin: 0, lineHeight: 1.7 }}>{ev}</pre>
                         </div>
                       ))}
                     </div>
@@ -2678,22 +2961,22 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
                   <div style={{ display: "flex", gap: 8, marginTop: 14 }}>
                     {confirmDelete === s.sessionId ? (
                       <>
-                        <span style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#c0392b", alignSelf: "center", flex: 1 }}>CONFIRM DELETION — THIS CANNOT BE UNDONE</span>
+                        <span style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#c0392b", alignSelf: "center", flex: 1 }}>CONFIRM DELETION — THIS CANNOT BE UNDONE</span>
                         <button onClick={() => { onDeleteSession(s.sessionId); setConfirmDelete(null); setExpandedId(null); }} style={{
                           background: "rgba(40,0,0,0.8)", border: "1px solid #c0392b", color: "#c0392b",
-                          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+                          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
                           cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2,
                         }}>PURGE</button>
                         <button onClick={() => setConfirmDelete(null)} style={{
                           background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
-                          fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+                          fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
                           cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2,
                         }}>CANCEL</button>
                       </>
                     ) : (
                       <button onClick={() => setConfirmDelete(s.sessionId)} style={{
                         background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80", opacity: 0.7,
-                        fontFamily: "'Courier New', monospace", fontSize: 9, padding: "6px 14px",
+                        fontFamily: "'Courier New', monospace", fontSize: 11, padding: "6px 14px",
                         cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2, marginLeft: "auto",
                       }}>⊘ PURGE SESSION</button>
                     )}
@@ -2705,7 +2988,7 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
         </div>
       )}
 
-      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.65, textAlign: "center", marginTop: 24, lineHeight: 1.8 }}>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.65, textAlign: "center", marginTop: 24, lineHeight: 1.8 }}>
         Sessions are stored locally in this browser. They persist across visits but are not synced to a server.<br />
         Clearing your browser data will erase your archive.
       </div>
