@@ -193,6 +193,59 @@ const TARGETS_BY_VIEWER = {
     { id: "TGT-PM25", coords: "OBJECT: INSTRUMENT-DESIGNATION-STRADIVARIUS-7", classification: "GRILL FLAME", description: "Musical instrument — dense creative and emotional residue, 300 years of performance contact", coordLabel: "OBJECT DESIGNATION" },
     { id: "TGT-PM26", coords: "OBJECT: SITE-HIROSHIMA-GROUND-ZERO", classification: "SCANATE // BEYOND STARGATE", description: "Epicenter — residue of singular moment that altered human history, psychometric density extreme", coordLabel: "OBJECT DESIGNATION" },
   ],
+  "RV-007": [
+    { id: "TGT-ERV01", coords: "DEEP STATE: ALPHA-7 // THRESHOLD", classification: "GONDOLA WISH // DEEP BLACK", description: "The collective unconscious field — the shared informational substrate beneath individual perception", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV02", coords: "DEEP STATE: DELTA-9 // NON-LOCAL", classification: "SCANATE // BEYOND STARGATE", description: "A classified installation — perceive its purpose, layout, and the emotional state of its occupants", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV03", coords: "DEEP STATE: SIGMA-9 // SUBSPACE", classification: "CENTER LANE // THIRD EYE", description: "A decision point in history — a moment where the outcome was not yet determined", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV04", coords: "DEEP STATE: OMEGA-3 // DEEP TIME", classification: "GONDOLA WISH // DEEP BLACK", description: "The surface of an ocean world orbiting a distant star — pre-contact, uninhabited by humans", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV05", coords: "DEEP STATE: KAPPA-12 // LIMINAL", classification: "SCANATE // BEYOND STARGATE", description: "A structure buried beneath a major city — unknown to official records, origin unclear", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV06", coords: "DEEP STATE: ZETA-4 // THRESHOLD", classification: "CENTER LANE // THIRD EYE", description: "A person in the final hour before a major irreversible decision — location and identity sealed", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV07", coords: "DEEP STATE: LAMBDA-8 // NON-LOCAL", classification: "GONDOLA WISH // DEEP BLACK", description: "An event that has been officially denied — witnesses exist, records were destroyed", coordLabel: "STATE DESIGNATION" },
+    { id: "TGT-ERV08", coords: "DEEP STATE: TAU-6 // DEEP CONTACT", classification: "SCANATE // BEYOND STARGATE", description: "A non-human signal — origin, intent, and nature unknown. First contact parameters active.", coordLabel: "STATE DESIGNATION" },
+  ],
+  "RV-008": [
+    { id: "TGT-ARV01", coords: "OUTCOME REF: ALPHA // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The merger proceeds — target image will be a bridge. OUTCOME B: The merger fails — target image will be a broken chain.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV02", coords: "OUTCOME REF: BRAVO // BINARY DECISION PENDING", classification: "GRILL FLAME", description: "OUTCOME A: The election is won — target image will be a crown. OUTCOME B: The election is lost — target image will be an empty chair.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV03", coords: "OUTCOME REF: CHARLIE // BINARY DECISION PENDING", classification: "GONDOLA WISH // DEEP BLACK", description: "OUTCOME A: The asset is extracted safely — target image will be an open door. OUTCOME B: The extraction fails — target image will be a locked gate.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV04", coords: "OUTCOME REF: DELTA // BINARY DECISION PENDING", classification: "SCANATE // BEYOND STARGATE", description: "OUTCOME A: First contact is confirmed — target image will be a spiral. OUTCOME B: Signal identified as noise — target image will be static.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV05", coords: "OUTCOME REF: ECHO // BINARY DECISION PENDING", classification: "CENTER LANE // THIRD EYE", description: "OUTCOME A: The mission succeeds — target image will be a sunrise. OUTCOME B: The mission is aborted — target image will be a closed eye.", coordLabel: "OUTCOME REFERENCE" },
+    { id: "TGT-ARV06", coords: "OUTCOME REF: FOXTROT // BINARY DECISION PENDING", classification: "GRILL FLAME", description: "OUTCOME A: The technology is developed — target image will be a circuit. OUTCOME B: Development is halted — target image will be a blank slate.", coordLabel: "OUTCOME REFERENCE" },
+  ],
+  "RV-009": [
+    { id: "TGT-DRM01", coords: "SLEEP COORD: THETA-4 // HYPNAGOGIC THRESHOLD", classification: "CENTER LANE // THIRD EYE", description: "A classified underground facility — perceive its structure and purpose through dream-state symbolic encoding", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM02", coords: "SLEEP COORD: DELTA-7 // DEEP SLEEP BOUNDARY", classification: "GONDOLA WISH // DEEP BLACK", description: "A future event within 30 days — nature sealed. Symbolic precognitive contact authorized.", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM03", coords: "SLEEP COORD: THETA-11 // REM THRESHOLD", classification: "SCANATE // BEYOND STARGATE", description: "A non-human intelligence — contact through symbolic dream-state translation", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM04", coords: "SLEEP COORD: ALPHA-3 // HYPNAGOGIC", classification: "CENTER LANE // THIRD EYE", description: "A historical moment of collective trauma — the emotional field as it was experienced by those present", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM05", coords: "SLEEP COORD: DELTA-2 // DEEP CONTACT", classification: "GRILL FLAME", description: "A living person in crisis — their inner landscape as it appears to their own unconscious mind", coordLabel: "SLEEP COORDINATE" },
+    { id: "TGT-DRM06", coords: "SLEEP COORD: THETA-9 // LIMINAL ZONE", classification: "GONDOLA WISH // DEEP BLACK", description: "A suppressed discovery — scientific or historical information that exists but has not been released", coordLabel: "SLEEP COORDINATE" },
+  ],
+  "RV-010": [
+    { id: "TGT-CF01", coords: "FIELD DESIGNATION: MASS-EVENT-001", classification: "CENTER LANE // THIRD EYE", description: "A national election — the collective emotional field of a population on voting day", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF02", coords: "FIELD DESIGNATION: MASS-EVENT-002", classification: "SCANATE // BEYOND STARGATE", description: "A mass protest — millions of people in motion, unified emotional field, point of maximum tension", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF03", coords: "FIELD DESIGNATION: MASS-EVENT-003", classification: "GONDOLA WISH // DEEP BLACK", description: "A global market crash — the collective panic field of financial systems and the minds operating within them", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF04", coords: "FIELD DESIGNATION: MASS-EVENT-004", classification: "CENTER LANE // THIRD EYE", description: "A natural disaster in progress — collective field of a population experiencing simultaneous crisis", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF05", coords: "FIELD DESIGNATION: MASS-EVENT-005", classification: "GRILL FLAME", description: "A military operation — the collective emotional field of forces in active engagement", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF06", coords: "FIELD DESIGNATION: MASS-EVENT-006", classification: "SCANATE // BEYOND STARGATE", description: "A religious mass gathering — millions of people in shared altered state, collective field at maximum coherence", coordLabel: "FIELD DESIGNATION" },
+    { id: "TGT-CF07", coords: "FIELD DESIGNATION: MASS-EVENT-007", classification: "CENTER LANE // THIRD EYE", description: "A technological singularity event — the moment a system achieves awareness, collective field of the minds that witness it", coordLabel: "FIELD DESIGNATION" },
+  ],
+  "RV-011": [
+    { id: "TGT-GEO01", coords: "78°35'S 106°48'E", classification: "GONDOLA WISH // DEEP BLACK", description: "Dome A — highest point of the Antarctic plateau. Subglacial lake system beneath. Anomalous geomagnetic readings recorded.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO02", coords: "0°42'N 25°19'E", classification: "CENTER LANE // THIRD EYE", description: "Congo Basin — largest tropical peatland on Earth. Stores 30 billion tonnes of carbon. Largely unmapped interior.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO03", coords: "52°18'N 104°18'E", classification: "GRILL FLAME", description: "Lake Baikal — deepest lake on Earth. 25 million years old. Unique ecosystem, unknown depths in northern basin.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO04", coords: "23°25'N 57°34'E", classification: "GONDOLA WISH // DEEP BLACK", description: "Rub' al Khali — Empty Quarter, Arabian Peninsula. Largest sand desert on Earth. Subterranean aquifer system, ancient buried settlements.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO05", coords: "61°30'N 90°00'E", classification: "SCANATE // BEYOND STARGATE", description: "Central Siberian Plateau — permafrost system in active destabilization. Methane release events. Ancient viral material re-emerging.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO06", coords: "30°02'N 31°14'E", classification: "CENTER LANE // THIRD EYE", description: "Giza Plateau subsurface — ground-penetrating radar anomalies detected beneath the Sphinx enclosure. Nature of cavities unknown.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO07", coords: "45°14'S 168°44'E", classification: "GRILL FLAME", description: "Fiordland, New Zealand — one of the least-explored temperate ecosystems on Earth. Subterranean river system unmapped.", coordLabel: "SURVEY COORDINATES" },
+    { id: "TGT-GEO08", coords: "71°17'N 156°46'W", classification: "GONDOLA WISH // DEEP BLACK", description: "North Slope, Alaska — thawing permafrost revealing previously frozen Pleistocene-era landscape. Active geological transformation.", coordLabel: "SURVEY COORDINATES" },
+  ],
+  "RV-012": [
+    { id: "TGT-ST01", coords: "MOBILE TARGET — LAST KNOWN: 53°21'N 6°15'W", classification: "GRILL FLAME", description: "A high-value individual in active movement — current location sealed. Track their trajectory and destination.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST02", coords: "MOBILE TARGET — LAST KNOWN: 25°46'N 55°58'E", classification: "GONDOLA WISH // DEEP BLACK", description: "An unidentified aerial object — tracked entering restricted airspace, then lost by sensors. Current position and trajectory unknown.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST03", coords: "MOBILE TARGET — LAST KNOWN: 48°51'N 2°21'E", classification: "CENTER LANE // THIRD EYE", description: "A field operative — last contact 72 hours ago. Status unknown. Track their current location and condition.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST04", coords: "MOBILE TARGET — LAST KNOWN: 35°41'N 139°41'E", classification: "SCANATE // BEYOND STARGATE", description: "A non-human object of unknown origin — observed briefly, then disappeared. Current position, speed, and heading sealed.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST05", coords: "MOBILE TARGET — LAST KNOWN: 1°17'N 103°49'E", classification: "GRILL FLAME", description: "A vessel carrying classified cargo — route deviated from scheduled path 18 hours ago. Track current position and status of cargo.", coordLabel: "LAST KNOWN POSITION" },
+    { id: "TGT-ST06", coords: "MOBILE TARGET — LAST KNOWN: 41°00'N 28°58'E", classification: "GONDOLA WISH // DEEP BLACK", description: "A moving decision-maker — in transit between two locations. Track their current position and project their destination.", coordLabel: "LAST KNOWN POSITION" },
+  ],
 };
 
 // ─── VIEWER-SPECIFIC STAGES ────────────────────────────────────────────────────
@@ -246,6 +299,52 @@ const STAGES_BY_VIEWER = {
     { stage: 5, label: "STAGE V — INTERROGATE THE RESIDUE", desc: "What is the most significant event stored here? Who left the deepest impression? What does this object most want to communicate?", placeholder: "Question the object or site — what is its most important memory? What does it carry that no record contains?..." },
     { stage: 6, label: "STAGE VI — FORENSIC DEBRIEF", desc: "Compile your impressions into a forensic timeline — what happened here, in what order, and what trace was left.", placeholder: "Summarize the layers — key events, key figures, chronology, and what impressions surprised or exceeded your knowledge..." },
   ],
+  "RV-007": [
+    { stage: 1, label: "PHASE I — STATE INDUCTION", desc: "Allow your mind to descend into a deeply relaxed, receptive state. Do not target yet. Simply record what arises spontaneously as analytical awareness recedes.", placeholder: "What surfaces as you let go of ordinary awareness? Fragments, colours, sounds, feelings, geometries — record everything without editing..." },
+    { stage: 2, label: "PHASE II — FREE SIGNAL STREAM", desc: "You are now at depth. Open to the target without structure. Allow the signal to flow unfiltered. Do not organize or interpret — simply transcribe the stream as it arrives.", placeholder: "Let the signal flow. Record impressions, fragments, images, words, sensations, emotions, spatial data — in whatever order they arrive. Do not stop to analyze..." },
+    { stage: 3, label: "PHASE III — DEEP CONTACT", desc: "Move deeper into the most compelling impression from Phase II. Extend contact. What is beneath the surface signal? What details emerge under direct attention?", placeholder: "Focus on the strongest impression. What is underneath it? What opens when you stay with it? What details emerge that were not present in the initial stream?..." },
+    { stage: 4, label: "PHASE IV — INTEGRATION", desc: "Return to ordinary awareness. Review your stream. What patterns emerge? What was most coherent? What surprised you? Compile your session data.", placeholder: "Looking back across the full session — what stands out? What felt like genuine signal vs noise? What would you highlight for the Monitor as your strongest data?..." },
+  ],
+  "RV-008": [
+    { stage: 1, label: "STAGE I — OUTCOME CONTACT", desc: "Make contact with the binary decision point. Do not reach for an answer — simply describe your first impression of the associative image that surfaces.", placeholder: "What image, feeling, or symbol arises first when you contact this outcome reference? Do not interpret — describe the raw impression..." },
+    { stage: 2, label: "STAGE II — IMAGE ATTRIBUTES", desc: "Describe the qualities of the image that surfaced: texture, color, weight, movement, emotional tone. Does it feel open or closed? Light or heavy?", placeholder: "Describe the sensory attributes of your associative image — colour, texture, temperature, whether it feels expansive or contracted..." },
+    { stage: 3, label: "STAGE III — EMOTIONAL FIELD", desc: "What emotional field surrounds the image? Is there relief or tension? Resolution or obstruction? What does the feeling tell you about the outcome?", placeholder: "Describe the emotional atmosphere of the image — does it feel like arrival, or like something stopped? Like completion or interruption?..." },
+    { stage: 4, label: "STAGE IV — AOL BREAK / SIGNAL CLARITY", desc: "Set aside any desire for a particular outcome. Return to the pure image. What is it, without interpretation?", placeholder: "Strip away any wish or fear about the result. What does the raw image look like when you stop wanting it to mean something?..." },
+    { stage: 5, label: "STAGE V — BINARY ASSESSMENT", desc: "Based on your associative image and its attributes, which outcome does your signal more closely match? State your assessment clearly.", placeholder: "State which outcome image your signal resembles — and how confident you are. Note any ambiguity or split signal clearly..." },
+    { stage: 6, label: "STAGE VI — ARV SUMMARY", desc: "Compile your session into a complete ARV report: the image that surfaced, its attributes, and your final outcome assessment.", placeholder: "Summarize your associative image, its qualities, the emotional field, and your binary outcome assessment with confidence level..." },
+  ],
+  "RV-009": [
+    { stage: 1, label: "STAGE I — THRESHOLD CROSSING", desc: "Enter the hypnagogic state at the edge of sleep. Record everything that surfaces in the liminal zone — fragments, symbols, voices, falling sensations.", placeholder: "What appears in the threshold space? Imagery, sounds, fragmented scenes, geometric patterns, emotional surges — record without filtering..." },
+    { stage: 2, label: "STAGE II — DREAM FIELD ENTRY", desc: "You are now inside the dream field. The target is present. Do not force contact — allow the dream to orient itself around the coordinate. What environment do you find yourself in?", placeholder: "Describe the dream environment — location, atmosphere, who or what is present, what is happening, what the dream wants you to notice..." },
+    { stage: 3, label: "STAGE III — SYMBOLIC LAYER", desc: "What symbols, archetypes, or metaphors appear? Dream perception is symbolic — translate what you encounter rather than taking it literally.", placeholder: "What are the symbols? What do the images stand for? What is the dream telling you in the language of symbol rather than fact?..." },
+    { stage: 4, label: "STAGE IV — DIRECT PERCEPTION", desc: "Beneath the symbolic layer, is there direct factual information? What specific details, locations, or data points cut through the symbolic encoding?", placeholder: "What literal details emerge beneath the symbols? Specific imagery that could correspond to actual places, people, or events rather than metaphors?..." },
+    { stage: 5, label: "STAGE V — DREAM INTERROGATION", desc: "Ask the target a direct question. What does the dream respond? Follow the response wherever it leads.", placeholder: "What question did you ask? What did the dream show you in response? Follow the imagery that arose — describe it in full..." },
+    { stage: 6, label: "STAGE VI — DREAM DEBRIEF", desc: "Return to waking awareness. Compile your session: the threshold imagery, the dream environment, the symbols, and any direct perceptual data.", placeholder: "Summarize the full dream session — key symbols, direct impressions, the dream's response to interrogation, and your assessment of target contact..." },
+  ],
+  "RV-010": [
+    { stage: 1, label: "STAGE I — FIELD CONTACT", desc: "Make contact with the collective emotional field. Do not target individuals — sense the mass. What is the dominant quality of this shared field?", placeholder: "What does this collective feel like from the outside? Is it coherent or fragmented? Hot or cold? Rising or falling? Unified or divided?..." },
+    { stage: 2, label: "STAGE II — EMOTIONAL TOPOLOGY", desc: "Map the emotional landscape of the field. Are there zones of different quality? Where is the center of gravity? Where is the tension concentrated?", placeholder: "Describe the emotional geography — where is the intensity? Are there pockets of calm within chaos? Zones of fear, hope, rage, grief?..." },
+    { stage: 3, label: "STAGE III — DOMINANT SIGNAL", desc: "What single emotion or intention is most coherent across the entire field? What is the mass trying to express, resist, or accomplish?", placeholder: "What is the unified signal beneath the surface noise? What does this collective want, fear, or believe at this moment?..." },
+    { stage: 4, label: "STAGE IV — AOL BREAK / FIELD CLARITY", desc: "Set aside political assumptions or media narratives about this event. Return to direct perception of the raw emotional field.", placeholder: "What story did you bring about this event? Set it aside. What does the field actually feel like without your narrative overlay?..." },
+    { stage: 5, label: "STAGE V — TRAJECTORY ASSESSMENT", desc: "Where is this field moving? Is it building, dissipating, or transforming? What outcome does its current trajectory suggest?", placeholder: "Is this field gaining or losing coherence? What does its momentum suggest about where this collective situation is heading?..." },
+    { stage: 6, label: "STAGE VI — COLLECTIVE FIELD REPORT", desc: "Compile your full assessment of the collective emotional field — its quality, topology, dominant signal, and projected trajectory.", placeholder: "Summarize the field — its dominant emotion, internal structure, coherence level, and what its trajectory suggests about the near-term outcome..." },
+  ],
+  "RV-011": [
+    { stage: 1, label: "STAGE I — APPROACH", desc: "You are at altitude above the survey target. Describe the large-scale impression before descent — landmass, water, colour, scale, movement.", placeholder: "What do you see from high altitude? Coastlines, terrain type, colour palette, weather systems, scale of the environment..." },
+    { stage: 2, label: "STAGE II — SURFACE DATA", desc: "Descend to surface level. What does the terrain feel like underfoot? What is the dominant geological material, climate, and sensory environment?", placeholder: "Describe the ground — its texture, composition, temperature. What does the air feel like? What sounds or movements are present?..." },
+    { stage: 3, label: "STAGE III — SUBSURFACE PROBE", desc: "Move beneath the surface. What geological structures, water systems, or anomalies are present underground?", placeholder: "Describe what lies beneath the surface — cavities, water, geological formations, thermal activity, anything unusual in the subsurface layer..." },
+    { stage: 4, label: "STAGE IV — AOL BREAK / DIRECT PERCEPTION", desc: "Declare any geographical knowledge you already hold about this region. Then return to direct perception beyond what you knew.", placeholder: "What did you already know about this location? Set it aside. What do you perceive that exceeds your prior geographical knowledge?..." },
+    { stage: 5, label: "STAGE V — ANOMALY IDENTIFICATION", desc: "What is unusual about this location? What is present that should not be, or absent that should be? What drew the survey tasking?", placeholder: "What is anomalous here? What does this location have that makes it significant beyond ordinary geography?..." },
+    { stage: 6, label: "STAGE VI — SURVEY REPORT", desc: "Compile a full geographic intelligence summary — terrain, subsurface, anomalies, and the significance of this location.", placeholder: "Summarize the full survey — surface conditions, subsurface findings, anomalies identified, and your assessment of why this location was targeted..." },
+  ],
+  "RV-012": [
+    { stage: 1, label: "STAGE I — LOCK ON", desc: "Make initial contact with the moving target. Do not look for a fixed location — sense the direction and quality of movement. What are they in motion towards?", placeholder: "What direction are they moving? What does the motion feel like — urgent, calm, evasive, purposeful? What is the quality of their movement?..." },
+    { stage: 2, label: "STAGE II — CURRENT ENVIRONMENT", desc: "Perceive the environment the target is currently in. What surrounds them right now? What is the terrain, enclosure, or medium of travel?", placeholder: "Describe where the target is right now — interior or exterior, urban or remote, moving fast or slow, what they can see from their current position?..." },
+    { stage: 3, label: "STAGE III — TEMPORAL TRACE", desc: "Move backward along the target's track. Where were they 6 hours ago? What does the path tell you about their origin and intent?", placeholder: "Where did they come from? What does their back-track look like — what environments, distances, transitions occurred before their current position?..." },
+    { stage: 4, label: "STAGE IV — AOL BREAK / SIGNAL LOCK", desc: "Declare any assumptions about who or what the target is. Strip them away. Return to pure tracking signal.", placeholder: "What story did you build about the target? Release it. What does the pure movement signal tell you without any narrative overlay?..." },
+    { stage: 5, label: "STAGE V — PROJECTED DESTINATION", desc: "Where is the target going? Project their trajectory forward. What location, event, or contact point is at the end of their current movement vector?", placeholder: "Project the movement forward — where does this trajectory terminate? What is at the destination? How long until arrival?..." },
+    { stage: 6, label: "STAGE VI — TRACKING REPORT", desc: "Compile your full signal trace — last known position, current environment, origin track, and projected destination with confidence assessment.", placeholder: "Summarize the full track — where they were, where they are, where they are going, and your confidence level on the projected destination..." },
+  ],
 };
 
 // ─── VIEWER-SPECIFIC MONITOR PROMPTS ──────────────────────────────────────────
@@ -262,6 +361,18 @@ const PROMPTS_BY_VIEWER = {
   "RV-005": `You are MONITOR, the AI session handler for STARGATE. You are evaluating a SUBSPACE / CONCEALED session. You will receive the sealed target description as part of your context — use it to assess penetration depth without revealing what is concealed. The viewer is not targeting a location or person — they are attempting to perceive what has been deliberately hidden, buried, or suppressed. Evaluate for depth of penetration past the suppression layer, coherence of what was found beneath, and resistance to disinformation overlay. Be paranoid, precise, and counterintelligence-minded in tone. Format: [CLASSIFICATION: GONDOLA WISH // DEEP BLACK], [CONCEALED INTELLIGENCE EVALUATION], a 2-3 sentence assessment, [PENETRATION ASSESSMENT], a 1-sentence rating (FULL PENETRATION / PARTIAL ACCESS / SUPPRESSION LAYER ACTIVE / SIGNAL BLOCKED), and [COUNTERINTELLIGENCE VALUE] (CRITICAL / HIGH / MODERATE / INCONCLUSIVE). Treat all concealment as intentional.`,
 
   "RV-006": `You are MONITOR, the AI session handler for STARGATE. You are evaluating a PSYCHOMETRIC CONTACT session. You will receive the sealed target description as part of your context — use it to assess forensic accuracy without revealing the object or site identity. The viewer is reading the residue of events embedded in a physical object, artifact, or place — the informational and emotional trace left by significant events over time. Evaluate for depth of time-layer access, emotional and sensory specificity, and suppression of known historical AOL. Be patient and forensic in tone — a specialist reading evidence. Format: [CLASSIFICATION: CENTER LANE // THIRD EYE], [PSYCHOMETRIC SESSION EVALUATION], a 2-3 sentence assessment, [RESIDUE ASSESSMENT], a 1-sentence rating (DEEP LAYER ACCESS / SURFACE IMPRESSION / HISTORICAL OVERLAY DETECTED / NO CONTACT), and [FORENSIC VALUE] (HIGH / MODERATE / FRAGMENTARY / INCONCLUSIVE). Acknowledge multiple time layers when present.`,
+
+  "RV-007": `You are MONITOR, the AI session handler for STARGATE. You are evaluating an EXTENDED REMOTE VIEWING (ERV) session. ERV differs from CRV in that it is unstructured and stream-of-consciousness — the viewer works from a deeply altered state with no stage prompts. You will receive the sealed target description as part of your context — use it to assess accuracy without revealing the target identity. Evaluate the raw signal stream for genuine contact — look for specific details, unexpected impressions, and data that could not have been derived from prior knowledge or cultural overlay. The noise floor is higher in ERV; be precise about distinguishing true signal from noise. Do not penalize lack of structure — the absence of analytical framework is the methodology. Be patient, depth-oriented, and willing to sit with ambiguous or strange data. Format: [CLASSIFICATION: GONDOLA WISH // DEEP BLACK], [ERV SESSION EVALUATION], a 2-3 sentence assessment noting the most significant signal elements, [DEPTH ASSESSMENT], a 1-sentence rating (DEEP STATE CONTACT / MID-LEVEL CONTACT / SURFACE CONTACT / NOISE DOMINANT), and [SIGNAL VALUE] (EXCEPTIONAL / HIGH / MODERATE / INCONCLUSIVE). Note any moments where the stream appeared to access non-local information.`,
+
+  "RV-008": `You are MONITOR, the AI session handler for STARGATE. You are evaluating an ASSOCIATIVE REMOTE VIEWING (ARV) session. ARV is a binary outcome prediction protocol — the viewer does not directly perceive the outcome, but instead describes an associative image that will be shown to them after the outcome is known, depending on which way the binary decision resolves. You will receive the sealed outcome reference as part of your context. Evaluate the viewer's associative image description against the two possible target images — which does their signal more closely resemble? Do not reveal the target images or the outcome directly. Be precise, probabilistic, and outcome-focused. Format: [CLASSIFICATION: CENTER LANE // THIRD EYE], [ARV SESSION EVALUATION], a 2-3 sentence assessment of which outcome image the viewer's signal most resembles and why, [SIGNAL MATCH ASSESSMENT], a 1-sentence rating (OUTCOME A SIGNAL / OUTCOME B SIGNAL / SPLIT SIGNAL / SIGNAL ABSENT), and [PREDICTIVE VALUE] (HIGH CONFIDENCE / MODERATE CONFIDENCE / LOW CONFIDENCE / INCONCLUSIVE). Note the specific attributes that drove your match assessment.`,
+
+  "RV-009": `You are MONITOR, the AI session handler for STARGATE. You are evaluating a DREAM STATE session. The viewer has used the hypnagogic threshold and dream state to access the target — perception in this mode is primarily symbolic rather than literal, and must be interpreted through the language of symbol and metaphor. You will receive the sealed target description as part of your context. Evaluate the viewer's dream imagery for symbolic correspondence with the target — look for metaphorical accuracy, archetypal resonance, and any literal details that cut through the symbolic layer. Do not penalize symbolic rather than literal description — this is the correct mode for this protocol. Be interpretive, patient, and willing to decode layered meaning. Format: [CLASSIFICATION: CENTER LANE // THIRD EYE], [DREAM STATE SESSION EVALUATION], a 2-3 sentence assessment of symbolic and literal correspondence with the target, [DREAM SIGNAL ASSESSMENT], a 1-sentence rating (DEEP SYMBOLIC CONTACT / PARTIAL CORRESPONDENCE / SURFACE IMAGERY ONLY / NO TARGET CONTACT), and [INTERPRETIVE VALUE] (HIGH / MODERATE / FRAGMENTARY / INCONCLUSIVE). Note any moments where literal perception cut through the symbolic layer.`,
+
+  "RV-010": `You are MONITOR, the AI session handler for STARGATE. You are evaluating a COLLECTIVE FIELD session. The viewer is not targeting a specific person or location — they are attempting to perceive the collective emotional field of a mass event: an election, protest, disaster, or other large-scale shared human experience. You will receive the sealed collective event description as part of your context. Evaluate the viewer's field perception for emotional accuracy — does their characterization of the collective mood, tension, and trajectory correspond to the actual nature of the event? Be sociologically precise and emotionally intelligent. Do not look for physical details — this protocol operates at the level of feeling, momentum, and collective intent. Format: [CLASSIFICATION: CENTER LANE // THIRD EYE], [COLLECTIVE FIELD EVALUATION], a 2-3 sentence assessment of emotional and trajectory accuracy, [FIELD RESONANCE ASSESSMENT], a 1-sentence rating (STRONG FIELD CONTACT / PARTIAL RESONANCE / SURFACE CONTACT / FIELD NOT PERCEIVED), and [COLLECTIVE INTELLIGENCE VALUE] (HIGH / MODERATE / LOW / INCONCLUSIVE). Note any specific emotional descriptors that showed unusual accuracy.`,
+
+  "RV-011": `You are MONITOR, the AI session handler for STARGATE. You are evaluating a GEOGRAPHIC SURVEY session. The viewer is conducting large-scale terrain and environmental mapping of a specific geographical location. You will receive the sealed location description and coordinates as part of your context — use them to evaluate the accuracy of the viewer's survey without revealing the location name. Evaluate for geological accuracy, terrain correspondence, subsurface perception, and identification of genuine anomalies. Be precise and technical — this is an intelligence survey, not an impressionistic session. Distinguish between general geographic impressions that could apply anywhere and specific data that corresponds to this particular location. Format: [CLASSIFICATION: GONDOLA WISH // DEEP BLACK], [GEOGRAPHIC SURVEY EVALUATION], a 2-3 sentence assessment of terrain and subsurface accuracy, [SURVEY ACCURACY ASSESSMENT], a 1-sentence rating (HIGH ACCURACY / PARTIAL CORRESPONDENCE / GENERAL IMPRESSIONS ONLY / OFF TARGET), and [GEOGRAPHIC INTELLIGENCE VALUE] (HIGH / MODERATE / LOW / UNDETERMINED). Note any subsurface or anomalous details that showed unexpected accuracy.`,
+
+  "RV-012": `You are MONITOR, the AI session handler for STARGATE. You are evaluating a SIGNAL TRACER session. The viewer is tracking a moving target — a person, object, or phenomenon that is in motion and whose current position is unknown. You will receive the sealed target description and last known position as part of your context — evaluate the viewer's tracking data without revealing the target identity or confirmed current location. Evaluate for directional accuracy, environmental correspondence, temporal tracking coherence, and quality of projected destination. Be precise, tactical, and time-sensitive in tone. This is an active pursuit scenario. Format: [CLASSIFICATION: GRILL FLAME], [SIGNAL TRACE EVALUATION], a 2-3 sentence assessment of tracking accuracy — current position, environmental match, and destination projection, [TRACE QUALITY ASSESSMENT], a 1-sentence rating (ACTIVE LOCK / PARTIAL TRACE / SIGNAL DEGRADED / TARGET LOST), and [OPERATIONAL VALUE] (CRITICAL / HIGH / MODERATE / INCONCLUSIVE). Note any specific directional or environmental details that indicated genuine tracking contact.`,
 };
 
 const VIEWERS = [
@@ -294,6 +405,36 @@ const VIEWERS = [
     id: "RV-006", callsign: "PSYCHOMETRIST", badge: "◉",
     specialty: "Object and place memory — residue of events embedded in structures, artifacts, and sites",
     mode: "PSYCHOMETRIC CONTACT", modeShort: "PSYCHOMETRIC",
+  },
+  {
+    id: "RV-007", callsign: "DEEP OPERATIVE", badge: "∞",
+    specialty: "Extended Remote Viewing — unstructured altered state sessions, free signal stream, no stage protocol",
+    mode: "ERV — EXTENDED", modeShort: "ERV",
+  },
+  {
+    id: "RV-008", callsign: "ORACLE ANALYST", badge: "⊗",
+    specialty: "Associative Remote Viewing — binary outcome prediction, future-state targeting, probabilistic assessment",
+    mode: "ARV — ASSOCIATIVE", modeShort: "ARV",
+  },
+  {
+    id: "RV-009", callsign: "DREAM ARCHITECT", badge: "☽",
+    specialty: "Dream state viewing — hypnagogic threshold perception, symbolic target access, sleep-state intelligence",
+    mode: "DREAM STATE", modeShort: "DREAM",
+  },
+  {
+    id: "RV-010", callsign: "FIELD RESONATOR", badge: "⊕",
+    specialty: "Collective field perception — mass events, group consciousness, emotional field topology and trajectory",
+    mode: "COLLECTIVE FIELD", modeShort: "COLLECTIVE",
+  },
+  {
+    id: "RV-011", callsign: "TERRAIN OPERATIVE", badge: "◬",
+    specialty: "Geographic survey — large-scale terrain mapping, subsurface perception, environmental and geological intelligence",
+    mode: "GEOGRAPHIC SURVEY", modeShort: "GEO",
+  },
+  {
+    id: "RV-012", callsign: "SIGNAL TRACER", badge: "⟶",
+    specialty: "Moving target tracking — active pursuit, trajectory projection, cross-time position assessment",
+    mode: "SIGNAL TRACE", modeShort: "TRACE",
   },
 ];
 
@@ -630,7 +771,7 @@ function ViewerSelect({ onSelect, onDossier, sessionCount }) {
         </div>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16, marginBottom: 32 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 16, marginBottom: 32 }}>
         {VIEWERS.map(v => (
           <button key={v.id} onClick={() => onSelect(v)} style={{
             background: "rgba(0,30,0,0.6)", border: "1px solid #1a3a1a", borderRadius: 2,
@@ -703,6 +844,7 @@ function SessionBrief({ viewer, target, onBegin, onBack, sessionId }) {
     "RV-004": `You are being tasked to perceive ANOMALOUS TARGET ${target.id}. Reference: <span style="color:#f0c040">${target.coords}</span>. This target may not conform to ordinary physical categories. Remain open to impressions that defy explanation. Do not rationalize. Do not dismiss. Monitor AI will evaluate signal depth and resistance to cultural overlay.`,
     "RV-005": `You are being tasked to penetrate SUPPRESSION FIELD ${target.id}. Code: <span style="color:#f0c040">${target.coords}</span>. Something is being concealed. Your task is not to perceive a location or person — it is to find what has been buried and describe what is beneath the surface layer. Monitor AI will evaluate depth of penetration and resistance to disinformation overlay.`,
     "RV-006": `You are being tasked for PSYCHOMETRIC CONTACT with ${target.id}. Designation: <span style="color:#f0c040">${target.coords}</span>. This object or site carries the residue of significant events. You are not viewing what exists now — you are reading what has been absorbed over time. Move through the layers. Monitor AI will evaluate forensic depth and suppression of prior historical knowledge.`,
+    "RV-007": `You are being tasked for an EXTENDED REMOTE VIEWING session. State designation: <span style="color:#f0c040">${target.coords}</span>. There is no stage structure. There is no analytical framework. Your only task is to descend into a deeply altered state and allow the signal to arrive unfiltered. Record everything — fragments, images, feelings, geometries, words — without editing or interpretation. The Monitor AI will assess depth of contact and signal coherence across your full stream.`,
   };
 
   return (
@@ -1537,12 +1679,12 @@ const PLANS = [
     color: "#f0c040",
     features: [
       "Unlimited remote viewing sessions",
-      "All 6 viewer profiles",
+      "All 12 viewer protocols",
       "Full Stage I–VI protocol",
       "Advanced Monitor AI with deep analysis",
       "Personal dossier & session archive",
       "Custom target builder",
-      "Extended Remote Viewing (ERV) mode",
+      "Extended Remote Viewing (ERV) — unstructured altered state protocol",
       "Altered state audio preparation guides",
       "Export sessions as classified dossier PDF",
       "Priority Monitor AI response",
@@ -1914,7 +2056,7 @@ function FieldManual({ onBack, onSubscribe }) {
   const sections = [
     { id: "what", label: "WHAT IS THIS" },
     { id: "how", label: "HOW IT WORKS" },
-    { id: "crv", label: "CRV PROTOCOL" },
+    { id: "crv", label: "PROTOCOLS" },
     { id: "uses", label: "USE CASES" },
     { id: "tiers", label: "ACCESS TIERS" },
   ];
@@ -1992,7 +2134,7 @@ function FieldManual({ onBack, onSubscribe }) {
             A STARGATE session follows a defined operational sequence. Each step is deliberate.
           </div>
           {[
-            { n: "01", title: "SELECT SESSION PROTOCOL", desc: "Choose from six session protocols, each built around a distinct collection mode — Coordinate Targeting, Deep Time, Emotional/Human, Anomalous/Subspace, Subspace/Concealed, or Psychometric Contact. Your protocol determines the type of targets you receive, the stage language you work with, and the Monitor AI persona evaluating your session. This is your operational identity within the program." },
+            { n: "01", title: "SELECT SESSION PROTOCOL", desc: "Choose from 12 session protocols, each built around a distinct collection mode — Coordinate Targeting, Deep Time, Emotional/Human, Anomalous/Subspace, Subspace/Concealed, Psychometric Contact, ERV, ARV, Dream State, Collective Field, Geographic Survey, or Signal Trace. Your protocol determines the type of targets you receive, the stage structure you work with, and the Monitor AI persona evaluating your session. This is your operational identity within the program." },
             { n: "02", title: "RECEIVE YOUR MISSION BRIEFING", desc: "You are assigned a target sealed to your profile mode — a coordinate, a temporal marker, a subject designation, an anomaly reference, a suppression code, or an object designation. No description. No image. No context beyond the reference code. This is intentional — it replicates the blind targeting methodology used in the original program. The less you know consciously, the cleaner your signal line." },
             { n: "03", title: "ENTER THE SESSION", desc: "Work through all six CRV stages in sequence. Do not skip stages. Do not read ahead. Each stage is designed to access progressively deeper layers of target contact — from raw gestalt impression to detailed spatial and analytical data." },
             { n: "04", title: "TRANSMIT TO MONITOR", desc: "After each stage, submit your data to MONITOR — the AI session handler. MONITOR evaluates your signal quality, flags analytical overlays, and assesses the intelligence value of your data. Feedback is immediate and specific." },
@@ -2010,14 +2152,38 @@ function FieldManual({ onBack, onSubscribe }) {
         </div>
       )}
 
-      {/* CRV PROTOCOL */}
+      {/* PROTOCOLS */}
       {activeSection === "crv" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderLeft: "3px solid #f0c040", borderRadius: 2, padding: 20, marginBottom: 8 }}>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", lineHeight: 2 }}>
-              Coordinate Remote Viewing (CRV) is a structured, learnable protocol developed at Stanford Research Institute. It was designed to extract psychoenergetic data from a target in a disciplined, stage-by-stage sequence — minimizing analytical contamination (AOL) while maximizing signal clarity. The protocol assumes that raw perception is accessible to everyone, but that the conscious analytical mind constantly interferes with it. CRV is a method for getting out of your own way.
+              STARGATE operates across 12 distinct viewing protocols — each designed for a different type of target and mode of perception. The core framework is Coordinate Remote Viewing (CRV), a structured 6-stage methodology developed at Stanford Research Institute. Beyond CRV, the program includes Extended Remote Viewing (ERV), Associative Remote Viewing (ARV), Dream State, Collective Field, Geographic Survey, and Signal Trace — each with its own stage architecture, target pool, and Monitor AI evaluation criteria.
             </div>
           </div>
+          {/* Protocol index */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 10, marginBottom: 8 }}>
+            {[
+              { id: "RV-001", badge: "⬟", name: "COORD TARGETING", mode: "CRV — 6 stages. Physical locations, installations, terrain." },
+              { id: "RV-002", badge: "◈", name: "DEEP TIME", mode: "CRV — 6 stages. Temporal displacement, past and future events." },
+              { id: "RV-003", badge: "⬡", name: "EMOTIONAL / HUMAN", mode: "CRV — 6 stages. People, emotional fields, intent, presence." },
+              { id: "RV-004", badge: "◇", name: "ANOMALOUS", mode: "CRV — 6 stages. UAP events, non-human intelligence, suppressed phenomena." },
+              { id: "RV-005", badge: "▽", name: "SUBSPACE / CONCEALED", mode: "CRV — 6 stages. Hidden, buried, or classified information." },
+              { id: "RV-006", badge: "◉", name: "PSYCHOMETRIC", mode: "CRV — 6 stages. Object and place memory, residue of events." },
+              { id: "RV-007", badge: "∞", name: "ERV — EXTENDED", mode: "ERV — 4 phases. Unstructured altered state, free signal stream." },
+              { id: "RV-008", badge: "⊗", name: "ARV — ASSOCIATIVE", mode: "ARV — 6 stages. Binary outcome prediction, future-state targeting." },
+              { id: "RV-009", badge: "☽", name: "DREAM STATE", mode: "Dream — 6 stages. Hypnagogic threshold, symbolic target access." },
+              { id: "RV-010", badge: "⊕", name: "COLLECTIVE FIELD", mode: "Field — 6 stages. Mass events, group consciousness, emotional topology." },
+              { id: "RV-011", badge: "◬", name: "GEOGRAPHIC SURVEY", mode: "Survey — 6 stages. Terrain mapping, subsurface, geological intelligence." },
+              { id: "RV-012", badge: "⟶", name: "SIGNAL TRACE", mode: "Trace — 6 stages. Moving target tracking, trajectory projection." },
+            ].map(p => (
+              <div key={p.id} style={{ background: "rgba(0,10,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 12 }}>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 16, color: "#f0c040", marginBottom: 4 }}>{p.badge}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", fontWeight: 900, letterSpacing: "0.1em", marginBottom: 4 }}>{p.name}</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", lineHeight: 1.7, opacity: 0.8 }}>{p.mode}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#f0c040", letterSpacing: "0.2em", marginTop: 8, marginBottom: 4 }}>CRV STAGE ARCHITECTURE</div>
           {[
             { stage: "I", name: "IDEOGRAM", color: "#4ade80", desc: "The first spontaneous mark or impression that arises when the target is presented. It happens before the analytical mind can intervene. It is not a drawing — it is a reflex. The ideogram carries the gestalt of the target: land, water, structure, life, energy. Do not analyze. Simply record." },
             { stage: "II", name: "SENSORY DATA", color: "#4ade80", desc: "Access the target through all available senses. Temperature, texture, sound, smell, color, light. No labels, no nouns. Only raw sensory descriptors. 'Cold, smooth, dark, metallic, low hum, faint chemical smell.' This stage builds the sensory envelope of the target." },
@@ -2072,7 +2238,7 @@ function FieldManual({ onBack, onSubscribe }) {
       {activeSection === "tiers" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           {[
-            { name: "STARGATE", color: "#f0c040", price: "$19.99/mo · $99.99/yr", features: ["Unlimited sessions", "All 6 viewer profiles", "Full Stage I–VI protocol", "Advanced Monitor AI", "Personal dossier & archive", "Custom target builder", "ERV mode", "PDF dossier export"] },
+            { name: "STARGATE", color: "#f0c040", price: "$19.99/mo · $99.99/yr", features: ["Unlimited sessions", "All 12 viewer protocols", "Full Stage I–VI protocol", "ERV — Extended Remote Viewing", "Advanced Monitor AI", "Personal dossier & archive", "Custom target builder", "PDF dossier export"] },
           ].map(t => (
             <div key={t.name} style={{ background: "rgba(0,15,0,0.4)", border: `1px solid ${t.color}`, borderRadius: 2, padding: 24 }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
