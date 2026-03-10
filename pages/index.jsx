@@ -715,7 +715,7 @@ function SessionBrief({ viewer, target, onBegin, onBack, sessionId }) {
         }}
           onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
           onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
-        >← CHANGE VIEWER</button>
+        >← CHANGE PROTOCOL</button>
         <ClassifiedStamp text={target.classification} />
         <span style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5 }}>SESSION {sessionId}</span>
       </div>
@@ -1711,18 +1711,19 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
         </div>
 
         {/* Payment method icons */}
-        <div style={{ textAlign: "center", fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.4, marginBottom: 8 }}>
+        <div style={{ textAlign: "center", fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, marginBottom: 12, letterSpacing: "0.2em" }}>
           ACCEPTED PAYMENT CHANNELS
         </div>
-        <div style={{ display: "flex", justifyContent: "center", gap: 12, flexWrap: "wrap", marginBottom: 24 }}>
+        <div style={{ display: "flex", justifyContent: "center", gap: 8, flexWrap: "wrap", marginBottom: 16 }}>
           {["VISA", "MASTERCARD", "AMEX", "APPLE PAY", "GOOGLE PAY"].map(m => (
             <span key={m} style={{
-              fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80",
-              border: "1px solid #1a3a1a", padding: "3px 10px", borderRadius: 2, opacity: 0.5,
+              fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80",
+              border: "1px solid #2a4a2a", padding: "5px 12px", borderRadius: 2,
+              background: "rgba(0,20,0,0.4)",
             }}>{m}</span>
           ))}
         </div>
-        <div style={{ textAlign: "center", fontFamily: "'Courier New', monospace", fontSize: 8, color: "#4ade80", opacity: 0.3, lineHeight: 1.8 }}>
+        <div style={{ textAlign: "center", fontFamily: "'Courier New', monospace", fontSize: 9, color: "#4ade80", opacity: 0.5, lineHeight: 2 }}>
           Payments processed securely via Stripe. Cancel anytime.<br />
           iOS and Android subscribers managed via RevenueCat + native app store billing.
         </div>
