@@ -782,6 +782,38 @@ function BootScreen({ onEnter }) {
   );
 }
 
+function PaymentSuccess({ onBegin }) {
+  return (
+    <div style={{ padding: "80px 24px", maxWidth: 560, margin: "0 auto", textAlign: "center" }}>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 52, color: "#f0c040", marginBottom: 20, animation: "pulseGlow 2s ease-in-out infinite" }}>⬟</div>
+      <div style={{ fontFamily: "Georgia, serif", fontSize: 28, color: "#f0c040", fontWeight: 900, marginBottom: 12 }}>
+        CLEARANCE GRANTED
+      </div>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#c0392b", letterSpacing: "0.25em", marginBottom: 24 }}>
+        [ ACCESS PROVISIONED — ALL PROTOCOLS ACTIVE ]
+      </div>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2.2, marginBottom: 40, opacity: 0.8 }}>
+        Your subscription is confirmed.<br />
+        All 12 remote viewing protocols are now active.<br />
+        Monitor AI is standing by.<br />
+        The signal line is open.
+      </div>
+      <button onClick={onBegin} style={{
+        background: "rgba(0,60,0,0.9)", border: "1px solid #4ade80", color: "#4ade80",
+        fontFamily: "'Courier New', monospace", fontSize: 14, padding: "16px 40px",
+        cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, width: "100%",
+        animation: "pulseGlow 2s ease-in-out infinite",
+      }}
+        onMouseEnter={e => { e.currentTarget.style.background = "rgba(0,80,0,1)"; e.currentTarget.style.animation = "none"; }}
+        onMouseLeave={e => { e.currentTarget.style.background = "rgba(0,60,0,0.9)"; e.currentTarget.style.animation = "pulseGlow 2s ease-in-out infinite"; }}
+      >[ BEGIN REMOTE VIEWING SESSION ]</button>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.35, marginTop: 16, letterSpacing: "0.1em" }}>
+        A receipt has been transmitted to your email.
+      </div>
+    </div>
+  );
+}
+
 function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, onCustomTarget, onDossier, sessionCount, onHome }) {
   const [time, setTime] = useState(new Date());
   const [menuOpen, setMenuOpen] = useState(false);
@@ -1820,6 +1852,8 @@ const PLANS = [
     priceMonthly: 19.99,
     priceAnnual: 8.33,
     annualTotal: 99.99,
+    stripePriceMonthly: "price_1T9pfrGMGwq99PIT3LOF7fdc",
+    stripePriceAnnual: "price_1T9pgFGMGwq99PITLLDR0kIu",
     color: "#f0c040",
     features: [
       "Unlimited remote viewing sessions",
@@ -1862,10 +1896,28 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
   const handlePayment = async () => {
     if (!agreed) return;
     setProcessing(true);
-    // Simulate processing — replace with real Stripe / RevenueCat SDK call
-    await new Promise(r => setTimeout(r, 2200));
-    setProcessing(false);
-    setDone(true);
+    try {
+      const priceId = billing === "annual"
+        ? selectedPlan.stripePriceAnnual
+        : selectedPlan.stripePriceMonthly;
+
+      const res = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ priceId, email: form.email }),
+      });
+
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        console.error("No checkout URL returned:", data);
+        setProcessing(false);
+      }
+    } catch (err) {
+      console.error("Checkout error:", err);
+      setProcessing(false);
+    }
   };
 
   const price = (plan) => billing === "annual" ? plan.priceAnnual : plan.priceMonthly;
@@ -2190,11 +2242,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
             {processing ? "[ PROCESSING TRANSMISSION... ]" : `[ AUTHORIZE $${price(selectedPlan).toFixed(2)}/MO ]`}
           </button>
 
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", opacity: 0.5, textAlign: "center", marginTop: 8, letterSpacing: "0.1em" }}>
-            ⚠ DEMO MODE — STRIPE INTEGRATION COMING SOON
-          </div>
-
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", marginTop: 8, lineHeight: 1.8 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", marginTop: 12, lineHeight: 1.8 }}>
             🔒 Secured by Stripe. Card details never touch our servers.<br />
             Cancel anytime. No hidden fees. Prorated on upgrade.
           </div>
@@ -3082,6 +3130,19 @@ export default function App() {
 
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "instant" });
 
+  // Handle Stripe redirect back to app
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const session = params.get("session");
+    if (session === "success") {
+      setPhase("payment_success");
+      window.history.replaceState({}, "", "/");
+    } else if (session === "cancelled") {
+      setPhase("select");
+      window.history.replaceState({}, "", "/");
+    }
+  }, []);
+
   const goTo = (p) => { setHistory(h => [...h, phase]); setPhase(p); scrollTop(); };
   const goBack = () => {
     setHistory(h => {
@@ -3157,6 +3218,7 @@ export default function App() {
         {phase === "brief" && <SessionBrief viewer={viewer} target={target} onBegin={handleBegin} onBack={goBack} sessionId={sessionId} />}
         {phase === "session" && <SessionView viewer={viewer} target={target} sessionId={sessionId} onComplete={handleComplete} onBack={goBack} />}
         {phase === "report" && <SessionReport session={completedSession} onNewSession={handleNewSession} onSameProtocol={() => { const pool = TARGETS_BY_VIEWER[completedSession.viewer.id] || TARGETS_BY_VIEWER["RV-001"]; setTarget(pool[Math.floor(Math.random() * pool.length)]); setSessionId(generateSessionId()); setCompletedSession(null); setPhase("brief"); scrollTop(); }} />}
+        {phase === "payment_success" && <PaymentSuccess onBegin={() => { setPhase("select"); scrollTop(); }} />}
         {phase === "learn" && <LearnMore onBack={goBack} />}
         {phase === "subscribe" && <SubscriptionScreen onBack={goBack} />}
         {phase === "fieldmanual" && <FieldManual onBack={goBack} onSubscribe={() => goTo("subscribe")} />}
