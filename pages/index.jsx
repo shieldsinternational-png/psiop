@@ -782,7 +782,7 @@ function BootScreen({ onEnter }) {
   );
 }
 
-function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, onCustomTarget, onDossier, sessionCount }) {
+function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, onCustomTarget, onDossier, sessionCount, onHome }) {
   const [time, setTime] = useState(new Date());
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => { const t = setInterval(() => setTime(new Date()), 1000); return () => clearInterval(t); }, []);
@@ -803,8 +803,11 @@ function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, on
       <div style={{ padding: "10px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         {/* LEFT — logo */}
         <div style={{ display: "flex", alignItems: "center", gap: 12, flexShrink: 0 }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 17, fontWeight: 900, color: "#f0c040", letterSpacing: "0.2em" }}>STARGATE</div>
+          <div onClick={onHome} style={{ display: "flex", flexDirection: "column", gap: 4, cursor: "pointer" }}
+            onMouseEnter={e => e.currentTarget.querySelector("div").style.opacity = "0.7"}
+            onMouseLeave={e => e.currentTarget.querySelector("div").style.opacity = "1"}
+          >
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 17, fontWeight: 900, color: "#f0c040", letterSpacing: "0.2em", transition: "opacity 0.15s" }}>STARGATE</div>
             <div style={{ height: 1, background: "linear-gradient(to right, #f0c040, transparent)" }} />
           </div>
           <div style={{ width: 1, height: 20, background: "#1a3a1a" }} />
@@ -1158,7 +1161,7 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
             width: "100%", background: "rgba(0,15,0,0.8)", border: "1px solid #1a3a1a",
             borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
             fontSize: 15, padding: 16, lineHeight: 1.8, resize: "vertical", outline: "none",
-            boxSizing: "border-box",
+            boxSizing: "border-box", minHeight: 160,
           }}
           onFocus={e => e.target.style.borderColor = "#4ade80"}
           onBlur={e => e.target.style.borderColor = "#1a3a1a"}
@@ -1234,7 +1237,7 @@ function SessionView({ viewer, target, sessionId, onComplete, onBack }) {
   );
 }
 
-function SessionReport({ session, onNewSession }) {
+function SessionReport({ session, onNewSession, onSameProtocol }) {
   const [finalEval, setFinalEval] = useState(null);
   const [loading, setLoading] = useState(false);
   const [footerLine] = useState(() => FOOTER_LINES[Math.floor(Math.random() * FOOTER_LINES.length)]);
@@ -1599,13 +1602,28 @@ function SessionReport({ session, onNewSession }) {
         {exporting ? "[ GENERATING DOSSIER PDF... ]" : "[ EXPORT CLASSIFIED DOSSIER PDF ]"}
       </button>
 
-      <button onClick={onNewSession} style={{
-        background: "rgba(0,50,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
-        fontFamily: "'Courier New', monospace", fontSize: 14, padding: "14px 40px",
-        cursor: "pointer", letterSpacing: "0.2em", width: "100%", borderRadius: 2,
-      }}>
-        [ INITIATE NEW MISSION ]
-      </button>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+        <button onClick={onSameProtocol} style={{
+          background: "rgba(0,30,0,0.6)", border: "1px solid #4ade80", color: "#4ade80",
+          fontFamily: "'Courier New', monospace", fontSize: 12, padding: "14px 10px",
+          cursor: "pointer", letterSpacing: "0.15em", width: "100%", borderRadius: 2,
+        }}
+          onMouseEnter={e => e.currentTarget.style.background = "rgba(0,50,0,0.8)"}
+          onMouseLeave={e => e.currentTarget.style.background = "rgba(0,30,0,0.6)"}
+        >
+          [ SAME PROTOCOL<br/>NEW TARGET ]
+        </button>
+        <button onClick={onNewSession} style={{
+          background: "rgba(0,50,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
+          fontFamily: "'Courier New', monospace", fontSize: 12, padding: "14px 10px",
+          cursor: "pointer", letterSpacing: "0.15em", width: "100%", borderRadius: 2,
+        }}
+          onMouseEnter={e => e.currentTarget.style.background = "rgba(0,70,0,0.9)"}
+          onMouseLeave={e => e.currentTarget.style.background = "rgba(0,50,0,0.8)"}
+        >
+          [ SELECT NEW<br/>PROTOCOL ]
+        </button>
+      </div>
     </div>
   );
 }
@@ -1854,23 +1872,31 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
 
   if (done) return (
     <div style={{ padding: "60px 24px", maxWidth: 560, margin: "0 auto", textAlign: "center" }}>
-      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 48, color: "#f0c040", marginBottom: 16 }}>⬟</div>
-      <div style={{ fontFamily: "Georgia, serif", fontSize: 24, color: "#f0c040", fontWeight: 900, marginBottom: 8 }}>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 48, color: "#f0c040", marginBottom: 16, animation: "pulseGlow 2s ease-in-out infinite" }}>⬟</div>
+      <div style={{ fontFamily: "Georgia, serif", fontSize: 26, color: "#f0c040", fontWeight: 900, marginBottom: 10 }}>
         CLEARANCE GRANTED
       </div>
-      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", opacity: 0.7, marginBottom: 8 }}>
-        TIER: {selectedPlan.name}
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#c0392b", letterSpacing: "0.2em", marginBottom: 16 }}>
+        [{selectedPlan.name} ACCESS PROVISIONED]
       </div>
-      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, marginBottom: 32, opacity: 0.6 }}>
-        Welcome, {form.name}. Your access has been provisioned.<br />
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2, marginBottom: 36, opacity: 0.8 }}>
+        Welcome, {form.name}.<br />
+        Your access has been provisioned.<br />
         Confirmation transmitted to {form.email}.<br />
         The signal line is open.
       </div>
       <button onClick={onBack} style={{
-        background: "rgba(0,50,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
-        fontFamily: "'Courier New', monospace", fontSize: 13, padding: "12px 36px",
-        cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, width: "100%",
-      }}>[ ENTER STARGATE ]</button>
+        background: "rgba(0,60,0,0.9)", border: "1px solid #4ade80", color: "#4ade80",
+        fontFamily: "'Courier New', monospace", fontSize: 14, padding: "16px 36px",
+        cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, width: "100%", marginBottom: 12,
+        animation: "pulseGlow 2s ease-in-out infinite",
+      }}
+        onMouseEnter={e => { e.currentTarget.style.background = "rgba(0,80,0,1)"; e.currentTarget.style.animation = "none"; }}
+        onMouseLeave={e => { e.currentTarget.style.background = "rgba(0,60,0,0.9)"; e.currentTarget.style.animation = "pulseGlow 2s ease-in-out infinite"; }}
+      >[ BEGIN REMOTE VIEWING SESSION ]</button>
+      <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.4, letterSpacing: "0.1em" }}>
+        All 12 protocols active. Monitor AI standing by.
+      </div>
     </div>
   );
 
@@ -2164,7 +2190,11 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
             {processing ? "[ PROCESSING TRANSMISSION... ]" : `[ AUTHORIZE $${price(selectedPlan).toFixed(2)}/MO ]`}
           </button>
 
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", marginTop: 12, lineHeight: 1.8 }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#f0c040", opacity: 0.5, textAlign: "center", marginTop: 8, letterSpacing: "0.1em" }}>
+            ⚠ DEMO MODE — STRIPE INTEGRATION COMING SOON
+          </div>
+
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", marginTop: 8, lineHeight: 1.8 }}>
             🔒 Secured by Stripe. Card details never touch our servers.<br />
             Cancel anytime. No hidden fees. Prorated on upgrade.
           </div>
@@ -2296,7 +2326,7 @@ function FieldManual({ onBack, onSubscribe }) {
       {/* Section tabs */}
       <div style={{ display: "flex", gap: 4, marginBottom: 28, borderBottom: "1px solid #1a3a1a", flexWrap: "wrap" }}>
         {sections.map(s => (
-          <button key={s.id} onClick={() => setActiveSection(s.id)} style={{
+          <button key={s.id} onClick={() => { setActiveSection(s.id); setSelectedProtocol(null); }} style={{
             background: activeSection === s.id ? "rgba(0,50,0,0.8)" : "transparent",
             border: "none", borderBottom: activeSection === s.id ? "2px solid #f0c040" : "2px solid transparent",
             color: activeSection === s.id ? "#f0c040" : "#4ade80",
@@ -2904,13 +2934,23 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
       {loaded && sessions.length === 0 && (
         <div style={{
           background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2,
-          padding: 48, textAlign: "center",
+          padding: 56, textAlign: "center",
         }}>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 28, color: "#1a3a1a", marginBottom: 16 }}>◈</div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 13, color: "#4ade80", opacity: 0.9, lineHeight: 1.8 }}>
-            NO SESSIONS ON FILE<br />
-            <span style={{ fontSize: 11, opacity: 0.7 }}>Complete a remote viewing session to begin your archive.</span>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 40, color: "#1a3a1a", marginBottom: 20 }}>◈</div>
+          <div style={{ fontFamily: "Georgia, serif", fontSize: 18, color: "#f0c040", fontWeight: 900, marginBottom: 12 }}>
+            NO SESSIONS ON FILE
           </div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", opacity: 0.7, lineHeight: 2, marginBottom: 28, maxWidth: 400, margin: "0 auto 28px" }}>
+            Your personal dossier is empty. Complete your first remote viewing session to begin building your archive. Every session is stored here — transcript, Monitor evaluations, and final debrief.
+          </div>
+          <button onClick={onBack} style={{
+            background: "rgba(0,50,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
+            fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 32px",
+            cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2,
+          }}
+            onMouseEnter={e => e.currentTarget.style.background = "rgba(0,70,0,0.9)"}
+            onMouseLeave={e => e.currentTarget.style.background = "rgba(0,50,0,0.8)"}
+          >[ BEGIN FIRST SESSION ]</button>
         </div>
       )}
 
@@ -3033,17 +3073,27 @@ function Dossier({ onBack, sessions, loaded, onDeleteSession, onViewSession }) {
 
 export default function App() {
   const [phase, setPhase] = useState("boot");
-  const [prevPhase, setPrevPhase] = useState("select");
+  const [history, setHistory] = useState([]);
   const [viewer, setViewer] = useState(null);
   const [target, setTarget] = useState(null);
   const [sessionId, setSessionId] = useState(null);
   const [completedSession, setCompletedSession] = useState(null);
   const { sessions, loaded, saveSession, deleteSession } = useDossier();
 
-  const goTo = (p) => { setPrevPhase(phase); setPhase(p); };
-  const goBack = () => setPhase(["learn","subscribe","fieldmanual","customtarget","dossier"].includes(prevPhase) ? "select" : prevPhase);
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: "instant" });
 
-  const handleEnter = () => setPhase("select");
+  const goTo = (p) => { setHistory(h => [...h, phase]); setPhase(p); scrollTop(); };
+  const goBack = () => {
+    setHistory(h => {
+      const prev = h[h.length - 1] || "select";
+      setPhase(prev);
+      scrollTop();
+      return h.slice(0, -1);
+    });
+  };
+  const goHome = () => { setHistory([]); setPhase("select"); scrollTop(); };
+
+  const handleEnter = () => { setHistory([]); setPhase("select"); scrollTop(); };
   const handleSelectViewer = (v) => { const pool = TARGETS_BY_VIEWER[v.id] || TARGETS_BY_VIEWER["RV-001"]; setViewer(v); setTarget(pool[Math.floor(Math.random() * pool.length)]); setSessionId(generateSessionId()); setPhase("brief"); };
   const handleBegin = () => { setPhase("session"); };
   const handleComplete = (s) => {
@@ -3088,6 +3138,7 @@ export default function App() {
         @media (max-width: 640px) {
           #desktop-nav { display: none !important; }
           #hamburger { display: block !important; }
+          textarea { min-height: 140px !important; font-size: 16px !important; }
         }
       `}</style>
       <Scanlines /><Noise />
@@ -3100,11 +3151,12 @@ export default function App() {
           onCustomTarget={() => goTo("customtarget")}
           onDossier={() => goTo("dossier")}
           sessionCount={sessions.length}
+          onHome={goHome}
         />
         {phase === "select" && <ViewerSelect onSelect={handleSelectViewer} onDossier={() => goTo("dossier")} sessionCount={sessions.length} />}
-        {phase === "brief" && <SessionBrief viewer={viewer} target={target} onBegin={handleBegin} onBack={() => setPhase("select")} sessionId={sessionId} />}
-        {phase === "session" && <SessionView viewer={viewer} target={target} sessionId={sessionId} onComplete={handleComplete} onBack={() => setPhase("brief")} />}
-        {phase === "report" && <SessionReport session={completedSession} onNewSession={handleNewSession} />}
+        {phase === "brief" && <SessionBrief viewer={viewer} target={target} onBegin={handleBegin} onBack={goBack} sessionId={sessionId} />}
+        {phase === "session" && <SessionView viewer={viewer} target={target} sessionId={sessionId} onComplete={handleComplete} onBack={goBack} />}
+        {phase === "report" && <SessionReport session={completedSession} onNewSession={handleNewSession} onSameProtocol={() => { const pool = TARGETS_BY_VIEWER[completedSession.viewer.id] || TARGETS_BY_VIEWER["RV-001"]; setTarget(pool[Math.floor(Math.random() * pool.length)]); setSessionId(generateSessionId()); setCompletedSession(null); setPhase("brief"); scrollTop(); }} />}
         {phase === "learn" && <LearnMore onBack={goBack} />}
         {phase === "subscribe" && <SubscriptionScreen onBack={goBack} />}
         {phase === "fieldmanual" && <FieldManual onBack={goBack} onSubscribe={() => goTo("subscribe")} />}
