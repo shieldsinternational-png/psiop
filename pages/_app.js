@@ -14,7 +14,6 @@ export default function App({ Component, pageProps }) {
           colorTextSecondary: "#4ade80",
           colorInputBackground: "rgba(0,15,0,0.8)",
           colorInputText: "#4ade80",
-          colorInputPlaceholder: "rgba(74,222,128,0.4)",
           borderRadius: "2px",
           fontFamily: "'Courier New', monospace",
         },
@@ -40,12 +39,6 @@ export default function App({ Component, pageProps }) {
             fontFamily: "'Courier New', monospace",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
-          },
-          footerActionLink: {
-            color: "#f0c040",
-          },
-          identityPreviewText: {
-            color: "#4ade80",
           },
           formFieldInput: {
             background: "rgba(0,15,0,0.8)",
@@ -74,28 +67,17 @@ export default function App({ Component, pageProps }) {
           },
           footerActionText: {
             color: "#4ade80",
-            opacity: 0.8,
+            opacity: 1,
           },
-          footerActionText: {
-  color: "#4ade80",
-  opacity: 1,
-},
-footerPages: {
-  color: "#4ade80",
-},
-footer: {
-  color: "#4ade80",
-},
-footerAction: {
-  color: "#4ade80",
-},
-footerActionLink: {
-  color: "#f0c040",
-},
-formFieldInputPlaceholder: {
-  color: "#4ade80",
-  opacity: 0.4,
-},
+          footerActionLink: {
+            color: "#f0c040",
+          },
+          footer: {
+            color: "#4ade80",
+          },
+          identityPreviewText: {
+            color: "#4ade80",
+          },
         },
       }}
     >
