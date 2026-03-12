@@ -71,6 +71,10 @@ export default function App({ Component, pageProps }) {
             border: "1px solid #1a3a1a",
             color: "#4ade80",
           },
+          footerActionText: {
+            color: "#4ade80",
+            opacity: 0.8,
+          },
         },
       }}
     >
