@@ -880,6 +880,22 @@ function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, on
               <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.6, maxWidth: 100, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
                 {user?.emailAddresses?.[0]?.emailAddress?.split("@")[0]?.toUpperCase()}
               </div>
+              {user?.publicMetadata?.subscribed && (
+                <button onClick={async () => {
+                  try {
+                    const res = await fetch("/api/customer-portal", { method: "POST" });
+                    const data = await res.json();
+                    if (data.url) window.location.href = data.url;
+                  } catch (e) { console.error(e); }
+                }} style={{
+                  background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
+                  fontFamily: "'Courier New', monospace", fontSize: 10, padding: "4px 8px",
+                  cursor: "pointer", borderRadius: 2, letterSpacing: "0.1em", whiteSpace: "nowrap",
+                }}
+                  onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
+                  onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
+                >MANAGE</button>
+              )}
               <button onClick={() => signOut()} style={{
                 background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
                 fontFamily: "'Courier New', monospace", fontSize: 10, padding: "4px 8px",
