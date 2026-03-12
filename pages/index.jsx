@@ -1977,8 +1977,8 @@ const PLANS = [
     priceMonthly: 19.99,
     priceAnnual: 8.33,
     annualTotal: 99.99,
-    stripePriceMonthly: "price_1T9pfrGMGwq99PIT3LOF7fdc",
-    stripePriceAnnual: "price_1T9pgFGMGwq99PITLLDR0kIu",
+    stripePriceMonthly: "price_1T9pb4GMGwq99PITyzYZjWz8",
+    stripePriceAnnual: "price_1T9pb4GMGwq99PITVsf6bVxp",
     color: "#f0c040",
     features: [
       "Unlimited remote viewing sessions",
