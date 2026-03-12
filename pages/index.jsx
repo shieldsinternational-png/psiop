@@ -3335,6 +3335,36 @@ export default function App() {
         {phase === "fieldmanual" && <FieldManual onBack={goBack} onSubscribe={() => goTo("subscribe")} />}
         {phase === "customtarget" && <CustomTargetBuilder onBack={goBack} onLaunchSession={handleLaunchCustomSession} userTier="sun_streak" />}
         {phase === "dossier" && <Dossier onBack={goBack} sessions={sessions} loaded={loaded} onDeleteSession={deleteSession} />}
+
+        {/* Global footer */}
+        <div style={{
+          borderTop: "1px solid #1a3a1a", padding: "20px 24px",
+          fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80",
+        }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12, marginBottom: 10, opacity: 0.6 }}>
+            <div style={{ letterSpacing: "0.1em" }}>© {new Date().getFullYear()} ALPHABRIEFING LLC — TEXAS, USA</div>
+            <div style={{ display: "flex", gap: 20 }}>
+              <a href="/terms" style={{ color: "#4ade80", textDecoration: "none", letterSpacing: "0.1em" }}
+                onMouseEnter={e => e.currentTarget.style.opacity = "1"}
+                onMouseLeave={e => e.currentTarget.style.opacity = "0.6"}
+              >TERMS</a>
+              <a href="/privacy" style={{ color: "#4ade80", textDecoration: "none", letterSpacing: "0.1em" }}
+                onMouseEnter={e => e.currentTarget.style.opacity = "1"}
+                onMouseLeave={e => e.currentTarget.style.opacity = "0.6"}
+              >PRIVACY</a>
+            </div>
+          </div>
+          <div style={{
+            borderTop: "1px solid #1a3a1a", paddingTop: 10,
+            display: "flex", alignItems: "center", justifyContent: "center", gap: 8, opacity: 0.5,
+          }}>
+            <span style={{ letterSpacing: "0.1em" }}>SUPPORT & INQUIRIES —</span>
+            <a href="mailto:monitor@psiop.io" style={{ color: "#f0c040", textDecoration: "none", letterSpacing: "0.1em" }}
+              onMouseEnter={e => e.currentTarget.style.opacity = "0.7"}
+              onMouseLeave={e => e.currentTarget.style.opacity = "1"}
+            >MONITOR@PSIOP.IO</a>
+          </div>
+        </div>
       </div>
     </>
   );
