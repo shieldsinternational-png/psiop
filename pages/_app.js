@@ -75,6 +75,22 @@ export default function App({ Component, pageProps }) {
             color: "#4ade80",
             opacity: 0.8,
           },
+          footerActionText: {
+  color: "#4ade80",
+  opacity: 1,
+},
+footerPages: {
+  color: "#4ade80",
+},
+footer: {
+  color: "#4ade80",
+},
+footerAction: {
+  color: "#4ade80",
+},
+footerActionLink: {
+  color: "#f0c040",
+},
         },
       }}
     >
