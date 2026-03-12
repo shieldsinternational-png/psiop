@@ -14,6 +14,7 @@ export default function App({ Component, pageProps }) {
           colorTextSecondary: "#4ade80",
           colorInputBackground: "rgba(0,15,0,0.8)",
           colorInputText: "#4ade80",
+          colorInputPlaceholder: "rgba(74,222,128,0.4)",
           borderRadius: "2px",
           fontFamily: "'Courier New', monospace",
         },
