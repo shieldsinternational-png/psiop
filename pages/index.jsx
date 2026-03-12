@@ -2253,82 +2253,15 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
             </div>
           </div>
 
-          {/* Payment method selector */}
-          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-            {[{ id: "card", label: "CARD" }, { id: "apple", label: " APPLE PAY" }, { id: "google", label: "G  GOOGLE PAY" }].map(m => (
-              <button key={m.id} onClick={() => setPayMethod(m.id)} style={{
-                flex: 1, background: payMethod === m.id ? "rgba(0,50,0,0.8)" : "transparent",
-                border: `1px solid ${payMethod === m.id ? "#4ade80" : "#1a3a1a"}`,
-                color: payMethod === m.id ? "#f0c040" : "#4ade80",
-                fontFamily: "'Courier New', monospace", fontSize: 11, padding: "8px 4px",
-                cursor: "pointer", letterSpacing: "0.1em", borderRadius: 2,
-              }}>{m.label}</button>
+          {/* What you get */}
+          <div style={{ background: "rgba(0,15,0,0.4)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 16, marginBottom: 16 }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.15em", marginBottom: 12 }}>▸ CLEARANCE INCLUDES</div>
+            {selectedPlan?.features?.map((f, i) => (
+              <div key={i} style={{ display: "flex", gap: 8, fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", lineHeight: 1.8, opacity: 0.8 }}>
+                <span style={{ color: "#f0c040", flexShrink: 0 }}>—</span>
+                <span>{f}</span>
+              </div>
             ))}
-          </div>
-
-          <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 24, marginBottom: 16 }}>
-            {payMethod === "card" && (<>
-              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 16 }}>
-                ▸ CARD DETAILS
-              </div>
-              <div style={{ marginBottom: 12 }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 6 }}>CARD NUMBER</div>
-                <input
-                  value={cardForm.number}
-                  onChange={e => {
-                    const v = e.target.value.replace(/\D/g, "").slice(0, 16);
-                    const formatted = v.replace(/(.{4})/g, "$1 ").trim();
-                    setCardForm(f => ({ ...f, number: formatted }));
-                  }}
-                  placeholder="0000 0000 0000 0000"
-                  maxLength={19}
-                  style={{
-                    width: "100%", background: "rgba(0,10,0,0.8)", border: "1px solid #1a3a1a",
-                    borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
-                    fontSize: 14, padding: "10px 14px", outline: "none", boxSizing: "border-box", letterSpacing: "0.1em",
-                  }}
-                  onFocus={e => e.target.style.borderColor = "#4ade80"}
-                  onBlur={e => e.target.style.borderColor = "#1a3a1a"}
-                />
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 10 }}>
-                {[
-                  { key: "expiry", label: "EXPIRY", placeholder: "MM / YY", maxLen: 7 },
-                  { key: "cvc", label: "CVC", placeholder: "•••", maxLen: 4 },
-                  { key: "zip", label: "ZIP / POSTAL", placeholder: "00000", maxLen: 10 },
-                ].map(field => (
-                  <div key={field.key}>
-                    <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 6 }}>{field.label}</div>
-                    <input
-                      value={cardForm[field.key]}
-                      onChange={e => setCardForm(f => ({ ...f, [field.key]: e.target.value }))}
-                      placeholder={field.placeholder}
-                      maxLength={field.maxLen}
-                      style={{
-                        width: "100%", background: "rgba(0,10,0,0.8)", border: "1px solid #1a3a1a",
-                        borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
-                        fontSize: 14, padding: "10px 10px", outline: "none", boxSizing: "border-box",
-                      }}
-                      onFocus={e => e.target.style.borderColor = "#4ade80"}
-                      onBlur={e => e.target.style.borderColor = "#1a3a1a"}
-                    />
-                  </div>
-                ))}
-              </div>
-            </>)}
-
-            {(payMethod === "apple" || payMethod === "google") && (
-              <div style={{ textAlign: "center", padding: "20px 0" }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 28, color: "#4ade80", marginBottom: 12 }}>
-                  {payMethod === "apple" ? "" : "G"}
-                </div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, opacity: 0.7 }}>
-                  {payMethod === "apple" ? "Apple Pay" : "Google Pay"} button will appear here<br />
-                  after Stripe integration is configured.<br />
-                  <span style={{ opacity: 0.5, fontSize: 11 }}>Requires Stripe.js + payment request API</span>
-                </div>
-              </div>
-            )}
           </div>
 
           {/* Terms checkbox */}
@@ -2341,21 +2274,21 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
               {agreed && <span style={{ color: "#4ade80", fontSize: 12 }}>✓</span>}
             </div>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6, lineHeight: 1.6 }}>
-              I agree to the Terms of Service and Privacy Policy. I understand this is a recurring subscription and can cancel anytime from my account settings.
+              I agree to the Terms of Service and Privacy Policy. I understand this is a recurring subscription and can cancel anytime.
             </div>
           </div>
 
           <button
             onClick={handlePayment}
-            disabled={!agreed || processing || (payMethod === "card" && (!cardForm.number || !cardForm.expiry || !cardForm.cvc))}
+            disabled={!agreed || processing}
             style={{
               width: "100%", background: processing ? "rgba(0,30,0,0.6)" : "rgba(0,60,0,0.9)",
-              border: "1px solid #4ade80", color: "#4ade80",
+              border: "1px solid #4ade80", color: !agreed ? "rgba(74,222,128,0.4)" : "#4ade80",
               fontFamily: "'Courier New', monospace", fontSize: 14, padding: "14px",
-              cursor: processing ? "not-allowed" : "pointer", letterSpacing: "0.2em", borderRadius: 2,
-              animation: !processing ? "pulseGlow 2s ease-in-out infinite" : "none",
+              cursor: !agreed || processing ? "not-allowed" : "pointer", letterSpacing: "0.2em", borderRadius: 2,
+              animation: agreed && !processing ? "pulseGlow 2s ease-in-out infinite" : "none",
             }}>
-            {processing ? "[ PROCESSING TRANSMISSION... ]" : `[ AUTHORIZE $${price(selectedPlan).toFixed(2)}/MO ]`}
+            {processing ? "[ REDIRECTING TO SECURE CHECKOUT... ]" : `[ PROCEED TO SECURE CHECKOUT — $${price(selectedPlan).toFixed(2)}/MO ]`}
           </button>
 
           <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", marginTop: 12, lineHeight: 1.8 }}>
