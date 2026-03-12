@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useUser, useClerk } from "@clerk/nextjs";
 
 // ─── CONSTANTS ─────────────────────────────────────────────────────────────────
 
@@ -817,6 +818,8 @@ function PaymentSuccess({ onBegin }) {
 function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, onCustomTarget, onDossier, sessionCount, onHome }) {
   const [time, setTime] = useState(new Date());
   const [menuOpen, setMenuOpen] = useState(false);
+  const { isSignedIn, user } = useUser();
+  const { openSignIn, signOut } = useClerk();
   useEffect(() => { const t = setInterval(() => setTime(new Date()), 1000); return () => clearInterval(t); }, []);
 
   const navBtns = [
@@ -871,6 +874,31 @@ function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, on
             {sessionId && <div style={{ fontSize: 10 }}>SID: {sessionId.slice(-8)}</div>}
             {viewer && <div style={{ fontSize: 10 }}>{viewer.id}</div>}
           </div>
+          {/* Auth button */}
+          {isSignedIn ? (
+            <div style={{ display: "flex", alignItems: "center", gap: 6, marginLeft: 6 }}>
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.6, maxWidth: 100, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                {user?.emailAddresses?.[0]?.emailAddress?.split("@")[0]?.toUpperCase()}
+              </div>
+              <button onClick={() => signOut()} style={{
+                background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
+                fontFamily: "'Courier New', monospace", fontSize: 10, padding: "4px 8px",
+                cursor: "pointer", borderRadius: 2, letterSpacing: "0.1em",
+              }}
+                onMouseEnter={e => e.currentTarget.style.borderColor = "#4ade80"}
+                onMouseLeave={e => e.currentTarget.style.borderColor = "#1a3a1a"}
+              >SIGN OUT</button>
+            </div>
+          ) : (
+            <button onClick={() => openSignIn()} style={{
+              background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
+              fontFamily: "'Courier New', monospace", fontSize: 10, padding: "4px 10px",
+              cursor: "pointer", borderRadius: 2, marginLeft: 6, letterSpacing: "0.1em",
+            }}
+              onMouseEnter={e => e.currentTarget.style.background = "rgba(30,60,0,0.9)"}
+              onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
+            >SIGN IN</button>
+          )}
           {/* Hamburger — mobile only */}
           <button onClick={() => setMenuOpen(m => !m)} style={{
             background: "transparent", border: "1px solid #1a3a1a", color: "#4ade80",
@@ -987,6 +1015,17 @@ function ViewerSelect({ onSelect, onDossier, sessionCount }) {
 }
 
 function SessionBrief({ viewer, target, onBegin, onBack, sessionId }) {
+  const { isSignedIn } = useUser();
+  const { openSignIn } = useClerk();
+  const [showAuthPrompt, setShowAuthPrompt] = useState(false);
+
+  const handleBeginClick = () => {
+    if (isSignedIn) {
+      onBegin();
+    } else {
+      setShowAuthPrompt(true);
+    }
+  };
   const briefingCopy = {
     "RV-001": `You are being tasked to remote view TARGET ${target.id}. The coordinates <span style="color:#f0c040">${target.coords}</span> designate your physical target. Begin with Stage I ideogram. Suppress analytical overlay. Allow spontaneous spatial impressions to surface. Monitor AI will evaluate your session data after each stage.`,
     "RV-002": `You are being tasked to TEMPORALLY DISPLACE to TARGET ${target.id}. The temporal coordinates <span style="color:#f0c040">${target.coords}</span> designate your moment in time. Release all prior historical knowledge. Perceive directly — do not reconstruct from memory. Monitor AI will evaluate for temporal coherence and AOL suppression.`,
@@ -1068,13 +1107,54 @@ function SessionBrief({ viewer, target, onBegin, onBack, sessionId }) {
         </div>
       </div>
 
-      <button onClick={onBegin} style={{
-        background: "rgba(0,60,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
-        fontFamily: "'Courier New', monospace", fontSize: 14, padding: "14px 40px",
-        cursor: "pointer", letterSpacing: "0.2em", textTransform: "uppercase", width: "100%", borderRadius: 2,
-      }}>
-        [ BEGIN REMOTE VIEWING SESSION ]
-      </button>
+      {showAuthPrompt && !isSignedIn ? (
+        <div style={{
+          background: "rgba(0,10,0,0.95)", border: "1px solid #f0c040", borderRadius: 2,
+          padding: 32, textAlign: "center",
+        }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.25em", marginBottom: 8 }}>
+            ⬟ AUTHENTICATION REQUIRED
+          </div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2, marginBottom: 24, opacity: 0.8 }}>
+            A verified identity is required to access the signal line.<br />
+            Create a free account or sign in to begin your session.
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 16 }}>
+            <button onClick={() => openSignIn()} style={{
+              background: "rgba(0,60,0,0.9)", border: "1px solid #4ade80", color: "#4ade80",
+              fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 10px",
+              cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
+            }}
+              onMouseEnter={e => e.currentTarget.style.background = "rgba(0,80,0,1)"}
+              onMouseLeave={e => e.currentTarget.style.background = "rgba(0,60,0,0.9)"}
+            >[ SIGN IN ]</button>
+            <button onClick={() => openSignIn()} style={{
+              background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
+              fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 10px",
+              cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
+            }}
+              onMouseEnter={e => e.currentTarget.style.background = "rgba(30,60,0,0.9)"}
+              onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
+            >[ CREATE ACCOUNT ]</button>
+          </div>
+          <button onClick={() => setShowAuthPrompt(false)} style={{
+            background: "transparent", border: "none", color: "#4ade80",
+            fontFamily: "'Courier New', monospace", fontSize: 10, opacity: 0.4,
+            cursor: "pointer", letterSpacing: "0.1em",
+          }}>← BACK TO BRIEFING</button>
+        </div>
+      ) : (
+        <button onClick={handleBeginClick} style={{
+          background: "rgba(0,60,0,0.8)", border: "1px solid #4ade80", color: "#4ade80",
+          fontFamily: "'Courier New', monospace", fontSize: 14, padding: "14px 40px",
+          cursor: "pointer", letterSpacing: "0.2em", textTransform: "uppercase", width: "100%", borderRadius: 2,
+        }}
+          onMouseEnter={e => e.currentTarget.style.background = "rgba(0,80,0,0.9)"}
+          onMouseLeave={e => e.currentTarget.style.background = "rgba(0,60,0,0.8)"}
+        >
+          {isSignedIn ? "[ BEGIN REMOTE VIEWING SESSION ]" : "[ AUTHENTICATE TO BEGIN ]"}
+        </button>
+      )}
     </div>
   );
 }
