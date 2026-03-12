@@ -1982,6 +1982,7 @@ const PLANS = [
 ];
 
 function SubscriptionScreen({ onBack, onSelectPlan }) {
+  const { isSignedIn, user } = useUser();
   const [billing, setBilling] = useState("annual");
   const [step, setStep] = useState("plans"); // plans | signup | payment
   const [selectedPlan, setSelectedPlan] = useState(null);
@@ -1994,7 +1995,13 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
 
   const handlePlanSelect = (plan) => {
     setSelectedPlan(plan);
-    setStep("signup");
+    // Skip signup step if already signed in via Clerk
+    if (isSignedIn && user?.emailAddresses?.[0]?.emailAddress) {
+      setForm(f => ({ ...f, email: user.emailAddresses[0].emailAddress, name: user.firstName || "" }));
+      setStep("payment");
+    } else {
+      setStep("signup");
+    }
   };
 
   const handleSignup = () => {
