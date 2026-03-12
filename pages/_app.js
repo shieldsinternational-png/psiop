@@ -91,6 +91,10 @@ footerAction: {
 footerActionLink: {
   color: "#f0c040",
 },
+formFieldInputPlaceholder: {
+  color: "#4ade80",
+  opacity: 0.4,
+},
         },
       }}
     >
