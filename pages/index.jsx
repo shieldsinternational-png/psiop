@@ -1014,16 +1014,17 @@ function ViewerSelect({ onSelect, onDossier, sessionCount }) {
   );
 }
 
-function SessionBrief({ viewer, target, onBegin, onBack, sessionId }) {
-  const { isSignedIn } = useUser();
+function SessionBrief({ viewer, target, onBegin, onBack, sessionId, onSubscribe }) {
+  const { isSignedIn, user } = useUser();
   const { openSignIn } = useClerk();
   const [showAuthPrompt, setShowAuthPrompt] = useState(false);
+  const isSubscribed = user?.publicMetadata?.subscribed === true;
 
   const handleBeginClick = () => {
-    if (isSignedIn) {
-      onBegin();
-    } else {
+    if (!isSignedIn) {
       setShowAuthPrompt(true);
+    } else {
+      onBegin();
     }
   };
   const briefingCopy = {
@@ -1137,6 +1138,32 @@ function SessionBrief({ viewer, target, onBegin, onBack, sessionId }) {
               onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
             >[ CREATE ACCOUNT ]</button>
           </div>
+          <button onClick={() => setShowAuthPrompt(false)} style={{
+            background: "transparent", border: "none", color: "#4ade80",
+            fontFamily: "'Courier New', monospace", fontSize: 10, opacity: 0.4,
+            cursor: "pointer", letterSpacing: "0.1em",
+          }}>← BACK TO BRIEFING</button>
+        </div>
+      ) : isSignedIn && !isSubscribed ? (
+        <div style={{
+          background: "rgba(0,10,0,0.95)", border: "1px solid #f0c040", borderRadius: 2,
+          padding: 32, textAlign: "center",
+        }}>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.25em", marginBottom: 8 }}>
+            ⬟ CLEARANCE REQUIRED
+          </div>
+          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 2, marginBottom: 24, opacity: 0.8 }}>
+            An active STARGATE subscription is required to begin sessions.<br />
+            Upgrade your clearance to access the signal line.
+          </div>
+          <button onClick={onSubscribe} style={{
+            background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
+            fontFamily: "'Courier New', monospace", fontSize: 12, padding: "14px 10px",
+            cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2, width: "100%", marginBottom: 12,
+          }}
+            onMouseEnter={e => e.currentTarget.style.background = "rgba(30,60,0,0.9)"}
+            onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
+          >[ UPGRADE CLEARANCE ]</button>
           <button onClick={() => setShowAuthPrompt(false)} style={{
             background: "transparent", border: "none", color: "#4ade80",
             fontFamily: "'Courier New', monospace", fontSize: 10, opacity: 0.4,
@@ -3295,7 +3322,7 @@ export default function App() {
           onHome={goHome}
         />
         {phase === "select" && <ViewerSelect onSelect={handleSelectViewer} onDossier={() => goTo("dossier")} sessionCount={sessions.length} />}
-        {phase === "brief" && <SessionBrief viewer={viewer} target={target} onBegin={handleBegin} onBack={goBack} sessionId={sessionId} />}
+        {phase === "brief" && <SessionBrief viewer={viewer} target={target} onBegin={handleBegin} onBack={goBack} sessionId={sessionId} onSubscribe={() => goTo("subscribe")} />}
         {phase === "session" && <SessionView viewer={viewer} target={target} sessionId={sessionId} onComplete={handleComplete} onBack={goBack} />}
         {phase === "report" && <SessionReport session={completedSession} onNewSession={handleNewSession} onSameProtocol={() => { const pool = TARGETS_BY_VIEWER[completedSession.viewer.id] || TARGETS_BY_VIEWER["RV-001"]; setTarget(pool[Math.floor(Math.random() * pool.length)]); setSessionId(generateSessionId()); setCompletedSession(null); setPhase("brief"); scrollTop(); }} />}
         {phase === "payment_success" && <PaymentSuccess onBegin={() => { setPhase("select"); scrollTop(); }} />}
