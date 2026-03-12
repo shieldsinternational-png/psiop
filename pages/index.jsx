@@ -1121,22 +1121,24 @@ function SessionBrief({ viewer, target, onBegin, onBack, sessionId, onSubscribe 
             Create a free account or sign in to begin your session.
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 16 }}>
-            <button onClick={() => openSignIn()} style={{
+            <a href="/sign-in" style={{
               background: "rgba(0,60,0,0.9)", border: "1px solid #4ade80", color: "#4ade80",
               fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 10px",
-              cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
+              letterSpacing: "0.15em", borderRadius: 2, display: "block", textAlign: "center",
+              textDecoration: "none", cursor: "pointer",
             }}
               onMouseEnter={e => e.currentTarget.style.background = "rgba(0,80,0,1)"}
               onMouseLeave={e => e.currentTarget.style.background = "rgba(0,60,0,0.9)"}
-            >[ SIGN IN ]</button>
-            <button onClick={() => openSignUp()} style={{
+            >[ SIGN IN ]</a>
+            <a href="/sign-up" style={{
               background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
               fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 10px",
-              cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
+              letterSpacing: "0.15em", borderRadius: 2, display: "block", textAlign: "center",
+              textDecoration: "none", cursor: "pointer",
             }}
               onMouseEnter={e => e.currentTarget.style.background = "rgba(30,60,0,0.9)"}
               onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
-            >[ CREATE ACCOUNT ]</button>
+            >[ CREATE ACCOUNT ]</a>
           </div>
           <button onClick={() => setShowAuthPrompt(false)} style={{
             background: "transparent", border: "none", color: "#4ade80",
@@ -2351,7 +2353,9 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
 
           <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", marginTop: 12, lineHeight: 1.8 }}>
             🔒 Secured by Stripe. Card details never touch our servers.<br />
-            Cancel anytime. No hidden fees. Prorated on upgrade.
+            Cancel anytime. No hidden fees. Prorated on upgrade.<br /><br />
+            <a href="/terms" style={{ color: "#4ade80", opacity: 0.5, textDecoration: "none", marginRight: 16 }}>Terms of Service</a>
+            <a href="/privacy" style={{ color: "#4ade80", opacity: 0.5, textDecoration: "none" }}>Privacy Policy</a>
           </div>
         </div>
       )}
