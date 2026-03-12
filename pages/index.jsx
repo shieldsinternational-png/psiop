@@ -2192,50 +2192,6 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
       </>)}
 
       {/* STEP: SIGNUP */}
-      {step === "signup" && (
-        <div style={{ maxWidth: 480, margin: "0 auto" }}>
-          <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 28, marginBottom: 20 }}>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.2em", marginBottom: 20 }}>
-              ▸ CREATE VIEWER ACCOUNT — {selectedPlan?.name}
-            </div>
-            {["name", "email", "password"].map(field => (
-              <div key={field} style={{ marginBottom: 16 }}>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.5, marginBottom: 6, letterSpacing: "0.15em" }}>
-                  {field === "name" ? "OPERATIVE NAME" : field === "email" ? "CONTACT EMAIL" : "PASSPHRASE"}
-                </div>
-                <input
-                  type={field === "password" ? "password" : field === "email" ? "email" : "text"}
-                  value={form[field]}
-                  onChange={e => setForm(f => ({ ...f, [field]: e.target.value }))}
-                  placeholder={field === "name" ? "Your name" : field === "email" ? "you@example.com" : "Min. 8 characters"}
-                  style={{
-                    width: "100%", background: "rgba(0,10,0,0.8)", border: "1px solid #1a3a1a",
-                    borderRadius: 2, color: "#4ade80", fontFamily: "'Courier New', monospace",
-                    fontSize: 14, padding: "10px 14px", outline: "none", boxSizing: "border-box",
-                  }}
-                  onFocus={e => e.target.style.borderColor = "#4ade80"}
-                  onBlur={e => e.target.style.borderColor = "#1a3a1a"}
-                />
-              </div>
-            ))}
-            <button
-              onClick={handleSignup}
-              disabled={!form.email || !form.name || !form.password}
-              style={{
-                width: "100%", background: "rgba(0,50,0,0.8)", border: "1px solid #4ade80",
-                color: "#4ade80", fontFamily: "'Courier New', monospace", fontSize: 13,
-                padding: "12px", cursor: "pointer", letterSpacing: "0.2em", borderRadius: 2, marginTop: 8,
-              }}>
-              [ CONTINUE TO PAYMENT ]
-            </button>
-          </div>
-          <div style={{ fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, textAlign: "center", lineHeight: 1.8 }}>
-            By continuing you agree to our Terms of Service and Privacy Policy.<br />
-            Your data is never sold. Session content is not used for training without consent.
-          </div>
-        </div>
-      )}
-
       {/* STEP: PAYMENT */}
       {step === "payment" && (
         <div style={{ maxWidth: 480, margin: "0 auto" }}>
