@@ -1016,7 +1016,7 @@ function ViewerSelect({ onSelect, onDossier, sessionCount }) {
 
 function SessionBrief({ viewer, target, onBegin, onBack, sessionId, onSubscribe }) {
   const { isSignedIn, user } = useUser();
-  const { openSignIn } = useClerk();
+  const { openSignIn, openSignUp } = useClerk();
   const [showAuthPrompt, setShowAuthPrompt] = useState(false);
   const isSubscribed = user?.publicMetadata?.subscribed === true;
 
@@ -1129,7 +1129,7 @@ function SessionBrief({ viewer, target, onBegin, onBack, sessionId, onSubscribe 
               onMouseEnter={e => e.currentTarget.style.background = "rgba(0,80,0,1)"}
               onMouseLeave={e => e.currentTarget.style.background = "rgba(0,60,0,0.9)"}
             >[ SIGN IN ]</button>
-            <button onClick={() => openSignIn()} style={{
+            <button onClick={() => openSignUp()} style={{
               background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
               fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 10px",
               cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
