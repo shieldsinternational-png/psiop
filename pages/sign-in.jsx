@@ -33,11 +33,12 @@ export default function SignInPage() {
           routing="path"
           path="/sign-in"
           signUpUrl="/sign-up"
-          fallbackRedirectUrl="/"
+          fallbackRedirectUrl="https://www.psiop.io"
+          forceRedirectUrl="https://www.psiop.io"
         />
 
         <div style={{ textAlign: "center", marginTop: 24, fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80", opacity: 0.3, letterSpacing: "0.15em" }}>
-          STARGATE — RV TRAINING PLATFORM
+          STARGATE — REMOTE VIEWING TRAINING PLATFORM
         </div>
       </div>
     </div>
