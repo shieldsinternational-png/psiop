@@ -9,13 +9,13 @@ const isPublicRoute = createRouteMatcher([
   "/api/stripe-webhook(.*)",
 ]);
 
-export default clerkMiddleware((auth, req) => {
-  // All routes are public — auth is handled at the component level
+export default clerkMiddleware(async (auth, req) => {
+  // Protect nothing — auth is handled at the component level
+  // All routes including API routes are public
 });
 
 export const config = {
   matcher: [
-    "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
-    "/(api|trpc)(.*)",
+    "/((?!_next|api|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
   ],
 };
