@@ -2011,13 +2011,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
 
   const handlePlanSelect = (plan) => {
     setSelectedPlan(plan);
-    // Skip signup step if already signed in via Clerk
-    if (isSignedIn && user?.emailAddresses?.[0]?.emailAddress) {
-      setForm(f => ({ ...f, email: user.emailAddresses[0].emailAddress, name: user.firstName || "" }));
-      setStep("payment");
-    } else {
-      setStep("signup");
-    }
+    setStep("payment");
   };
 
   const handleSignup = () => {
@@ -2209,7 +2203,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
 
       {/* STEP: SIGNUP */}
       {/* STEP: PAYMENT */}
-      {step === "payment" ? (
+      {step === "payment" && (
         <div style={{ maxWidth: 480, margin: "0 auto" }}>
           {/* Order summary */}
           <div style={{ background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 16, marginBottom: 16, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -2270,9 +2264,7 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
             <a href="/privacy" style={{ color: "#4ade80", opacity: 0.5, textDecoration: "none" }}>Privacy Policy</a>
           </div>
         </div>
-      ) : (
-  <div style={{color: "red", fontFamily: "monospace", padding: 20}}>DEBUG — STEP: {step} | PLAN: {JSON.stringify(selectedPlan?.name)}</div>
-)}
+      )}
     </div>
   );
 }
