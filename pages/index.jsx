@@ -830,8 +830,9 @@ function Header({ viewer, sessionId, onLearnMore, onSubscribe, onFieldManual, on
   const { openSignIn, signOut } = useClerk();
   useEffect(() => { const t = setInterval(() => setTime(new Date()), 1000); return () => clearInterval(t); }, []);
 
+  const isSubscribed = user?.publicMetadata?.subscribed === true;
   const navBtns = [
-    { label: "▸ UPGRADE", action: onSubscribe, amber: true },
+    ...(!isSubscribed ? [{ label: "▸ UPGRADE", action: onSubscribe, amber: true }] : []),
     { label: "▸ FIELD MANUAL", action: onFieldManual },
     { label: "▸ CUSTOM TARGET", action: onCustomTarget },
     { label: "▸ EXPAND CLEARANCE", action: onLearnMore },
