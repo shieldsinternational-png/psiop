@@ -48,8 +48,10 @@ export default async function handler(req, res) {
 
         if (email) {
           const users = await client.users.getUserList({ emailAddress: [email] });
+          console.log(`Looking up email: ${email}, found: ${users.data.length} users`);
           if (users.data.length > 0) {
             const user = users.data[0];
+            console.log(`Updating user ${user.id} metadata`);
             await client.users.updateUserMetadata(user.id, {
               publicMetadata: {
                 subscribed: true,
@@ -59,6 +61,8 @@ export default async function handler(req, res) {
               },
             });
             console.log(`Subscription activated for ${email}`);
+          } else {
+            console.log(`No user found for email: ${email}`);
           }
         }
         break;
