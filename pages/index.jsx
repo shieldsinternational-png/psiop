@@ -3269,7 +3269,7 @@ export default function App() {
           fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80",
         }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12, marginBottom: 10, opacity: 0.6 }}>
-            <div style={{ letterSpacing: "0.1em" }}>© {new Date().getFullYear()} ALPHABRIEFING LLC — TEXAS, USA</div>
+            <div style={{ letterSpacing: "0.1em" }}>© {new Date().getFullYear()} ALPHABRIEFING LLC</div>
             <div style={{ display: "flex", gap: 20 }}>
               <a href="/terms" style={{ color: "#4ade80", textDecoration: "none", letterSpacing: "0.1em" }}
                 onMouseEnter={e => e.currentTarget.style.opacity = "1"}
