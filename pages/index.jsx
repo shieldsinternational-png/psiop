@@ -2025,6 +2025,8 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
     setStep("payment");
   };
 
+  const price = (plan) => billing === "annual" ? plan?.priceAnnual : plan?.priceMonthly;
+
   const handlePayment = async () => {
     if (!agreed) return;
     setProcessing(true);
@@ -2051,8 +2053,6 @@ function SubscriptionScreen({ onBack, onSelectPlan }) {
       setProcessing(false);
     }
   };
-
-  const price = (plan) => billing === "annual" ? plan.priceAnnual : plan.priceMonthly;
 
   if (done) return (
     <div style={{ padding: "60px 24px", maxWidth: 560, margin: "0 auto", textAlign: "center" }}>
