@@ -603,7 +603,18 @@ const LEARN_MORE_FIGURES = [
 ];
 
 const LEARN_MORE_RESOURCES = [
-  // BOOKS
+  // ── DECLASSIFIED CIA / DIA / NSA DOCUMENTS ──────────────────────────────────
+  { title: "Analysis and Assessment of Gateway Process", author: "Lt. Col. Wayne M. McDonnell · U.S. Army INSCOM", year: "1983", type: "CIA", ref: "CIA-RDP96-00788R001700210016-5", desc: "The most circulated CIA document on the internet. Army INSCOM's formal analysis of the Monroe Institute's Hemi-Sync altered state technique — its neurological mechanics, theoretical basis, and suitability for remote viewing viewer preparation. Covers OBE, consciousness, transcendental meditation, holographic brain theory, and quantum mechanics. Declassified 2003.", link: "https://archive.org/details/cia-readingroom-document-cia-rdp96-00788r001700210016-5" },
+  { title: "Soviet and Czechoslovakian Parapsychology Research", author: "Defense Intelligence Agency", year: "1975", type: "CIA", ref: "CIA-RDP96-00787R000500420001-2", desc: "The DIA intelligence assessment that directly triggered the U.S. remote viewing program. Comprehensive survey of Soviet and Czech research into ESP, telepathy, psychokinesis, psychotronic generators, out-of-body phenomena, and Kirlian photography. Estimated Soviet spend: 60 million rubles annually. The document that started the Cold War psychic arms race.", link: "https://archive.org/details/CIA-RDP96-00787R000500420001-2" },
+  { title: "Coordinate Remote Viewing Technology 1981–1983", author: "Ingo Swann · SRI International", year: "1983", type: "CIA", ref: "CIA-RDP96-00788R001100520001-3", desc: "Swann's own three-year briefing paper documenting the development of CRV methodology at SRI. Covers the evolution of the coordinate targeting system, the ideogram protocol, and the theoretical model underpinning all six stages. The foundational document that preceded — and directly shaped — the 1986 DIA CRV Manual.", link: "https://archive.org/details/CIA-RDP96-00788R001100520001-3" },
+  { title: "Star Gate Project: Program Overview", author: "Defense Intelligence Agency", year: "1993", type: "CIA", ref: "CIA-RDP96-00789R002800180001-2", desc: "Comprehensive internal program overview covering the full operational history of Stargate — viewer performance statistics, mission tasking examples including counternarcotics operations, the role of the Monroe Institute in viewer preparation, and the program's organizational evolution from GRILL FLAME through CENTER LANE and SUN STREAK.", link: "https://archive.org/details/cia-readingroom-document-cia-rdp96-00789r002800180001-2" },
+  { title: "Controlled Offensive Behavior — USSR", author: "Defense Intelligence Agency", year: "1972", type: "CIA", ref: "CIA-RDP96-00788R001300020001-6", desc: "One of the earliest CIA/DIA assessments of Soviet research into psychoenergetics for offensive applications — mind control, behavior modification at range, and remote influence techniques. The document that set Cold War paranoia about Soviet psychic warfare in motion and justified the initial SCANATE funding. Declassified 2003.", link: "https://archive.org/details/cia-readingroom-document-cia-rdp96-00788r001300020001-6" },
+  { title: "Soviet and East European Parapsychology Research", author: "DIA / NSA", year: "1975", type: "CIA", ref: "NSA-RDP96X00790R000100010041-2", desc: "NSA and DIA joint assessment of parapsychology research programs across the Soviet Union and the full Eastern Bloc. Covers telepathy, psychokinesis, biocommunications, and the Soviet use of the term 'psychoenergetics' as a substitute for parapsychology — indicating a deliberate effort to rebrand the field as engineering rather than pseudoscience.", link: "https://www.cia.gov/readingroom/docs/NSA-RDP96X00790R000100010041-2.pdf" },
+  { title: "Soviet Parapsychology — Brief Bibliography", author: "CIA Special Translation", year: "1976", type: "CIA", ref: "CIA-RDP96-00787R000400010012-6", desc: "CIA translation and annotated bibliography of Soviet scientific literature on parapsychology, telepathy, psychotronics, psychokinesis, Kirlian photography, and bioenergy. References classified Soviet research journals not available in the West. A direct window into what Moscow was publishing internally — and what Langley was tracking.", link: "https://archive.org/details/cia-readingroom-document-cia-rdp96-00787r000400010012-6" },
+  { title: "An Evaluation of the Remote Viewing Program", author: "American Institutes for Research · Utts / Hyman", year: "1995", type: "CIA", ref: "CIA-RDP96-00791R000200180005-5", desc: "The AIR report commissioned by CIA that formally ended the program. Statistician Jessica Utts found the results statistically significant and wrote that the effect was real. Psychologist Ray Hyman disagreed. The program was terminated despite their split findings — making this document the most revealing artifact of institutional ambivalence in the entire archive.", link: "https://archive.org/details/cia-readingroom-document-cia-rdp96-00791r000200180005-5" },
+  { title: "CIA Remote Viewing Declassification Q&A Memo", author: "CIA Office of Research and Development", year: "1995", type: "CIA", ref: "CIA-RDP96-00791R000100030062-7", desc: "Internal CIA memo from June 1995 preparing public affairs staff for media questions ahead of the program's declassification. Written as a candid internal Q&A — includes frank admissions about what was spent, who was involved, and what the CIA actually believed. A rare look at the institutional machinery behind public disclosure.", link: "https://archive.org/details/cia-readingroom-document-cia-rdp96-00791r000100030062-7" },
+
+  // ── BOOKS ───────────────────────────────────────────────────────────────────
   { title: "Mind Reach", author: "Russell Targ & Hal Puthoff", year: "1977", type: "BOOK", desc: "The foundational text from the two SRI physicists who launched the program. Lays out experimental evidence for remote viewing in accessible language. Essential starting point.", link: "https://www.amazon.com/Mind-Reach-Scientists-Psychic-Abilities-Consciousness/dp/1571744142" },
   { title: "Remote Viewers: The Secret History of America's Psychic Spies", author: "Jim Schnabel", year: "1997", type: "BOOK", desc: "The most comprehensive journalistic account of the Stargate program. Schnabel conducted hundreds of interviews with participants. Detailed, sceptical, and essential.", link: "https://www.amazon.com/Remote-Viewers-History-Americas-Psychic/dp/0440614058" },
   { title: "The Men Who Stare at Goats", author: "Jon Ronson", year: "2004", type: "BOOK", desc: "Gonzo investigation into the U.S. Army's First Earth Battalion and psychic soldier programs. Dark, funny, and stranger than fiction. Later adapted into a film.", link: "https://www.amazon.com/Men-Who-Stare-Goats/dp/1439181772" },
@@ -620,7 +631,7 @@ const LEARN_MORE_RESOURCES = [
   { title: "Mind Trek", author: "Joseph McMoneagle", year: "1993", type: "BOOK", desc: "McMoneagle's first book — part memoir, part instructional. Describes his experiences as the program's most decorated viewer and his continued work after declassification.", link: "https://www.amazon.com/Mind-Trek-Joseph-McMoneagle/dp/1937530787" },
   { title: "The Stargate Chronicles", author: "Joseph McMoneagle", year: "2002", type: "BOOK", desc: "McMoneagle's most complete account of his career within the program. Includes discussion of his most significant sessions and the program's operational history.", link: "https://www.amazon.com/Stargate-Chronicles-Joseph-McMoneagle/dp/1571742255" },
 
-  // FILMS & DOCUMENTARIES
+  // ── FILMS & DOCUMENTARIES ───────────────────────────────────────────────────
   { title: "Third Eye Spies", author: "Lance Mungia (dir.)", year: "2019", type: "FILM", desc: "Documentary featuring Russell Targ, Hal Puthoff, Ingo Swann, and CIA officers. Uses declassified documents and firsthand interviews. The definitive film on the program.", link: "https://www.imdb.com/title/tt5112424/" },
   { title: "The Men Who Stare at Goats", author: "Grant Heslov (dir.)", year: "2009", type: "FILM", desc: "George Clooney, Ewan McGregor. Darkly comic dramatisation of Jon Ronson's book. Fictionalises the psychic soldier programs. Not a documentary — but captures the absurdist truth.", link: "https://www.imdb.com/title/tt1234548/" },
   { title: "Phenomena", author: "Netflix", year: "2023", type: "FILM", desc: "Spanish documentary examining government-funded parapsychology research, including remote viewing. Broader than the U.S. program — covers European and Soviet research tracks.", link: "https://www.netflix.com/title/81444229" },
@@ -628,14 +639,11 @@ const LEARN_MORE_RESOURCES = [
   { title: "The Reality of Remote Viewing (Banned TEDx Talk)", author: "Russell Targ", year: "2013", type: "FILM", desc: "Targ's TEDx talk, pulled by TED before broadcast. Presents the statistical case for remote viewing. Has since surpassed 7 million views on YouTube.", link: "https://www.youtube.com/watch?v=hBl0cwyn5GY" },
   { title: "The Real Science of Remote Viewing", author: "Vice", year: "2015", type: "FILM", desc: "Vice documentary short. Interviews former program viewers and researchers. Good accessible entry point for those unfamiliar with the subject.", link: "https://www.youtube.com/watch?v=ZQ_CGXJH3uE" },
 
-  // ARCHIVES & PRIMARY SOURCES
-  { title: "Stargate Project — CIA CREST Archive", author: "CIA / National Archives", year: "1995–2017", type: "ARCHIVE", desc: "12 million pages of declassified documents published online in 2017. Includes raw session transcripts, Monitor evaluations, target packages, and program correspondence.", link: "https://www.cia.gov/readingroom/collection/stargate" },
-  { title: "The Gateway Experience — CIA Analysis", author: "U.S. Army / CIA", year: "1983", type: "ARCHIVE", desc: "Declassified 1983 CIA analysis of the Monroe Institute's Gateway Process altered state program used to prepare program viewers. Available via the CREST archive.", link: "https://www.cia.gov/readingroom/document/cia-rdp96-00788r001700210016-5" },
-  { title: "SCANATE Program Files", author: "CIA", year: "1972–1975", type: "ARCHIVE", desc: "The earliest declassified files from the precursor program to Stargate. Includes the first SRI experiments and early viewer assessments.", link: "https://www.cia.gov/readingroom/collection/stargate" },
-  { title: "Defense Intelligence Agency — Star Gate Program Briefings", author: "DIA", year: "1986–1994", type: "ARCHIVE", desc: "Declassified DIA oversight documents covering the program's operational years. Includes budget records, session statistics, and program justifications.", link: "https://www.cia.gov/readingroom/collection/stargate" },
+  // ── ARCHIVES & PRIMARY SOURCES ──────────────────────────────────────────────
+  { title: "Stargate Project — Full CIA CREST Archive", author: "CIA / National Archives", year: "1995–2017", type: "ARCHIVE", desc: "12 million pages of declassified documents published online in January 2017. Raw session transcripts, Monitor evaluations, target packages, program correspondence, and operational after-action reports spanning 23 years.", link: "https://www.cia.gov/readingroom/collection/stargate" },
+  { title: "Monroe Institute — Gateway Experience", author: "Monroe Institute", year: "1975–present", type: "ARCHIVE", desc: "The binaural beat altered state induction program used to prepare Stargate viewers for deep sessions. The Army INSCOM Gateway Process document above was written specifically to evaluate this technique for operational use.", link: "https://www.monroeinstitute.org/" },
 
-  // ACADEMIC & OFFICIAL REPORTS
-  { title: "An Evaluation of Remote Viewing: Research and Operational Applications", author: "American Institutes for Research", year: "1995", type: "REPORT", desc: "The official termination report commissioned by the CIA. Acknowledges statistically significant laboratory results but recommends program closure on operational grounds.", link: "https://www.cia.gov/readingroom/document/cia-rdp96-00791r000200030002-6" },
+  // ── ACADEMIC PAPERS ─────────────────────────────────────────────────────────
   { title: "A Perceptual Channel for Information Transfer over Kilometer Distances", author: "Russell Targ & Hal Puthoff", year: "1974", type: "PAPER", desc: "The original peer-reviewed paper published in Nature. Describes controlled remote viewing experiments at SRI. One of the most cited anomalous cognition papers in scientific literature.", link: "https://doi.org/10.1038/251602a0" },
   { title: "Remote Viewing of Natural Targets", author: "Edwin C. May et al.", year: "1988", type: "PAPER", desc: "Comprehensive statistical analysis of remote viewing session data from the program's operational years. Published through the Cognitive Sciences Laboratory.", link: "https://www.cia.gov/readingroom/collection/stargate" },
   { title: "Journal of Scientific Exploration — Archive", author: "Society for Scientific Exploration", year: "1987–ongoing", type: "PAPER", desc: "Peer-reviewed journal that has published the majority of academic remote viewing research since 1987. Full archive accessible online.", link: "https://www.scientificexploration.org/journal" },
@@ -1786,6 +1794,7 @@ function SessionReport({ session, onNewSession, onSameProtocol }) {
 }
 
 const TYPE_COLORS = {
+  CIA: "#e05252",
   BOOK: "#f0c040",
   FILM: "#4ade80",
   ARCHIVE: "#c0392b",
@@ -1795,13 +1804,14 @@ const TYPE_COLORS = {
 
 function ResourcesSection() {
   const [filter, setFilter] = useState("ALL");
-  const types = ["ALL", "BOOK", "FILM", "ARCHIVE", "REPORT", "PAPER"];
+  const types = ["ALL", "CIA", "BOOK", "FILM", "ARCHIVE", "PAPER"];
   const filtered = filter === "ALL" ? LEARN_MORE_RESOURCES : LEARN_MORE_RESOURCES.filter(r => r.type === filter);
+  const ciaCount = LEARN_MORE_RESOURCES.filter(r => r.type === "CIA").length;
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
       <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6, lineHeight: 1.8 }}>
-        {LEARN_MORE_RESOURCES.length} entries across books, films, archives, academic papers, and official reports.
+        {LEARN_MORE_RESOURCES.length} entries — including {ciaCount} declassified CIA / DIA / NSA documents, books, films, archives, and academic papers.
       </div>
       {/* Filter bar */}
       <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 4 }}>
@@ -1817,7 +1827,10 @@ function ResourcesSection() {
       </div>
       {filtered.map(r => (
         <div key={r.title} style={{
-          background: "rgba(0,15,0,0.5)", border: "1px solid #1a3a1a", borderRadius: 2, padding: 20,
+          background: "rgba(0,15,0,0.5)",
+          border: `1px solid ${r.type === "CIA" ? "rgba(224,82,82,0.25)" : "#1a3a1a"}`,
+          borderLeft: r.type === "CIA" ? "3px solid rgba(224,82,82,0.5)" : undefined,
+          borderRadius: 2, padding: 20,
           display: "flex", gap: 16, alignItems: "flex-start",
         }}>
           <div style={{
@@ -1829,13 +1842,20 @@ function ResourcesSection() {
             <div style={{ fontFamily: "Georgia, serif", fontSize: 14, color: "#f0c040", fontWeight: 700, marginBottom: 2 }}>{r.title}</div>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#4ade80", opacity: 0.6, marginBottom: 8 }}>{r.author} · {r.year}</div>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8 }}>{r.desc}</div>
+            {r.ref && (
+              <div style={{ fontFamily: "'Courier New', monospace", fontSize: 9, color: "#e05252", opacity: 0.4, marginTop: 10, letterSpacing: "0.05em" }}>
+                REF: {r.ref}
+              </div>
+            )}
             {r.link && (
               <a href={r.link} target="_blank" rel="noopener noreferrer" style={{
                 display: "inline-block", marginTop: 10, fontFamily: "'Courier New', monospace", fontSize: 11,
-                color: "#4ade80", border: "1px solid #1a3a1a", padding: "3px 10px", borderRadius: 2,
+                color: r.type === "CIA" ? "#e05252" : "#4ade80",
+                border: `1px solid ${r.type === "CIA" ? "rgba(224,82,82,0.35)" : "#1a3a1a"}`,
+                padding: "3px 10px", borderRadius: 2,
                 textDecoration: "none", letterSpacing: "0.1em",
               }}>
-                {r.type === "BOOK" ? "↗ VIEW ON AMAZON" : r.type === "FILM" ? "↗ VIEW LISTING" : "↗ ACCESS SOURCE"}
+                {r.type === "CIA" ? "↗ OPEN DOCUMENT — CIA/ARCHIVE" : r.type === "BOOK" ? "↗ VIEW ON AMAZON" : r.type === "FILM" ? "↗ VIEW LISTING" : "↗ ACCESS SOURCE"}
               </a>
             )}
           </div>
