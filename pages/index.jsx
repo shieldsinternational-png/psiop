@@ -2705,7 +2705,7 @@ const TARGET_PRESETS = [
   { label: "Custom — build your own", location: "", time: "", entity: "", objective: "", freeform: "" },
 ];
 
-function CustomTargetBuilder({ onBack, onLaunchSession, userTier = "sun_streak", isSubscribed = false, isSignedIn = false, onSubscribe, onSignIn }) {
+function CustomTargetBuilder({ onBack, onLaunchSession, userTier = "sun_streak", isSubscribed = false, isSignedIn: userIsSignedIn = false, onSubscribe, onSignIn }) {
   const [preset, setPreset] = useState(null);
   const [fields, setFields] = useState({ location: "", time: "", entity: "", objective: "", freeform: "" });
   const [generatedTarget, setGeneratedTarget] = useState(null);
@@ -2897,11 +2897,11 @@ Keep it terse, classified, operational.`;
           <div style={{ background: "rgba(0,10,0,0.8)", border: "1px solid #f0c040", borderRadius: 2, padding: "20px", textAlign: "center" }}>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.25em", marginBottom: 8 }}>⬟ CLEARANCE REQUIRED</div>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, marginBottom: 16, opacity: 0.8 }}>
-              {isSignedIn
+              {userIsSignedIn
                 ? "An active STARGATE subscription is required to generate target packets."
                 : "Sign in or create an account to generate target packets and access the full programme."}
             </div>
-            {isSignedIn ? (
+            {userIsSignedIn ? (
               <button onClick={onSubscribe} style={{
                 background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
                 fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 24px",
@@ -3295,7 +3295,7 @@ export default function App() {
         {phase === "learn" && <LearnMore onBack={goBack} />}
         {phase === "subscribe" && <SubscriptionScreen onBack={goBack} />}
         {phase === "fieldmanual" && <FieldManual onBack={goBack} onSubscribe={() => goTo("subscribe")} />}
-        {phase === "customtarget" && <CustomTargetBuilder onBack={goBack} onLaunchSession={handleLaunchCustomSession} userTier="sun_streak" isSubscribed={isSignedIn && isSubscribed} isSignedIn={!!isSignedIn} onSubscribe={() => goTo("subscribe")} onSignIn={() => goTo("subscribe")} />}
+        {phase === "customtarget" && <CustomTargetBuilder onBack={goBack} onLaunchSession={handleLaunchCustomSession} userTier="sun_streak" isSubscribed={isSignedIn && isSubscribed} isSignedIn={!!isSignedIn} onSubscribe={() => goTo("subscribe")} onSignIn={() => openSignIn()} />}
         {phase === "dossier" && <Dossier onBack={goBack} sessions={sessions} loaded={loaded} onDeleteSession={deleteSession} />}
 
         {/* Global footer */}
