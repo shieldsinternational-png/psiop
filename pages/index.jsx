@@ -2705,7 +2705,7 @@ const TARGET_PRESETS = [
   { label: "Custom — build your own", location: "", time: "", entity: "", objective: "", freeform: "" },
 ];
 
-function CustomTargetBuilder({ onBack, onLaunchSession, userTier = "sun_streak" }) {
+function CustomTargetBuilder({ onBack, onLaunchSession, userTier = "sun_streak", isSubscribed = false, onSubscribe }) {
   const [preset, setPreset] = useState(null);
   const [fields, setFields] = useState({ location: "", time: "", entity: "", objective: "", freeform: "" });
   const [generatedTarget, setGeneratedTarget] = useState(null);
@@ -2881,16 +2881,35 @@ Keep it terse, classified, operational.`;
       </div>
 
       {/* Generate */}
-      <button onClick={generateTarget}
-        disabled={generating || (!fields.location && !fields.freeform)}
-        style={{
-          width: "100%", background: generating ? "rgba(0,30,0,0.5)" : "rgba(0,50,0,0.8)",
-          border: "1px solid #4ade80", color: "#4ade80",
-          fontFamily: "'Courier New', monospace", fontSize: 13, padding: "13px",
-          cursor: generating ? "not-allowed" : "pointer", letterSpacing: "0.2em", borderRadius: 2, marginBottom: 20,
-        }}>
-        {generating ? "[ GENERATING TARGET PACKET... ]" : "[ GENERATE TARGET PACKET ]"}
-      </button>
+      {isSubscribed ? (
+        <button onClick={generateTarget}
+          disabled={generating || (!fields.location && !fields.freeform)}
+          style={{
+            width: "100%", background: generating ? "rgba(0,30,0,0.5)" : "rgba(0,50,0,0.8)",
+            border: "1px solid #4ade80", color: "#4ade80",
+            fontFamily: "'Courier New', monospace", fontSize: 13, padding: "13px",
+            cursor: generating ? "not-allowed" : "pointer", letterSpacing: "0.2em", borderRadius: 2, marginBottom: 20,
+          }}>
+          {generating ? "[ GENERATING TARGET PACKET... ]" : "[ GENERATE TARGET PACKET ]"}
+        </button>
+      ) : (
+        <div style={{ marginBottom: 20 }}>
+          <div style={{ background: "rgba(0,10,0,0.8)", border: "1px solid #f0c040", borderRadius: 2, padding: "20px", textAlign: "center" }}>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.25em", marginBottom: 8 }}>⬟ CLEARANCE REQUIRED</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, marginBottom: 16, opacity: 0.8 }}>
+              An active STARGATE subscription is required to generate target packets.
+            </div>
+            <button onClick={onSubscribe} style={{
+              background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
+              fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 24px",
+              cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
+            }}
+              onMouseEnter={e => e.currentTarget.style.background = "rgba(30,60,0,0.9)"}
+              onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
+            >[ UPGRADE CLEARANCE ]</button>
+          </div>
+        </div>
+      )}
 
       {/* Generated target display */}
       {generatedTarget && !generatedTarget.error && (
@@ -3260,7 +3279,7 @@ export default function App() {
         {phase === "learn" && <LearnMore onBack={goBack} />}
         {phase === "subscribe" && <SubscriptionScreen onBack={goBack} />}
         {phase === "fieldmanual" && <FieldManual onBack={goBack} onSubscribe={() => goTo("subscribe")} />}
-        {phase === "customtarget" && <CustomTargetBuilder onBack={goBack} onLaunchSession={handleLaunchCustomSession} userTier="sun_streak" />}
+        {phase === "customtarget" && <CustomTargetBuilder onBack={goBack} onLaunchSession={handleLaunchCustomSession} userTier="sun_streak" isSubscribed={isSignedIn && isSubscribed} onSubscribe={() => goTo("subscribe")} />}
         {phase === "dossier" && <Dossier onBack={goBack} sessions={sessions} loaded={loaded} onDeleteSession={deleteSession} />}
 
         {/* Global footer */}
@@ -3269,7 +3288,7 @@ export default function App() {
           fontFamily: "'Courier New', monospace", fontSize: 10, color: "#4ade80",
         }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12, marginBottom: 10, opacity: 0.6 }}>
-            <div style={{ letterSpacing: "0.1em" }}>© {new Date().getFullYear()} ALPHABRIEFING LLC</div>
+            <div style={{ letterSpacing: "0.1em" }}>© {new Date().getFullYear()} ALPHABRIEFING LLC — TEXAS, USA</div>
             <div style={{ display: "flex", gap: 20 }}>
               <a href="/terms" style={{ color: "#4ade80", textDecoration: "none", letterSpacing: "0.1em" }}
                 onMouseEnter={e => e.currentTarget.style.opacity = "1"}
