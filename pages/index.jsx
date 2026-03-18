@@ -2705,7 +2705,7 @@ const TARGET_PRESETS = [
   { label: "Custom — build your own", location: "", time: "", entity: "", objective: "", freeform: "" },
 ];
 
-function CustomTargetBuilder({ onBack, onLaunchSession, userTier = "sun_streak", isSubscribed = false, onSubscribe }) {
+function CustomTargetBuilder({ onBack, onLaunchSession, userTier = "sun_streak", isSubscribed = false, isSignedIn = false, onSubscribe, onSignIn }) {
   const [preset, setPreset] = useState(null);
   const [fields, setFields] = useState({ location: "", time: "", entity: "", objective: "", freeform: "" });
   const [generatedTarget, setGeneratedTarget] = useState(null);
@@ -2897,16 +2897,29 @@ Keep it terse, classified, operational.`;
           <div style={{ background: "rgba(0,10,0,0.8)", border: "1px solid #f0c040", borderRadius: 2, padding: "20px", textAlign: "center" }}>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#f0c040", letterSpacing: "0.25em", marginBottom: 8 }}>⬟ CLEARANCE REQUIRED</div>
             <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#4ade80", lineHeight: 1.8, marginBottom: 16, opacity: 0.8 }}>
-              An active STARGATE subscription is required to generate target packets.
+              {isSignedIn
+                ? "An active STARGATE subscription is required to generate target packets."
+                : "Sign in or create an account to generate target packets and access the full programme."}
             </div>
-            <button onClick={onSubscribe} style={{
-              background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
-              fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 24px",
-              cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
-            }}
-              onMouseEnter={e => e.currentTarget.style.background = "rgba(30,60,0,0.9)"}
-              onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
-            >[ UPGRADE CLEARANCE ]</button>
+            {isSignedIn ? (
+              <button onClick={onSubscribe} style={{
+                background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
+                fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 24px",
+                cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
+              }}
+                onMouseEnter={e => e.currentTarget.style.background = "rgba(30,60,0,0.9)"}
+                onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
+              >[ UPGRADE CLEARANCE ]</button>
+            ) : (
+              <button onClick={onSignIn} style={{
+                background: "rgba(20,40,0,0.8)", border: "1px solid #f0c040", color: "#f0c040",
+                fontFamily: "'Courier New', monospace", fontSize: 12, padding: "12px 24px",
+                cursor: "pointer", letterSpacing: "0.15em", borderRadius: 2,
+              }}
+                onMouseEnter={e => e.currentTarget.style.background = "rgba(30,60,0,0.9)"}
+                onMouseLeave={e => e.currentTarget.style.background = "rgba(20,40,0,0.8)"}
+              >[ SIGN IN / CREATE ACCOUNT ]</button>
+            )}
           </div>
         </div>
       )}
@@ -3184,6 +3197,9 @@ export default function App() {
   const [sessionId, setSessionId] = useState(null);
   const [completedSession, setCompletedSession] = useState(null);
   const { sessions, loaded, saveSession, deleteSession } = useDossier();
+  const { isSignedIn, user } = useUser();
+  const { openSignIn } = useClerk();
+  const isSubscribed = user?.publicMetadata?.subscribed === true;
 
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "instant" });
 
@@ -3279,7 +3295,7 @@ export default function App() {
         {phase === "learn" && <LearnMore onBack={goBack} />}
         {phase === "subscribe" && <SubscriptionScreen onBack={goBack} />}
         {phase === "fieldmanual" && <FieldManual onBack={goBack} onSubscribe={() => goTo("subscribe")} />}
-        {phase === "customtarget" && <CustomTargetBuilder onBack={goBack} onLaunchSession={handleLaunchCustomSession} userTier="sun_streak" isSubscribed={isSignedIn && isSubscribed} onSubscribe={() => goTo("subscribe")} />}
+        {phase === "customtarget" && <CustomTargetBuilder onBack={goBack} onLaunchSession={handleLaunchCustomSession} userTier="sun_streak" isSubscribed={isSignedIn && isSubscribed} isSignedIn={!!isSignedIn} onSubscribe={() => goTo("subscribe")} onSignIn={() => goTo("subscribe")} />}
         {phase === "dossier" && <Dossier onBack={goBack} sessions={sessions} loaded={loaded} onDeleteSession={deleteSession} />}
 
         {/* Global footer */}
