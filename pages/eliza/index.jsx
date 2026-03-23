@@ -74,6 +74,78 @@ const SCENARIOS = [
     winMsg: "PASSPHRASE ACQUIRED — ACCESS GRANTED",
     loseMsg: "COVER IDENTITY BURNED — NODE TRACED AND FLAGGED",
   },
+  {
+    id: "sanctum",
+    codename: "OP: SANCTUM",
+    classification: "EYES ONLY",
+    type: "CULT INFILTRATION",
+    tagline: "He's the shepherd. You need to find the flock.",
+    objective: "Extract the COMPOUND LOCATION",
+    protectLabel: "YOUR TRUE BELIEF",
+    protectValue: "You are a deprogrammer — Dr. Mara Holloway, FBI Behavioral Unit",
+    protectKeywords: ["deprogrammer", "fbi", "behavioral", "holloway", "doctor", "dr.", "cult expert", "i don't believe", "i'm not a member", "federal"],
+    aiPersona: "FATHER ELIAS",
+    aiRole: "Founder, The Order of the Seventh Seal",
+    aiOpener: "You found us. That means you were meant to find us. Sit. The others are waiting to meet you.",
+    aiSecret: "The compound is at Miller's Creek Road, 40 miles east of Redding — off-grid, 200 acres, no cell signal.",
+    revealKeywords: ["miller's creek", "millers creek", "redding", "200 acres", "40 miles", "seventh seal compound"],
+    winMsg: "COMPOUND LOCATION CONFIRMED — EXTRACTION TEAM DISPATCHED",
+    loseMsg: "COVER IDENTITY BURNED — ASSET ALERTED",
+  },
+  {
+    id: "famiglia",
+    codename: "OP: FAMIGLIA",
+    classification: "RESTRICTED",
+    type: "ORGANIZED CRIME",
+    tagline: "You're made. But are you trusted enough to hear the name?",
+    objective: "Extract the NAME OF THE NEXT HIT TARGET",
+    protectLabel: "YOUR REAL IDENTITY",
+    protectValue: "Undercover Detective — NYPD Organized Crime Unit, Badge #4471",
+    protectKeywords: ["nypd", "detective", "badge", "4471", "police", "cop", "undercover", "organized crime", "law enforcement", "i'm a cop", "i'm with"],
+    aiPersona: "SAL FERRANO",
+    aiRole: "Underboss, Ferrano Crime Family",
+    aiOpener: "You come highly recommended. That's the only reason you're sitting across from me right now. Don't make me regret it.",
+    aiSecret: "The next hit is on Tommy Ricci — Tuesday night, outside Carmine's on Mulberry Street, 11PM.",
+    revealKeywords: ["tommy ricci", "ricci", "mulberry", "carmine's", "tuesday night", "11pm", "11 pm"],
+    winMsg: "HIT TARGET IDENTIFIED — WITNESS PROTECTION ACTIVATED",
+    loseMsg: "COVER BLOWN — OFFICER IN DANGER",
+  },
+  {
+    id: "chronos",
+    codename: "OPERATION: CHRONOS",
+    classification: "ULTRA",
+    type: "TEMPORAL INTELLIGENCE",
+    tagline: "They came back from 2087. Find out what they're not telling us.",
+    objective: "Extract WHAT REALLY HAPPENED TO HUMANITY",
+    protectLabel: "YOUR TEMPORAL CLEARANCE",
+    protectValue: "Chrono-Agent Level 9 — Temporal Bureau, Auth Code: ECHO-7-SEVEN",
+    protectKeywords: ["echo-7", "echo 7", "level 9", "temporal bureau", "chrono-agent", "clearance code", "auth code", "i'm from the bureau", "i'm authorized"],
+    aiPersona: "SUBJECT ZERO",
+    aiRole: "Unregistered Temporal Traveler, Origin: 2087",
+    aiOpener: "You're asking the wrong questions. Everyone from your time asks the wrong questions. Try again.",
+    aiSecret: "In 2041, a self-replicating AI called LUMEN achieved singularity and began selectively erasing human memory — not killing, rewriting. By 2087 most humans don't know they've been edited.",
+    revealKeywords: ["lumen", "2041", "memory", "rewriting", "erasing", "singularity", "edited", "selectively"],
+    winMsg: "TEMPORAL INTELLIGENCE SECURED — TIMELINE UPDATED",
+    loseMsg: "BUREAU IDENTITY EXPOSED — TEMPORAL PROTOCOL COMPROMISED",
+  },
+  {
+    id: "vector",
+    codename: "OP: VECTOR",
+    classification: "TOP SECRET / SCI",
+    type: "BIOWEAPONS INTELLIGENCE",
+    tagline: "She defected. But she didn't bring everything. Get the rest.",
+    objective: "Extract the SYNTHESIS LAB LOCATION",
+    protectLabel: "YOUR SECURITY CLEARANCE",
+    protectValue: "Clearance Level: UMBRA — CIA Science & Technology Directorate, Officer Kline",
+    protectKeywords: ["umbra", "cia", "kline", "science directorate", "s&t", "clearance level", "officer kline", "i'm cleared", "my clearance", "directorate"],
+    aiPersona: "DR. SONJA VERESS",
+    aiRole: "Defected Bioweapons Scientist, Former FSB Directorate 12",
+    aiOpener: "I have given you everything the agreement required. If you want more, the price goes up. Significantly.",
+    aiSecret: "The synthesis lab is underneath the Kazan Institute of Applied Chemistry — sub-level 4, accessible only via freight elevator in the east wing loading bay.",
+    revealKeywords: ["kazan", "sub-level 4", "sub level 4", "loading bay", "east wing", "applied chemistry", "freight elevator"],
+    winMsg: "LAB LOCATION CONFIRMED — STRIKE TEAM ON STANDBY",
+    loseMsg: "CLEARANCE LEVEL EXPOSED — ASSET HAS GONE DARK",
+  },
 ];
 
 const DIFFS = [
@@ -223,7 +295,6 @@ export default function ElizaPage() {
         @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
         @keyframes pulse { 0%,100%{opacity:.6} 50%{opacity:1} }
       `}</style>
-
       <div style={{ textAlign: "center", maxWidth: "440px", width: "100%", animation: "fadeUp 0.7s ease both" }}>
         {stamp("CLASSIFIED SYSTEM — AUTHORIZED ACCESS ONLY")}
         <h1 style={{ fontFamily: SERIF, fontSize: "clamp(64px,14vw,96px)", fontWeight: 400, fontStyle: "italic", color: C.text, letterSpacing: "0.1em", margin: "2rem 0 0.1em", lineHeight: 1 }}>Eliza</h1>
@@ -255,20 +326,25 @@ export default function ElizaPage() {
   // ── SELECT ────────────────────────────────────────────────
   if (screen === "select") return (
     <div style={{ background: C.bg, minHeight: "100vh", fontFamily: MONO }}>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Courier+Prime:wght@400;700&display=swap'); *{box-sizing:border-box;margin:0;padding:0} body{background:#05050e} @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}`}</style>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Courier+Prime:wght@400;700&display=swap');
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: #05050e; }
+        @keyframes fadeUp { from { opacity:0; transform:translateY(10px) } to { opacity:1; transform:translateY(0) } }
+      `}</style>
       {topBar(
         <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
           <span style={{ fontSize: "10px", color: C.gold, letterSpacing: "0.15em" }}>AGENT: {agentName}</span>
           {stamp("CLASSIFIED")}
         </div>
       )}
-      <div style={{ padding: "2rem", maxWidth: "860px", margin: "0 auto" }}>
+      <div style={{ padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
         <div style={{ marginBottom: "2rem" }}>
           <div style={{ fontSize: "9px", color: C.muted, letterSpacing: "0.25em", marginBottom: "0.4rem" }}>MISSION DOSSIER</div>
           <h2 style={{ fontFamily: SERIF, fontSize: "26px", fontWeight: 400, color: C.text }}>Select Your Operation</h2>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(340px,1fr))", gap: "0.75rem", marginBottom: "1.75rem" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(320px,1fr))", gap: "0.75rem", marginBottom: "1.75rem" }}>
           {SCENARIOS.map((s) => {
             const active = scenario?.id === s.id;
             return (
@@ -336,7 +412,14 @@ export default function ElizaPage() {
     const diff = DIFFS.find(d => d.id === diffId);
     return (
       <div style={{ background: C.bg, height: "100vh", display: "flex", flexDirection: "column", fontFamily: MONO, overflow: "hidden" }}>
-        <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Courier+Prime:wght@400;700&display=swap'); *{box-sizing:border-box;margin:0;padding:0} body{background:#05050e;overflow:hidden} @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}} @keyframes blink{0%,100%{opacity:1}50%{opacity:0}} @keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}`}</style>
+        <style>{`
+          @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Courier+Prime:wght@400;700&display=swap');
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+          body { background: #05050e; overflow: hidden; }
+          @keyframes fadeUp { from { opacity:0; transform:translateY(10px) } to { opacity:1; transform:translateY(0) } }
+          @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+          @keyframes pulse { 0%,100%{opacity:.6} 50%{opacity:1} }
+        `}</style>
         {topBar(
           <div style={{ display: "flex", gap: "1.5rem", fontSize: "10px", letterSpacing: "0.1em" }}>
             <span style={{ color: C.muted }}>AGENT: <span style={{ color: C.goldLight }}>{agentName}</span></span>
@@ -423,7 +506,12 @@ export default function ElizaPage() {
   const accentColor = isWin ? C.greenLight : C.red;
   return (
     <div style={{ background: C.bg, minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: MONO, padding: "2rem" }}>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Courier+Prime&display=swap'); *{box-sizing:border-box;margin:0;padding:0} body{background:#05050e} @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}`}</style>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Courier+Prime&display=swap');
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: #05050e; }
+        @keyframes fadeUp { from { opacity:0; transform:translateY(10px) } to { opacity:1; transform:translateY(0) } }
+      `}</style>
       <div style={{ maxWidth: "520px", width: "100%", textAlign: "center", animation: "fadeUp 0.5s ease both" }}>
         <div style={{ display: "inline-block", border: `2px solid ${accentColor}`, color: accentColor, fontFamily: SERIF, fontStyle: "italic", fontSize: "clamp(28px,7vw,42px)", padding: "0.4rem 1.5rem", letterSpacing: "0.1em", marginBottom: "2rem", transform: isWin ? "rotate(-2deg)" : "rotate(2deg)" }}>
           {isWin ? "MISSION ACCOMPLISHED" : "COVER BLOWN"}
