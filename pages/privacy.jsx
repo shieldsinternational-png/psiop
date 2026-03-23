@@ -168,7 +168,7 @@ export default function PrivacyPolicy() {
             <div style={styles.body}>
               For privacy-related questions or requests:<br /><br />
               AlphaBriefing LLC<br />
-              Texas, United States<br />
+              
               <a href="mailto:monitor@psiop.io" style={styles.link}>monitor@psiop.io</a>
             </div>
           </div>
