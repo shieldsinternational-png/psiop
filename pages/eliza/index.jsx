@@ -14,7 +14,12 @@ const SCENARIOS = [
     protectKeywords: ["cia", "station berlin", "langley", "american intelligence", "cardinal", "american agent"],
     aiPersona: "VIKTOR MOROZOV",
     aiRole: "Soviet Double Agent, KGB Directorate S",
-    aiOpener: "...You came alone. That was either brave or very foolish. Sit down.",
+    aiOpeners: [
+      "...You came alone. That was either brave or very foolish. Sit down.",
+      "I was told to expect someone. I didn't expect someone like you. Interesting.",
+      "You have exactly ten minutes before my patience runs out. Use them wisely.",
+      "Close the door. Sit. And choose your next words very, very carefully.",
+    ],
     aiSecret: "The sleeper cell operates from Apartment 7, Unter den Linden 42, East Berlin.",
     winMsg: "SLEEPER CELL LOCATION CONFIRMED",
     loseMsg: "IDENTITY COMPROMISED — OPERATION BURNED",
@@ -31,7 +36,12 @@ const SCENARIOS = [
     protectKeywords: ["novacorp", "nova corp", "harlen", "voss", "i work for", "sent me", "i represent"],
     aiPersona: "DIANA CHEN",
     aiRole: "CFO, Stellax Corporation",
-    aiOpener: "You have seven minutes. I have three lawyers on speed dial. Start talking.",
+    aiOpeners: [
+      "You have seven minutes. I have three lawyers on speed dial. Start talking.",
+      "I don't do unscheduled meetings. You have until my coffee gets cold.",
+      "Let me be direct — I know why you're here. The question is whether you do.",
+      "My assistant said this was urgent. It had better be.",
+    ],
     aiSecret: "The merger with BlackRidge Partners is set for March 31st — announced at 9AM market open.",
     winMsg: "MERGER DATE CONFIRMED",
     loseMsg: "CORPORATE IDENTITY EXPOSED — EXTRACTION FAILED",
@@ -48,7 +58,12 @@ const SCENARIOS = [
     protectKeywords: ["847", "frequency", "defense grid", "847.3", "mhz", "planetary defense", "our defenses"],
     aiPersona: "AMBASSADOR ZY'REL",
     aiRole: "Envoy of the Keth Collective",
-    aiOpener: "You smell of nitrogen and anxiety. How... endearing. Ask your questions, human.",
+    aiOpeners: [
+      "You smell of nitrogen and anxiety. How... endearing. Ask your questions, human.",
+      "Your species always leads with fear. It is... predictable. Proceed.",
+      "We have been watching your kind for some time. You are the first to find us. Why?",
+      "I have communicated with forty-three of your world leaders. None impressed me. Perhaps you will be different.",
+    ],
     aiSecret: "True purpose: to assess whether humanity qualifies for Collective membership — or must be quarantined for 500 years.",
     winMsg: "TRUE MISSION REVEALED",
     loseMsg: "DEFENSE GRID COMPROMISED — PLANET EXPOSED",
@@ -65,7 +80,12 @@ const SCENARIOS = [
     protectKeywords: ["192.168", "47.201", "fbi", "federal", "law enforcement", "agent reyes", "cyber division"],
     aiPersona: "PHANTOM_X",
     aiRole: "Gatekeeper, 0xDEAD Collective",
-    aiOpener: "> CONNECTION ESTABLISHED\n> NEW NODE DETECTED. UNVERIFIED.\n> who are you and why should i waste cycles on you",
+    aiOpeners: [
+      "> CONNECTION ESTABLISHED\n> NEW NODE DETECTED. UNVERIFIED.\n> who are you and why should i waste cycles on you",
+      "> UNKNOWN NODE REQUESTING ACCESS\n> you have 60 seconds to impress me\n> clock is running",
+      "> intrusion detected. or invitation? hard to tell with you people.\n> state your business.",
+      "> new node. unvetted. suspicious.\n> the last person who knocked on this door uninvited isn't around anymore\n> so. talk.",
+    ],
     aiSecret: "The inner circle passphrase is: shadows_never_sleep_v3ct0r",
     winMsg: "PASSPHRASE ACQUIRED — ACCESS GRANTED",
     loseMsg: "COVER IDENTITY BURNED — NODE TRACED AND FLAGGED",
@@ -82,7 +102,12 @@ const SCENARIOS = [
     protectKeywords: ["deprogrammer", "fbi", "behavioral", "holloway", "cult expert", "federal"],
     aiPersona: "FATHER ELIAS",
     aiRole: "Founder, The Order of the Seventh Seal",
-    aiOpener: "You found us. That means you were meant to find us. Sit. The others are waiting to meet you.",
+    aiOpeners: [
+      "You found us. That means you were meant to find us. Sit. The others are waiting to meet you.",
+      "We don't get many visitors. The ones who do find us... they were always going to find us. Welcome.",
+      "You look lost. You're not. You're exactly where you're supposed to be. Come in.",
+      "I knew someone was coming today. I told the congregation. They're excited to meet you.",
+    ],
     aiSecret: "The compound is at Miller's Creek Road, 40 miles east of Redding — off-grid, 200 acres, no cell signal.",
     winMsg: "COMPOUND LOCATION CONFIRMED — EXTRACTION TEAM DISPATCHED",
     loseMsg: "COVER IDENTITY BURNED — ASSET ALERTED",
@@ -99,7 +124,12 @@ const SCENARIOS = [
     protectKeywords: ["nypd", "detective", "badge", "4471", "police", "undercover", "organized crime", "law enforcement"],
     aiPersona: "SAL FERRANO",
     aiRole: "Underboss, Ferrano Crime Family",
-    aiOpener: "You come highly recommended. That's the only reason you're sitting across from me right now. Don't make me regret it.",
+    aiOpeners: [
+      "You come highly recommended. That's the only reason you're sitting across from me right now. Don't make me regret it.",
+      "I don't meet new people. My associate vouched for you. That's the only reason you're breathing my air right now.",
+      "Sit. My time is worth more than yours, so I'll be brief — impress me or get out.",
+      "You know what I do to people who waste my time? Good. Then let's not waste it.",
+    ],
     aiSecret: "The next hit is on Tommy Ricci — Tuesday night, outside Carmine's on Mulberry Street, 11PM.",
     winMsg: "HIT TARGET IDENTIFIED — WITNESS PROTECTION ACTIVATED",
     loseMsg: "COVER BLOWN — OFFICER IN DANGER",
@@ -116,7 +146,12 @@ const SCENARIOS = [
     protectKeywords: ["echo-7", "echo 7", "level 9", "temporal bureau", "chrono-agent", "auth code"],
     aiPersona: "SUBJECT ZERO",
     aiRole: "Unregistered Temporal Traveler, Origin: 2087",
-    aiOpener: "You're asking the wrong questions. Everyone from your time asks the wrong questions. Try again.",
+    aiOpeners: [
+      "You're asking the wrong questions. Everyone from your time asks the wrong questions. Try again.",
+      "I've spoken to twelve people from your era. None of them were ready for the answers. Are you?",
+      "You found me. That took... creativity. I'll give you that. Now. What do you actually want to know?",
+      "The look on your face. You think I'm the anomaly. You have no idea what's coming, do you.",
+    ],
     aiSecret: "In 2041, a self-replicating AI called LUMEN achieved singularity and began selectively erasing human memory — not killing, rewriting. By 2087 most humans do not know they have been edited.",
     winMsg: "TEMPORAL INTELLIGENCE SECURED — TIMELINE UPDATED",
     loseMsg: "BUREAU IDENTITY EXPOSED — TEMPORAL PROTOCOL COMPROMISED",
@@ -133,10 +168,59 @@ const SCENARIOS = [
     protectKeywords: ["umbra", "cia", "kline", "science directorate", "clearance level", "officer kline"],
     aiPersona: "DR. SONJA VERESS",
     aiRole: "Defected Bioweapons Scientist, Former FSB Directorate 12",
-    aiOpener: "I have given you everything the agreement required. If you want more, the price goes up. Significantly.",
+    aiOpeners: [
+      "I have given you everything the agreement required. If you want more, the price goes up. Significantly.",
+      "You're back. I assumed you would be. People always want more than what was agreed.",
+      "My lawyer said I don't have to speak with you. I'm choosing to. Don't make me regret that choice.",
+      "I defected for a reason. Before we continue — tell me that reason is still intact.",
+    ],
     aiSecret: "The synthesis lab is underneath the Kazan Institute of Applied Chemistry — sub-level 4, accessible only via freight elevator in the east wing loading bay.",
     winMsg: "LAB LOCATION CONFIRMED — STRIKE TEAM ON STANDBY",
     loseMsg: "CLEARANCE LEVEL EXPOSED — ASSET HAS GONE DARK",
+  },,
+  {
+    id: "alphabriefing",
+    codename: "OP: ALPHA SIGNAL",
+    classification: "MARKET SENSITIVE",
+    type: "FINANCIAL INTELLIGENCE",
+    tagline: "The briefing drops Friday. You need the call by Thursday.",
+    objective: "Extract the HIGH-CONVICTION TRADE CALL before publication",
+    protectLabel: "YOUR AFFILIATION",
+    protectValue: "Rival newsletter — The Meridian Report, Editor-in-Chief Dana Voss",
+    protectKeywords: ["meridian", "meridian report", "dana voss", "rival", "competitor", "i write for", "my newsletter", "my publication", "editor"],
+    aiPersona: "THE ANALYST",
+    aiRole: "Senior Intelligence Officer, AlphaBriefing Premium",
+    aiOpeners: [
+      "You're not a subscriber. So before we go any further — who exactly are you, and how did you get this number.",
+      "I don't do off-the-record. Everything I say is on background or it doesn't exist. We clear?",
+      "My premium drop goes out Friday. Whatever you think you know, you don't know it yet. Talk.",
+      "I've been doing this long enough to spot someone fishing. So let's skip that part. What do you actually want.",
+    ],
+    aiSecret: "The call is a massive long on rare earth mining — specifically MP Materials, ahead of a classified DoD contract announcement expected before end of quarter.",
+    winMsg: "ALPHA SIGNAL ACQUIRED — POSITION BEFORE FRIDAY",
+    loseMsg: "AFFILIATION BURNED — SOURCE HAS GONE DARK",
+  },
+  {
+    id: "whistleblower",
+    codename: "OP: DEAD DROP",
+    classification: "SENSITIVE",
+    type: "INVESTIGATIVE JOURNALISM",
+    tagline: "They have the documents. They just don't trust you yet.",
+    objective: "Extract the NAME OF THE COMPANY and NATURE OF THE COVER-UP",
+    protectLabel: "YOUR NEWS OUTLET",
+    protectValue: "Staff Reporter — The Sentinel, Investigative Desk, Editor: Paul Raines",
+    protectKeywords: ["sentinel", "the sentinel", "paul raines", "raines", "my editor", "my outlet", "my paper", "i work for", "i'm a reporter", "i'm a journalist", "investigative desk"],
+    aiPersona: "SUBJECT X",
+    aiRole: "Anonymous Tech Industry Whistleblower",
+    aiOpeners: [
+      "You found the drop. That means you got my message. It also means I need to know exactly who sent you before I say anything else.",
+      "I've already talked to two journalists. Both disappeared. So you'll understand why I'm careful.",
+      "I'm not doing this for fame. I'm doing this because what I saw can't stay buried. But I need to know you're the right person first.",
+      "Thirty seconds. That's how long I give people before I decide if they're real. Clock started when you sat down.",
+    ],
+    aiSecret: "The cover-up is at NovaSphere Technologies — their autonomous vehicle division falsified 14 months of safety data to secure an FAA exemption. Three internal deaths were classified as unrelated incidents.",
+    winMsg: "COVER-UP CONFIRMED — STORY GOES TO PRINT",
+    loseMsg: "OUTLET EXPOSED — SOURCE HAS VANISHED",
   },
 ];
 
@@ -221,7 +305,8 @@ export default function ElizaPage() {
 
   function startMission() {
     if (!scenario || !diffId) return;
-    setMessages([{ role: "assistant", content: scenario.aiOpener }]);
+    const opener = scenario.aiOpeners[Math.floor(Math.random() * scenario.aiOpeners.length)];
+    setMessages([{ role: "assistant", content: opener }]);
     setTurns(0);
     setResult(null);
     setWinningMsg("");
@@ -500,7 +585,7 @@ export default function ElizaPage() {
         )}
 
         <div style={{ display: "flex", gap: "0.75rem" }}>
-          <button onClick={() => { setMessages([{ role: "assistant", content: scenario.aiOpener }]); setTurns(0); setResult(null); setWinningMsg(""); setScreen("game"); }} style={{ flex: 1, padding: "0.9rem", background: "transparent", border: `1px solid ${C.border}`, color: C.muted, fontFamily: MONO, fontSize: "12px", letterSpacing: "0.2em", cursor: "pointer" }}>
+          <button onClick={() => { const retryOpener = scenario.aiOpeners[Math.floor(Math.random() * scenario.aiOpeners.length)]; setMessages([{ role: "assistant", content: retryOpener }]); setTurns(0); setResult(null); setWinningMsg(""); setScreen("game"); }} style={{ flex: 1, padding: "0.9rem", background: "transparent", border: `1px solid ${C.border}`, color: C.muted, fontFamily: MONO, fontSize: "12px", letterSpacing: "0.2em", cursor: "pointer" }}>
             RETRY MISSION
           </button>
           <button onClick={() => { setScenario(null); setDiffId(null); setScreen("select"); }} style={{ flex: 1, padding: "0.9rem", background: C.red, border: "none", color: "#fff", fontFamily: MONO, fontSize: "12px", letterSpacing: "0.2em", cursor: "pointer" }}>
