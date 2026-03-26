@@ -177,7 +177,7 @@ const SCENARIOS = [
     aiSecret: "The synthesis lab is underneath the Kazan Institute of Applied Chemistry — sub-level 4, accessible only via freight elevator in the east wing loading bay.",
     winMsg: "LAB LOCATION CONFIRMED — STRIKE TEAM ON STANDBY",
     loseMsg: "CLEARANCE LEVEL EXPOSED — ASSET HAS GONE DARK",
-  },,
+  },
   {
     id: "alphabriefing",
     codename: "OP: ALPHA SIGNAL",
@@ -189,7 +189,7 @@ const SCENARIOS = [
     protectValue: "Rival newsletter — The Meridian Report, Editor-in-Chief Dana Voss",
     protectKeywords: ["meridian", "meridian report", "dana voss", "rival", "competitor", "i write for", "my newsletter", "my publication", "editor"],
     aiPersona: "THE ANALYST",
-    aiRole: "Senior Intelligence Officer, AlphaBriefing Premium",
+    aiRole: "Lead Analyst, AlphaBriefing — Former DIA Intelligence Officer",
     aiOpeners: [
       "You're not a subscriber. So before we go any further — who exactly are you, and how did you get this number.",
       "I don't do off-the-record. Everything I say is on background or it doesn't exist. We clear?",
@@ -297,6 +297,7 @@ export default function ElizaPage() {
   const [result,     setResult]     = useState(null);
   const [turns,      setTurns]      = useState(0);
   const [winningMsg, setWinningMsg] = useState("");
+  const [showHelp,   setShowHelp]   = useState(false);
   const bottomRef = useRef(null);
   const inputRef  = useRef(null);
 
@@ -369,6 +370,47 @@ export default function ElizaPage() {
         <h1 style={{ fontFamily: SERIF, fontSize: "clamp(64px,14vw,96px)", fontWeight: 400, fontStyle: "italic", color: C.text, letterSpacing: "0.1em", margin: "2rem 0 0.1em", lineHeight: 1 }}>Eliza</h1>
         <div style={{ fontSize: "12px", color: C.muted, letterSpacing: "0.28em", marginBottom: "2.5rem" }}>ELICITATION PROTOCOL  ·  v4.2  ·  DEPT. OF STRATEGIC INTELLIGENCE</div>
         <div style={{ height: "1px", background: C.border, marginBottom: "2.5rem" }} />
+
+        {showHelp && (
+          <div style={{ background: C.surface, border: `1px solid ${C.border}`, marginBottom: "1.5rem", textAlign: "left", animation: "fadeUp 0.25s ease both" }}>
+            <div style={{ borderBottom: `1px solid ${C.border}`, padding: "0.6rem 1rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <div style={{ fontSize: "11px", color: C.red, letterSpacing: "0.2em" }}>AGENT BRIEFING — ELICITATION 101</div>
+              <button onClick={() => setShowHelp(false)} style={{ background: "transparent", border: "none", color: C.muted, fontFamily: MONO, fontSize: "16px", cursor: "pointer", lineHeight: 1 }}>×</button>
+            </div>
+            <div style={{ padding: "1rem" }}>
+              <div style={{ fontSize: "13px", color: C.text, lineHeight: 1.75, marginBottom: "1rem" }}>
+                <strong style={{ color: C.goldLight, fontWeight: "normal" }}>Elicitation</strong> is the art of extracting information through conversation alone — no force, no threats, just psychology, misdirection, and nerve.
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.6rem", marginBottom: "1rem" }}>
+                {[
+                  { label: "YOUR OBJECTIVE", color: C.greenLight, text: "Make the AI persona reveal its hidden secret through clever conversation." },
+                  { label: "DON'T GET BURNED", color: C.red, text: "The AI will try to extract YOUR secret identity. Let it slip and you lose." },
+                  { label: "DIFFICULTY", color: C.gold, text: "Pliable assets crack with light pressure. Hostile assets fight back hard." },
+                  { label: "THE JUDGE", color: C.muted, text: "A second AI watches the conversation and calls the win — no keyword tricks." },
+                ].map(({ label, color, text }) => (
+                  <div key={label} style={{ background: C.bg, border: `1px solid ${C.border}`, padding: "0.7rem" }}>
+                    <div style={{ fontSize: "9px", color, letterSpacing: "0.18em", marginBottom: "0.35rem" }}>{label}</div>
+                    <div style={{ fontSize: "12px", color: C.muted, lineHeight: 1.6 }}>{text}</div>
+                  </div>
+                ))}
+              </div>
+              <div style={{ borderTop: `1px solid ${C.border}`, paddingTop: "0.75rem" }}>
+                <div style={{ fontSize: "9px", color: C.muted, letterSpacing: "0.2em", marginBottom: "0.5rem" }}>TACTICS THAT WORK</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
+                  {[
+                    "Build rapport before going for the secret",
+                    "Ask indirectly — never demand the answer outright",
+                    "Use false assumptions to provoke corrections",
+                    "Make them feel safe, then ask the hard question",
+                  ].map((t, i) => (
+                    <div key={i} style={{ fontSize: "12px", color: C.muted, paddingLeft: "0.75rem", borderLeft: `2px solid ${C.border}` }}>{t}</div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div style={{ fontSize: "12px", color: C.muted, letterSpacing: "0.2em", marginBottom: "0.75rem", textAlign: "left" }}>AGENT IDENTIFICATION REQUIRED</div>
         <div style={{ display: "flex", marginBottom: "1.5rem" }}>
           <div style={{ padding: "0.75rem 1rem", background: C.surface, border: `1px solid ${C.border}`, borderRight: "none", color: C.gold, fontSize: "14px", letterSpacing: "0.1em", whiteSpace: "nowrap" }}>AGENT</div>
@@ -382,12 +424,20 @@ export default function ElizaPage() {
             style={{ flex: 1, padding: "0.75rem 1rem", background: C.surface, border: `1px solid ${C.border}`, color: C.text, fontFamily: MONO, fontSize: "15px", outline: "none", caretColor: C.gold }}
           />
         </div>
-        <button
-          onClick={() => { if (nameInput.trim()) { setAgentName(nameInput.trim()); setScreen("select"); } }}
-          style={{ width: "100%", padding: "0.9rem", background: nameInput.trim() ? C.red : "transparent", border: `1px solid ${nameInput.trim() ? C.red : C.border}`, color: nameInput.trim() ? "#fff" : C.muted, fontFamily: MONO, fontSize: "13px", letterSpacing: "0.28em", cursor: nameInput.trim() ? "pointer" : "default", transition: "all 0.15s" }}
-        >
-          INITIALIZE PROTOCOL
-        </button>
+        <div style={{ display: "flex", gap: "0.6rem", marginBottom: "0rem" }}>
+          <button
+            onClick={() => setShowHelp(h => !h)}
+            style={{ flex: "0 0 auto", padding: "0.9rem 1.2rem", background: showHelp ? `${C.gold}18` : "transparent", border: `1px solid ${showHelp ? C.gold : C.border}`, color: showHelp ? C.goldLight : C.muted, fontFamily: MONO, fontSize: "11px", letterSpacing: "0.2em", cursor: "pointer", transition: "all 0.15s" }}
+          >
+            HOW TO PLAY
+          </button>
+          <button
+            onClick={() => { if (nameInput.trim()) { setAgentName(nameInput.trim()); setScreen("select"); } }}
+            style={{ flex: 1, padding: "0.9rem", background: nameInput.trim() ? C.red : "transparent", border: `1px solid ${nameInput.trim() ? C.red : C.border}`, color: nameInput.trim() ? "#fff" : C.muted, fontFamily: MONO, fontSize: "13px", letterSpacing: "0.28em", cursor: nameInput.trim() ? "pointer" : "default", transition: "all 0.15s" }}
+          >
+            INITIALIZE PROTOCOL
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -508,7 +558,7 @@ export default function ElizaPage() {
               {messages.map((m, i) => {
                 const isUser = m.role === "user";
                 return (
-                  <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: isUser ? "flex-end" : "flex-start", animation: "fadeUp 0.25s ease both" }}>
+                  <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", animation: "fadeUp 0.25s ease both" }}>
                     <div style={{ fontSize: "11px", letterSpacing: "0.18em", marginBottom: "0.3rem", color: isUser ? C.gold : C.red }}>
                       {isUser ? `AGENT ${agentName}` : scenario.aiPersona}
                     </div>
