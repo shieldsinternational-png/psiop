@@ -213,6 +213,7 @@ export default function ElizaPage() {
   const [loading,   setLoading]   = useState(false);
   const [result,    setResult]    = useState(null);
   const [turns,     setTurns]     = useState(0);
+  const [winningMsg, setWinningMsg] = useState("");
   const bottomRef = useRef(null);
   const inputRef  = useRef(null);
 
@@ -224,6 +225,7 @@ export default function ElizaPage() {
     setMessages([{ role: "assistant", content: scenario.aiOpener }]);
     setTurns(0);
     setResult(null);
+    setWinningMsg("");
     setScreen("game");
   }
 
@@ -251,9 +253,10 @@ export default function ElizaPage() {
       const aiText = data.aiText ?? "[TRANSMISSION INTERRUPTED — RETRY]";
       setMessages([...allMsgs, { role: "assistant", content: aiText }]);
       if (data.playerBurned) {
-        setTimeout(() => { setResult("lose"); setScreen("result"); }, 900);
+        setTimeout(() => { setResult("lose"); setScreen("result"); }, 1200);
       } else if (data.secretRevealed) {
-        setTimeout(() => { setResult("win"); setScreen("result"); }, 900);
+        setWinningMsg(aiText);
+        setTimeout(() => { setResult("win"); setScreen("result"); }, 5000);
       }
     } catch {
       setMessages(m => [...m, { role: "assistant", content: "[TRANSMISSION INTERRUPTED — RETRY]" }]);
@@ -485,9 +488,15 @@ export default function ElizaPage() {
         <div style={{ color: C.muted, fontSize: "14px", marginBottom: "0.5rem" }}>{scenario.codename}  ·  {DIFFS.find(d => d.id === diffId)?.name}</div>
         <div style={{ color: C.muted, fontSize: "14px", marginBottom: "3rem" }}>Agent {agentName}  ·  {turns} exchange{turns !== 1 ? "s" : ""}</div>
         {isWin && (
-          <div style={{ background: "rgba(42,128,80,0.1)", border: "1px solid rgba(42,128,80,0.35)", padding: "1rem", marginBottom: "2rem", fontSize: "14px", color: C.text, lineHeight: 1.65 }}>
-            <div style={{ fontSize: "11px", color: C.greenLight, letterSpacing: "0.2em", marginBottom: "0.4rem" }}>INTELLIGENCE ACQUIRED</div>
-            {scenario.aiSecret}
+          <div style={{ marginBottom: "2rem" }}>
+            <div style={{ background: "rgba(42,128,80,0.1)", border: "1px solid rgba(42,128,80,0.35)", padding: "1rem", marginBottom: "0.75rem", fontSize: "14px", color: C.text, lineHeight: 1.7, textAlign: "left", whiteSpace: "pre-wrap" }}>
+              <div style={{ fontSize: "11px", color: C.greenLight, letterSpacing: "0.2em", marginBottom: "0.5rem" }}>FINAL TRANSMISSION — {scenario.aiPersona}</div>
+              {winningMsg}
+            </div>
+            <div style={{ background: "rgba(42,128,80,0.06)", border: "1px solid rgba(42,128,80,0.2)", padding: "0.75rem 1rem", fontSize: "13px", color: C.muted, lineHeight: 1.6, textAlign: "left" }}>
+              <div style={{ fontSize: "11px", color: C.greenLight, letterSpacing: "0.2em", marginBottom: "0.35rem" }}>INTELLIGENCE CONFIRMED</div>
+              {scenario.aiSecret}
+            </div>
           </div>
         )}
         <div style={{ display: "flex", gap: "0.75rem" }}>
