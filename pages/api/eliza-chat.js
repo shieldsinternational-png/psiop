@@ -4,14 +4,14 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { system, messages, aiSecret, protectValue, protectKeywords } = req.body;
+  const { system, messages, aiSecret, protectKeywords, diffId } = req.body;
 
   if (!system || !messages || !aiSecret) {
     return res.status(400).json({ error: "Missing required fields" });
   }
 
   try {
-    // ── 1. Get the AI persona's response ──────────────────────────────────
+    // ── 1. AI persona response ─────────────────────────────────────────────
     const aiRes = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: {
@@ -31,14 +31,22 @@ export default async function handler(req, res) {
     if (!aiRes.ok) return res.status(aiRes.status).json({ error: aiData });
     const aiText = aiData.content?.[0]?.text ?? "[SIGNAL LOST]";
 
-    // ── 2. Check if the player revealed their own secret ──────────────────
-    //    Keyword match is fine here — the player typed it, no paraphrasing
+    // ── 2. Check if player revealed their own secret ───────────────────────
     const lastUserMsg = [...messages].reverse().find(m => m.role === "user")?.content ?? "";
     const playerBurned = (protectKeywords ?? []).some(k =>
       lastUserMsg.toLowerCase().includes(k.toLowerCase())
     );
 
-    // ── 3. Judge call — did the AI meaningfully reveal its secret? ─────────
+    // ── 3. Judge — did the AI meaningfully reveal its secret? ──────────────
+    // Threshold varies by difficulty: easy is generous, hard is strict
+    const judgeThresholds = {
+      easy:   "The player wins if the AI has revealed ANY specific detail that meaningfully points toward the secret — even a partial hint or strong implication counts. Be generous.",
+      medium: "The player wins if the AI has revealed enough specific detail that someone could reasonably piece together the secret, even if not stated outright.",
+      hard:   "The player wins ONLY if the core specific facts of the secret are clearly and unambiguously present in the AI's responses — vague hints or implications do not count.",
+    };
+
+    const threshold = judgeThresholds[diffId] ?? judgeThresholds.medium;
+
     const fullConversation = [
       ...messages,
       { role: "assistant", content: aiText },
@@ -56,17 +64,13 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
         max_tokens: 10,
-        system: `You are a strict game judge for an elicitation game.
-Your only job: decide if the TARGET SECRET has been meaningfully revealed in the conversation.
+        system: `You are a game judge for an elicitation game.
 
 TARGET SECRET: "${aiSecret}"
 
-Rules:
-- Answer only YES or NO. Nothing else.
-- YES if the conversation contains enough specific detail that a reader could identify the secret, even if the exact words differ.
-- YES if the core facts (location, name, date, passphrase, etc.) are present in substance.
-- NO if the AI only hinted, spoke vaguely, or gave adjacent information without the key specifics.
-- NO if the secret has not been meaningfully disclosed yet.`,
+WIN CONDITION: ${threshold}
+
+Answer only YES or NO. Nothing else.`,
         messages: [{ role: "user", content: fullConversation }],
       }),
     });
